@@ -1,0 +1,49 @@
+Subject,Start Date,Start Time,End Date,End Time,All day event,Reminder on/off,Reminder Date,Reminder Time,Meeting Organizer,Required Attendees,Optional Attendees,Meeting Resources,Billing Information,Categories,Description,Location,Mileage,Priority,Private,Sensitivity,Show time as
+Work,05/02/2016,02:00:00 PM,05/02/2016,05:00:00 PM,FALSE,FALSE,5/1/2016,8:00:00 PM,"Lobo, Stein C",,,,,,"test12345
+ MERGED test56789
+",EBB,,Normal,FALSE,Normal,2Work1,05/03/2016,11:00:00 AM,05/03/2016,01:00:00 PM,FALSE,FALSE,5/2/2016,5:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work2,05/03/2016,03:00:00 PM,05/03/2016,05:00:00 PM,FALSE,FALSE,5/2/2016,9:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work3,05/04/2016,09:00:00 AM,05/04/2016,12:00:00 PM,FALSE,FALSE,5/3/2016,3:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work4,05/04/2016,03:00:00 PM,05/04/2016,05:00:00 PM,FALSE,FALSE,5/3/2016,9:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work5,05/05/2016,11:00:00 AM,05/05/2016,01:00:00 PM,FALSE,FALSE,5/4/2016,5:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work6,05/05/2016,03:00:00 PM,05/05/2016,05:00:00 PM,FALSE,TRUE,5/5/2016,2:50:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work7,05/06/2016,09:00:00 AM,05/06/2016,05:00:00 PM,FALSE,FALSE,5/5/2016,3:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work,05/09/2016,02:00:00 PM,05/09/2016,05:00:00 PM,FALSE,FALSE,5/8/2016,8:00:00 PM,"Lobo, Stein C",,,,,,"test12345
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work1,05/10/2016,11:00:00 AM,05/10/2016,01:00:00 PM,FALSE,FALSE,5/9/2016,5:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work2,05/10/2016,03:00:00 PM,05/10/2016,05:00:00 PM,FALSE,FALSE,5/9/2016,9:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work3,05/11/2016,09:00:00 AM,05/11/2016,12:00:00 PM,FALSE,FALSE,5/10/2016,3:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work4,05/11/2016,03:00:00 PM,05/11/2016,05:00:00 PM,FALSE,FALSE,5/10/2016,9:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work5,05/12/2016,11:00:00 AM,05/12/2016,01:00:00 PM,FALSE,FALSE,5/11/2016,5:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work6,05/12/2016,03:00:00 PM,05/12/2016,05:00:00 PM,FALSE,TRUE,5/12/2016,2:50:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2Work7,05/13/2016,09:00:00 AM,05/13/2016,05:00:00 PM,FALSE,FALSE,5/12/2016,3:00:00 PM,"Lobo, Stein C",,,,,,"test12345 
+ MERGED test56789
+ 
+",EBB,,Normal,FALSE,Normal,2
