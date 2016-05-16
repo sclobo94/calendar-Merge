@@ -59,7 +59,6 @@ while(listloop==1):
                 continue
             else:
                 if b.description=="": #if one of the events has empty notes delete
-                    print "a MERGED b"
                     eventlist[i+1] = null
                     i+=1
                     continue
@@ -68,9 +67,8 @@ while(listloop==1):
                     i+=1
                     continue
                 else:
-                    a.description += "\n\n HAS BEEN MERGED \n\n" + b.description
-                    a.description = "\"%s\"" % a.description
                     manualReview.append(a);
+                    manualReview.append(b);
                     i+=1
       
 # for i in eventlist:
