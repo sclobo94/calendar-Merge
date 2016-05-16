@@ -69,7 +69,7 @@ while(listloop==1):
                     continue
                 else:
                     a.description += "\n\n HAS BEEN MERGED \n\n" + b.description
-                    a.description = '"%s"' % a.description
+                    a.description = "\"%s\"" % a.description
                     manualReview.append(a);
                     i+=1
       
