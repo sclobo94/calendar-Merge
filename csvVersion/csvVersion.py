@@ -58,12 +58,12 @@ while(listloop==1):
                 i+=1
                 continue
             else:
-                if b.description=="": #if one of the events has empty notes delete
-                    eventlist[i+1] = null
+                if a.description=="": #if one of the events has empty notes delete
+                    eventlist[i] = null
                     i+=1
                     continue
-                elif a.description=="":
-                    eventlist[i] = null
+                elif b.description=="":
+                    eventlist[i+1] = null
                     i+=1
                     continue
                 else:
