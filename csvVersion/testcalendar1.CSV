@@ -1,0 +1,173 @@
+"Subject","Start Date","Start Time","End Date","End Time","All day event","Reminder on/off","Reminder Date","Reminder Time","Meeting Organizer","Required Attendees","Optional Attendees","Meeting Resources","Billing Information","Categories","Description","Location","Mileage","Priority","Private","Sensitivity","Show time as"
+"Weekly Meeting: Art Wasserman","5/4/2016","11:00:00 AM","5/4/2016","11:45:00 AM","False","True","5/4/2016","10:55:00 AM",,,,,,,,"TT",,"Normal","False","Normal","2"
+"Weekly Meeting: Art Wasserman","5/11/2016","11:00:00 AM","5/11/2016","11:45:00 AM","False","True","5/11/2016","10:55:00 AM",,,,,,,,"TT",,"Normal","False","Normal","2"
+"Weekly Meeting: Art Wasserman","5/18/2016","11:00:00 AM","5/18/2016","11:45:00 AM","False","True","5/18/2016","10:55:00 AM",,,,,,,,"TT",,"Normal","False","Normal","2"
+"Weekly Meeting: Art Wasserman","5/25/2016","11:00:00 AM","5/25/2016","11:45:00 AM","False","True","5/25/2016","10:55:00 AM",,,,,,,,"TT",,"Normal","False","Normal","2"
+"Weekly Meeting: Art Wasserman","6/1/2016","11:00:00 AM","6/1/2016","11:45:00 AM","False","True","6/1/2016","10:55:00 AM",,,,,,,,"TT",,"Normal","False","Normal","2"
+"Monthly meeting with Howard Weiss","5/19/2016","3:30:00 PM","5/19/2016","4:15:00 PM","False","True","5/19/2016","3:20:00 PM",,,,,,,"Regular monthly with School Chair - the third Thursday of every month.
+","TT",,"Normal","False","Normal","2"
+"Mother's Day (US)","5/8/2016","12:00:00 AM","5/9/2016","12:00:00 AM","True","False","5/7/2016","11:45:00 PM",,,,,,,"","",,"Normal","False","Normal","2"
+"Provost meeting: Dean","5/4/2016","1:00:00 PM","5/4/2016","3:00:00 PM","False","False","5/3/2016","7:00:00 PM",,,,,,,"","PCR",,"Normal","False","Normal","2"
+"Provost meeting: Dean","6/1/2016","1:00:00 PM","6/1/2016","3:00:00 PM","False","False","5/31/2016","7:00:00 PM",,,,,,,"","PCR",,"Normal","False","Normal","2"
+"Monthly Meeting with Provost Bras","5/18/2016","3:00:00 PM","5/18/2016","3:45:00 PM","False","True","5/18/2016","2:50:00 PM",,,,,,,,"carnegie",,"Normal","False","Normal","2"
+"Weekly meeting David Moore","5/2/2016","10:00:00 AM","5/2/2016","10:30:00 AM","False","True","5/2/2016","9:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting David Moore","5/9/2016","10:00:00 AM","5/9/2016","10:30:00 AM","False","True","5/9/2016","9:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting David Moore","5/16/2016","10:00:00 AM","5/16/2016","10:30:00 AM","False","True","5/16/2016","9:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting David Moore","5/23/2016","10:00:00 AM","5/23/2016","10:30:00 AM","False","True","5/23/2016","9:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting David Moore","5/30/2016","10:00:00 AM","5/30/2016","10:30:00 AM","False","True","5/30/2016","9:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"CoS Chairs' Monthly Meeting","5/10/2016","11:00:00 AM","5/10/2016","1:00:00 PM","False","True","5/10/2016","10:50:00 AM",,,,,,,,"Success Center - President's Suite C",,"Normal","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, David T, Juan","5/3/2016","9:00:00 AM","5/3/2016","10:30:00 AM","False","True","5/3/2016","8:45:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, David T, Juan","5/10/2016","9:00:00 AM","5/10/2016","10:30:00 AM","False","True","5/10/2016","8:45:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, David T, Juan","5/17/2016","9:00:00 AM","5/17/2016","10:30:00 AM","False","True","5/17/2016","8:45:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, David T, Juan","5/24/2016","9:00:00 AM","5/24/2016","10:30:00 AM","False","True","5/24/2016","8:45:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, David T, Juan","5/31/2016","9:00:00 AM","5/31/2016","10:30:00 AM","False","True","5/31/2016","8:45:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Bi-monthly meeting with Lew Lefton","5/5/2016","2:30:00 PM","5/5/2016","3:15:00 PM","False","True","5/5/2016","2:20:00 PM",,,,,,,,"",,"Normal","False","Normal","2"
+"Bi-monthly meeting with Lew Lefton","5/19/2016","2:30:00 PM","5/19/2016","3:15:00 PM","False","True","5/19/2016","2:20:00 PM",,,,,,,,"",,"Normal","False","Normal","2"
+"Private Appointment","5/4/2016","12:00:00 AM","5/5/2016","12:00:00 AM","False","False","5/3/2016","6:00:00 AM",,,,,,,,"",,"Normal","True","Private","2"
+"Weekly meeting Dian","5/2/2016","9:00:00 AM","5/2/2016","9:30:00 AM","False","True","5/2/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting Dian","5/9/2016","9:00:00 AM","5/9/2016","9:30:00 AM","False","True","5/9/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting Dian","5/16/2016","9:00:00 AM","5/16/2016","9:30:00 AM","False","True","5/16/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting Dian","5/23/2016","9:00:00 AM","5/23/2016","9:30:00 AM","False","True","5/23/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting Dian","5/30/2016","9:00:00 AM","5/30/2016","9:30:00 AM","False","True","5/30/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"CoS Chairs' Meeting","5/10/2016","11:00:00 AM","5/10/2016","1:00:00 PM","False","False","5/9/2016","5:00:00 PM","Crowther, Joylene P","Chung Hinkson, Dian A;David M Collard;David J Terraso;Moore, David L;Kubanek, Julia M;O'Brien, Gerald E;juan.archila@facilities.gatech.edu;Wasserman, Arthur G;cam.tyson@chemistry.gatech.edu;Oden, Keith L;Leavey, Jennifer K;Lew E Lefton;Paul M. Goldbart",,,,,"
+The following meeting has been modified:
+
+
+
+Subject:	CoS Chairs' Meeting 	
+Organizer:	""Crowther, Joylene P"" <joylene.crowther@cos.gatech.edu> 	
+
+
+Location:	Student Success Center - President Suite C [MODIFIED]	
+Time:	11:00:00 AM - 1:00:00 PM GMT -05:00 US/Canada Eastern [MODIFIED] 	
+Recurrence	: The second Tuesday of every 1 month(s) No end date Effective Jan 13, 2015	
+
+
+Invitees:	dian.chung@cos.gatech.edu; david.collard@chemistry.gatech.edu; david.terraso@cos.gatech.edu; david.moore@cos.gatech.edu; julia.kubanek@biology.gatech.edu; jerry.obrien@cos.gatech.edu; juan.archila@facilities.gatech.edu; arthur.wasserman@cos.gatech.edu; cam.tyson@chemistry.gatech.edu; keith.oden@chemistry.gatech.edu; Jennifer.Leavey@cos.gatech.edu ... 	
+*~*~*~*~*~*~*~*~*~*
+
+","EBB conf room 5029",,"Normal","False","Normal","1"
+"Private Appointment","5/4/2016","12:00:00 AM","5/5/2016","12:00:00 AM","False","False","5/3/2016","6:00:00 AM",,,,,,,,"",,"Normal","True","Private","2"
+"Private Appointment","5/16/2016","12:00:00 AM","5/17/2016","12:00:00 AM","False","False","5/15/2016","6:00:00 AM",,,,,,,,"",,"Normal","True","Private","2"
+"Provost meeting: Deans and Vice Provosts","5/18/2016","1:00:00 PM","5/18/2016","3:00:00 PM","False","False","5/17/2016","7:00:00 PM",,,,,,,"","PCR",,"Normal","False","Normal","2"
+"Champ Cty Prop Taxes pt 1","6/1/2016","12:00:00 AM","6/2/2016","12:00:00 AM","True","False","5/31/2016","11:45:00 PM",,,,,,,"
+...first installment due June 1; 
+   second due September 1; 
+   paid from UIECU CK#3 (Tax etc) 
+...all covering previous year 
+06/10: 2*$4,999.91 
+06/09: 2*$4,967.94 
+06/08: 2*$4,690.41 
+06/07: 2*$4,614.40 
+06/06: 2*$4,427.33 
+06/05: 2*$4,258.62 
+06/04: 2*$? 
+06/03: 2*$? 
+06/02: 2*$3,545.79 (paid 7.17; $3.6k from CK3) 
+  
+  
+
+","",,"Normal","False","Normal","3"
+"Due soon: Champ C'ty taxes","5/20/2016","12:00:00 AM","5/21/2016","12:00:00 AM","True","False","5/19/2016","11:45:00 PM",,,,,,,"
+","",,"Normal","False","Normal","2"
+"Noah Kim Lev (2010)","5/30/2016","12:00:00 AM","5/31/2016","12:00:00 AM","True","False","5/29/2016","11:45:00 PM",,,,,,,"
+Noah Kim Lev
+May 30, 2010 at 11:24 am
+6 lb 13 oz, 19 in
+
+
+","",,"Normal","False","Normal","2"
+"B'day: Nigel Goldenfeld (1957)","5/1/2016","12:00:00 AM","5/2/2016","12:00:00 AM","True","False","4/30/2016","11:45:00 PM",,,,,,,"
+","",,"Normal","False","Normal","2"
+"Julia Rosengren","5/22/2016","12:00:00 AM","5/23/2016","12:00:00 AM","True","False","5/21/2016","11:45:00 PM",,,,,,,"b. 1995, Urbana, IL 
+
+","",,"Normal","False","Normal","2"
+"Bardeen Birthday (1908)","5/23/2016","12:00:00 AM","5/24/2016","12:00:00 AM","True","False","5/22/2016","11:45:00 PM",,,,,,,"
+","",,"Normal","False","Normal","2"
+"PMG's GA Driver's License expires May 27, 2016","5/2/2016","12:00:00 AM","5/3/2016","12:00:00 AM","True","False","5/1/2016","11:45:00 PM",,,,,,,"","",,"Normal","False","Normal","2"
+"PMG's GA Driver's License expires May 27, 2016","5/9/2016","12:00:00 AM","5/10/2016","12:00:00 AM","True","False","5/8/2016","11:45:00 PM",,,,,,,"","",,"Normal","False","Normal","2"
+"PMG's GA Driver's License expires May 27, 2016","5/16/2016","12:00:00 AM","5/17/2016","12:00:00 AM","True","False","5/15/2016","11:45:00 PM",,,,,,,"","",,"Normal","False","Normal","2"
+"PMG's GA Driver's License expires May 27, 2016","5/23/2016","12:00:00 AM","5/24/2016","12:00:00 AM","True","False","5/22/2016","11:45:00 PM",,,,,,,"","",,"Normal","False","Normal","2"
+"PMG's GA Driver's License expires May 27, 2016","5/30/2016","12:00:00 AM","5/31/2016","12:00:00 AM","True","False","5/29/2016","11:45:00 PM",,,,,,,"","",,"Normal","False","Normal","2"
+"Weekly meeting with Maureen Rouhi","5/2/2016","4:00:00 PM","5/2/2016","4:45:00 PM","False","True","5/2/2016","3:45:00 PM","Goldbart, Paul M","maureen.rouhi@cos.gatech.edu",,,,,,"CE 201A",,"Normal","False","Normal","2"
+"Weekly meeting with Maureen Rouhi","5/9/2016","4:00:00 PM","5/9/2016","4:45:00 PM","False","True","5/9/2016","3:45:00 PM","Goldbart, Paul M","maureen.rouhi@cos.gatech.edu",,,,,,"CE 201A",,"Normal","False","Normal","2"
+"Weekly meeting with Maureen Rouhi","5/16/2016","4:00:00 PM","5/16/2016","4:45:00 PM","False","True","5/16/2016","3:45:00 PM","Goldbart, Paul M","maureen.rouhi@cos.gatech.edu",,,,,,"CE 201A",,"Normal","False","Normal","2"
+"Weekly meeting with Maureen Rouhi","5/23/2016","4:00:00 PM","5/23/2016","4:45:00 PM","False","True","5/23/2016","3:45:00 PM","Goldbart, Paul M","maureen.rouhi@cos.gatech.edu",,,,,,"CE 201A",,"Normal","False","Normal","2"
+"Weekly meeting with Maureen Rouhi","5/30/2016","4:00:00 PM","5/30/2016","4:45:00 PM","False","True","5/30/2016","3:45:00 PM","Goldbart, Paul M","maureen.rouhi@cos.gatech.edu",,,,,,"CE 201A",,"Normal","False","Normal","2"
+"CoS School Visit - Chemistry","5/9/2016","11:00:00 AM","5/9/2016","12:30:00 PM","False","False","5/9/2016","10:45:00 AM",,,,,,,"","MoSE 3201A",,"Normal","False","Normal","2"
+"CoS School Visit - Psychology","5/2/2016","11:00:00 AM","5/2/2016","12:30:00 PM","False","False","5/2/2016","10:45:00 AM",,,,,,,"","TBD",,"Normal","False","Normal","2"
+"Weekly meeting with Lizanne DeStefano","5/2/2016","1:00:00 PM","5/2/2016","1:45:00 PM","False","True","5/2/2016","12:45:00 PM","Goldbart, Paul M","Destefano, Lizanne",,,,,"
+
+","CE 201A",,"Normal","False","Normal","2"
+"Weekly meeting with Lizanne DeStefano","5/9/2016","1:00:00 PM","5/9/2016","1:45:00 PM","False","True","5/9/2016","12:45:00 PM","Goldbart, Paul M","Destefano, Lizanne",,,,,"
+
+","CE 201A",,"Normal","False","Normal","2"
+"Weekly meeting with Lizanne DeStefano","5/16/2016","1:00:00 PM","5/16/2016","1:45:00 PM","False","True","5/16/2016","12:45:00 PM","Goldbart, Paul M","Destefano, Lizanne",,,,,"
+
+","CE 201A",,"Normal","False","Normal","2"
+"Weekly meeting with Lizanne DeStefano","5/23/2016","1:00:00 PM","5/23/2016","1:45:00 PM","False","True","5/23/2016","12:45:00 PM","Goldbart, Paul M","Destefano, Lizanne",,,,,"
+
+","CE 201A",,"Normal","False","Normal","2"
+"Weekly meeting with Lizanne DeStefano","5/30/2016","1:00:00 PM","5/30/2016","1:45:00 PM","False","True","5/30/2016","12:45:00 PM","Goldbart, Paul M","Destefano, Lizanne",,,,,"
+
+","CE 201A",,"Normal","False","Normal","2"
+"Undergrad PM Ceremony","5/7/2016","3:00:00 PM","5/7/2016","5:30:00 PM","False","False","5/7/2016","2:45:00 PM",,,,,,,"","McCamish",,"Normal","False","Normal","2"
+"Undergrad AM Ceremony","5/7/2016","9:00:00 AM","5/7/2016","11:30:00 AM","False","False","5/7/2016","8:45:00 AM",,,,,,,"","McCamish",,"Normal","False","Normal","2"
+"Ph.D./Master’s Ceremony","5/6/2016","7:00:00 PM","5/6/2016","9:00:00 PM","False","False","5/6/2016","6:45:00 PM",,,,,,,"","Mccamish",,"Normal","False","Normal","2"
+"President’s Graduation Celebration","5/6/2016","3:00:00 PM","5/6/2016","5:00:00 PM","False","False","5/6/2016","2:45:00 PM",,,,,,,"","Tech Green",,"Normal","False","Normal","2"
+"PhD Hooding","5/6/2016","10:00:00 AM","5/6/2016","11:30:00 AM","False","False","5/6/2016","9:45:00 AM",,,,,,,"","McCamish",,"Normal","False","Normal","2"
+"Spring Commencement","5/6/2016","12:00:00 AM","5/8/2016","12:00:00 AM","True","False","5/5/2016","11:45:00 PM",,,,,,,,"",,"Normal","False","Normal","3"
+"Weekly meeting Dian","5/2/2016","9:00:00 AM","5/2/2016","9:30:00 AM","False","True","5/2/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting Dian","5/9/2016","9:00:00 AM","5/9/2016","9:30:00 AM","False","True","5/9/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting Dian","5/16/2016","9:00:00 AM","5/16/2016","9:30:00 AM","False","True","5/16/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting Dian","5/23/2016","9:00:00 AM","5/23/2016","9:30:00 AM","False","True","5/23/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Weekly meeting Dian","5/30/2016","9:00:00 AM","5/30/2016","9:30:00 AM","False","True","5/30/2016","8:50:00 AM",,,,,,,,"",,"Normal","False","Normal","2"
+"Provost meeting: Dean","5/4/2016","1:00:00 PM","5/4/2016","3:00:00 PM","False","False","5/3/2016","7:00:00 PM",,,,,,,,"PCR",,"Normal","False","Normal","2"
+"Provost meeting: Dean","6/1/2016","1:00:00 PM","6/1/2016","3:00:00 PM","False","False","5/31/2016","7:00:00 PM",,,,,,,,"PCR",,"Normal","False","Normal","2"
+"Art Wasserman weekly meeting","5/4/2016","11:00:00 AM","5/4/2016","12:00:00 PM","False","True","5/4/2016","10:45:00 AM","Goldbart, Paul M","Wasserman, Arthur G",,,,,"
+","",,"Normal","False","Normal","2"
+"Art Wasserman weekly meeting","5/11/2016","11:00:00 AM","5/11/2016","12:00:00 PM","False","True","5/11/2016","10:45:00 AM","Goldbart, Paul M","Wasserman, Arthur G",,,,,"
+","",,"Normal","False","Normal","2"
+"Art Wasserman weekly meeting","5/18/2016","11:00:00 AM","5/18/2016","12:00:00 PM","False","True","5/18/2016","10:45:00 AM","Goldbart, Paul M","Wasserman, Arthur G",,,,,"
+","",,"Normal","False","Normal","2"
+"Art Wasserman weekly meeting","5/25/2016","11:00:00 AM","5/25/2016","12:00:00 PM","False","True","5/25/2016","10:45:00 AM","Goldbart, Paul M","Wasserman, Arthur G",,,,,"
+","",,"Normal","False","Normal","2"
+"Art Wasserman weekly meeting","6/1/2016","11:00:00 AM","6/1/2016","12:00:00 PM","False","True","6/1/2016","10:45:00 AM","Goldbart, Paul M","Wasserman, Arthur G",,,,,"
+","",,"Normal","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, Juan and Lizanne","5/3/2016","9:00:00 AM","5/3/2016","10:30:00 AM","False","False","5/2/2016","3:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, Juan and Lizanne","5/10/2016","9:00:00 AM","5/10/2016","10:30:00 AM","False","False","5/9/2016","3:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, Juan and Lizanne","5/17/2016","9:00:00 AM","5/17/2016","10:30:00 AM","False","False","5/16/2016","3:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, Juan and Lizanne","5/24/2016","9:00:00 AM","5/24/2016","10:30:00 AM","False","False","5/23/2016","3:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"CoS Group meeting: Dian, David M, David C, Julia, Jerry, Lew, Art, Juan and Lizanne","5/31/2016","9:00:00 AM","5/31/2016","10:30:00 AM","False","False","5/30/2016","3:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"CoS Group Meeting: David C. David M. Dian, Jerry, Juan, Julia, and Art","5/5/2016","9:00:00 AM","5/5/2016","11:00:00 AM","False","False","5/4/2016","3:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"CoS Group Meeting: David C. David M. Dian, Jerry, Juan, Julia, and Art","5/12/2016","9:00:00 AM","5/12/2016","11:00:00 AM","False","False","5/11/2016","3:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"CoS Group Meeting: David C. David M. Dian, Jerry, Juan, Julia, and Art","5/19/2016","9:00:00 AM","5/19/2016","11:00:00 AM","False","False","5/18/2016","3:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"CoS Group Meeting: David C. David M. Dian, Jerry, Juan, Julia, and Art","5/26/2016","9:00:00 AM","5/26/2016","11:00:00 AM","False","False","5/25/2016","3:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"Monthly Meeting with Provost Bras","5/18/2016","3:00:00 PM","5/18/2016","3:45:00 PM","False","False","5/17/2016","9:00:00 PM",,,,,,,,"carnegie",,"High","False","Normal","2"
+"CoS Chairs' Meeting","5/10/2016","11:00:00 AM","5/10/2016","1:00:00 PM","False","False","5/9/2016","5:00:00 PM",,,,,,,"
+The following meeting has been modified:
+
+
+
+Subject:	CoS Chairs' Meeting 	
+Organizer:	""Crowther, Joylene P"" 	
+
+
+Location:	Student Success Center - President Suite C [MODIFIED]	
+Time:	11:00:00 AM - 1:00:00 PM GMT -05:00 US/Canada Eastern [MODIFIED] 	
+Recurrence	: The second Tuesday of every 1 month(s) No end date Effective Jan 13, 2015	
+
+
+Invitees:	dian.chung@cos.gatech.edu; david.collard@chemistry.gatech.edu; david.terraso@cos.gatech.edu; david.moore@cos.gatech.edu; julia.kubanek@biology.gatech.edu; jerry.obrien@cos.gatech.edu; juan.archila@facilities.gatech.edu; arthur.wasserman@cos.gatech.edu; cam.tyson@chemistry.gatech.edu; keith.oden@chemistry.gatech.edu; Jennifer.Leavey@cos.gatech.edu ... 	
+
+*~*~*~*~*~*~*~*~*~*
+
+","EBB - Conference room 4029",,"Normal","False","Normal","1"
+"Monthly meeting with Howard Weiss","5/19/2016","3:30:00 PM","5/19/2016","4:15:00 PM","False","False","5/18/2016","9:30:00 PM",,,,,,,"Regular monthly with School Chair - the third Thursday of every month.
+","TT",,"Normal","False","Normal","2"
+"Weekly meeting David Moore","5/2/2016","10:00:00 AM","5/2/2016","10:30:00 AM","False","False","5/1/2016","4:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"Weekly meeting David Moore","5/9/2016","10:00:00 AM","5/9/2016","10:30:00 AM","False","False","5/8/2016","4:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"Weekly meeting David Moore","5/16/2016","10:00:00 AM","5/16/2016","10:30:00 AM","False","False","5/15/2016","4:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"Weekly meeting David Moore","5/23/2016","10:00:00 AM","5/23/2016","10:30:00 AM","False","False","5/22/2016","4:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"Weekly meeting David Moore","5/30/2016","10:00:00 AM","5/30/2016","10:30:00 AM","False","False","5/29/2016","4:00:00 PM",,,,,,,,"",,"High","False","Normal","2"
+"Provost meeting: Deans and Vice Provosts","5/18/2016","1:00:00 PM","5/18/2016","3:00:00 PM","False","False","5/17/2016","7:00:00 PM",,,,,,,,"PCR",,"Normal","False","Normal","3"
