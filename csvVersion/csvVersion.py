@@ -31,7 +31,7 @@ csvfile.close()
 eventlist.sort(key=lambda y: y.stimeanddate);
 # for i in eventlist:
 #     i.eventprint() 
-#   
+#    
 # #loop through list of sorted events
 listloop = 1
 i = 0
@@ -40,7 +40,7 @@ while(listloop==1):
     if i == len(eventlist)-1:
         listloop=0 
         continue
-      
+       
     a = eventlist[i]
     b = eventlist[i+1]
     if b.stimeanddate > a.stimeanddate: #if times are different
@@ -70,28 +70,38 @@ while(listloop==1):
                     manualReview.append(a);
                     manualReview.append(b);
                     i+=1
-      
+       
 # for i in eventlist:
 #     if(i!=null):
 #         i.eventprint()    
 #        
 #write updated version to csv
-writeto = open("output.csv", "w")
-header = "Subject,Start Date,Start Time,End Date,End Time,All day event,Reminder on/off,Reminder Date,Reminder Time,Meeting Organizer,Required Attendees,Optional Attendees,Meeting Resources,Billing Information,Categories,Description,Location,Mileage,Priority,Private,Sensitivity,Show time as"
-header += "\n"
-writeto.write(header)
-for i in eventlist:
-    if(i!=null):
-        writeto.write(i.toString() + "\r")
+# writeto = open("output.csv", "w")
+# header = "Subject,Start Date,Start Time,End Date,End Time,All day event,Reminder on/off,Reminder Date,Reminder Time,Meeting Organizer,Required Attendees,Optional Attendees,Meeting Resources,Billing Information,Categories,Description,Location,Mileage,Priority,Private,Sensitivity,Show time as"
+# header += "\n"
+# writeto.write(header)
+# for i in eventlist:
+#     if(i!=null):
+#         writeto.write(i.toString() + "\r")
+# print "\n--------Manual Review--------" 
+# for i in manualReview:  
+#     print(i.toString())
+# writeto.close()       
+           
+with open("output1.csv", "w") as writeto:
+    writer = csv.writer(writeto, quotechar='"', quoting=csv.QUOTE_ALL)
+    writer.writerow(["Subject","Start Date","Start Time","End Date","End Time","All day event","Reminder on/off","Reminder Date","Reminder Time","Meeting Organizer","Required Attendees","Optional Attendees","Meeting Resources","Billing Information","Categories","Description","Location","Mileage","Priority","Private","Sensitivity","Show time as"])
+    for i in eventlist:
+        if(i!=null):
+            writer.writerow(i.toString())
+    
+    writeto.close()
+    
 print "\n--------Manual Review--------" 
 for i in manualReview:  
     print(i.toString())
-writeto.close()       
-          
+       
        
       
       
-      
-     
-     
-        
+         
