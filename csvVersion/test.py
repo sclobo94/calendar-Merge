@@ -6,7 +6,7 @@ from pyasn1.compat.octets import null
 
 
 #Sort events and store in list
-with open('testcalendar.CSV') as csvfile:
+with open('testcalendar1.CSV') as csvfile:
     reader = csv.DictReader(csvfile);
     eventlist=[];
     rownum=0
@@ -31,8 +31,8 @@ csvfile.close()
 eventlist.sort(key=lambda y: y.stimeanddate);
 # for i in eventlist:
 #     i.eventprint() 
- 
-#loop through list of sorted events
+#   
+# #loop through list of sorted events
 listloop = 1
 i = 0
 manualReview = [] #items with same times and notes that need to be reviewed
@@ -40,7 +40,7 @@ while(listloop==1):
     if i == len(eventlist)-1:
         listloop=0 
         continue
-     
+      
     a = eventlist[i]
     b = eventlist[i+1]
     if b.stimeanddate > a.stimeanddate: #if times are different
@@ -51,12 +51,15 @@ while(listloop==1):
             i+=1
             continue
         else: #if subject does match
+            a.description = a.description.strip()
+            b.description = b.description.strip()
             if b.description == a.description : #if notes match
                 eventlist[i] = null
                 i+=1
                 continue
             else:
                 if b.description=="": #if one of the events has empty notes delete
+                    print "a MERGED b"
                     eventlist[i+1] = null
                     i+=1
                     continue
@@ -65,21 +68,25 @@ while(listloop==1):
                     i+=1
                     continue
                 else:
-                    a.description += " MERGED " + b.description
+                    a.description += "\n\n HAS BEEN MERGED \n\n" + b.description
                     a.description = '"%s"' % a.description
                     manualReview.append(a);
                     i+=1
-     
-for i in manualReview:
-    i.eventprint()    
       
+# for i in eventlist:
+#     if(i!=null):
+#         i.eventprint()    
+#        
 #write updated version to csv
 writeto = open("output.csv", "w")
 header = "Subject,Start Date,Start Time,End Date,End Time,All day event,Reminder on/off,Reminder Date,Reminder Time,Meeting Organizer,Required Attendees,Optional Attendees,Meeting Resources,Billing Information,Categories,Description,Location,Mileage,Priority,Private,Sensitivity,Show time as"
 header += "\n"
 writeto.write(header)
-for i in manualReview:
-    writeto.write(i.toString() + "\r")
+for i in eventlist:
+    if(i!=null):
+        writeto.write(i.toString() + "\r")
+print "\n--------Manual Review--------" 
+for i in manualReview:  
     print(i.toString())
 writeto.close()       
           
