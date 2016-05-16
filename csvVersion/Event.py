@@ -1,4 +1,5 @@
 import time
+import difflib
 class Event(object):
     
     def __init__(self, subject, startdate, starttime, enddate, endtime, alldayevent, remon, remdate, remtime, meetorg, reqatt, optatt, meetres, billinfo, categor, description, location, mileage, priority, private, sensitivity, showtimeas):
@@ -27,7 +28,16 @@ class Event(object):
         self.sensitivity = sensitivity
         self.showtimeas = showtimeas
         
-        
+    def isSameAs(self, other):
+        a=self.subject
+        b=other.subject
+        seq=difflib.SequenceMatcher(None, a,b)
+        d=seq.ratio()*100
+        if (d > 40):
+            return True
+        else:
+            return False
+          
         
     def eventprint(self):
         print '{0}, {1}, {2}, {3}, {4}, {5}'.format(self.subject, time.strftime("%m/%d/%Y", self.startdate), time.strftime("%I:%M:%S %p", self.starttime), time.strftime("%m/%d/%Y", self.enddate), time.strftime("%I:%M:%S %p", self.endtime), self.description)

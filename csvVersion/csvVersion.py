@@ -47,7 +47,7 @@ while(listloop==1):
         i+=1
         continue
     else: #if same time
-        if b.subject != a.subject: #if subject doesn't match
+        if (b.isSameAs(a)==False): #if subject doesn't match
             i+=1
             continue
         else: #if subject does match
