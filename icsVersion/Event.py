@@ -11,10 +11,11 @@ class Event(object):
         self.description = None
         self.dtstart = None
         self.dtend = None
+        self.uid = None
         
         
     def event_Print(self):
-        print (self.summary, self.dtstart, self.dtend, self.description)
+        print (self.summary, self.dtstart, self.dtend, self.description, self.uid)
       
       
     def isSameAs(self, other):
