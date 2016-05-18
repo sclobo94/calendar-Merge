@@ -51,11 +51,13 @@ for event in cal.walk('VEVENT'):
             x = dt.combine(event["DTSTART"].dt, dt.min.time())
             s.dtstart=x.replace(tzinfo=EST)   
     if "DTEND" in event:
-            s.dtend = event["DTEND"].dt
+        s.dtend = event["DTEND"].dt
     if "UID" in event:
-            s.uid = event["UID"].encode('utf-8')
+        s.uid = event["UID"].encode('utf-8')
     if s.summary==None and s.description==None:
         continue
+    if "DTSTAMP" in event:
+        s.dtstamp=event["DTSTAMP"].dt
     eventlist.append(s)
      
      
@@ -86,18 +88,18 @@ while(listloop==1):
             continue
         else: #if subject does match
             if b.description == a.description : #if notes match
-                excludelist.append(eventlist[i].uid)
+                excludelist.append([eventlist[i].uid, eventlist[i].dtstamp])
                 eventlist[i] = null
                 i+=1
                 continue
             else:
                 if b.description==None: #if one of the events has empty notes delete
-                    excludelist.append(eventlist[i+1].uid)
+                    excludelist.append([eventlist[i+1].uid, eventlist[i+1].dtstamp])
                     eventlist[i+1] = null
                     i+=1
                     continue
                 elif a.description==None:
-                    excludelist.append(eventlist[i].uid)
+                    excludelist.append([eventlist[i].uid, eventlist[i].dtstamp])
                     eventlist[i] = null
                     i+=1
                     continue
@@ -113,16 +115,22 @@ while(listloop==1):
 #   
 # for i in manualReview:
 #     i.event_Print()
-    
-with open('outputics.ics', 'wb') as outfile:   
+
+# for i in cal.walk("VEVENT"):
+#     if any(event["UID"].encode("utf-8") in s for s in excludelist):
+#         if "SUMMARY" in i:
+#             print i["SUMMARY"]
+#     
+with open('outputics.ics', 'wb') as outfile:  
+    count=0 
     for row in preamble:
         outfile.write(row)
     for event in cal.walk("VEVENT"):
-        if any(event["UID"].encode("utf-8") in s for s in excludelist):
-            continue
+        if ([event["UID"].encode("utf-8"), event["DTSTAMP"].dt] in excludelist):
+                continue
         else:
             outfile.write(event.to_ical())
     outfile.write(ending)
-    
+      
 outfile.close()
 

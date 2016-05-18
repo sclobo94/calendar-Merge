@@ -12,6 +12,7 @@ class Event(object):
         self.dtstart = None
         self.dtend = None
         self.uid = None
+        self.dtstamp = None
         
         
     def event_Print(self):
