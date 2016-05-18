@@ -20,7 +20,7 @@ EST = timezone('US/Eastern')
 
 
 #Sort events and store in list
-f = open("testcalendar.ics", 'rb')
+f = open("testyear2016.ics", 'rb')
 fread=f.readlines()
 preamble=[]
 for i in fread:
@@ -32,7 +32,7 @@ for i in fread:
 ending="END:VCALENDAR\r\n"
 f.close()
 
-f = open("Goldbart Paul M Smaller.ics", 'rb')
+f = open("testyear2016.ics", 'rb')
 
 cal = Calendar.from_ical(f.read())
 eventlist=[]
@@ -54,21 +54,26 @@ for event in cal.walk('VEVENT'):
         s.dtend = event["DTEND"].dt
     if "UID" in event:
         s.uid = event["UID"].encode('utf-8')
-    if s.summary==None and s.description==None:
-        continue
+    
     if "DTSTAMP" in event:
         s.dtstamp=event["DTSTAMP"].dt
-    eventlist.append(s)
-     
+    if s.summary==None and s.description==None:
+        continue
+    else:
+        eventlist.append(s)
      
 f.close()
- 
+
+for i in eventlist:
+    if isinstance(i.dtstart, str):
+        print i.summary
 # #sort list of events
 eventlist.sort(key=lambda y: y.dtstart);
-# for i in eventlist:
-#     i.event_Print()
-       
-# # # # #loop through list of sorted events
+# with open("checkfile.txt", "wb") as test:
+#     for i in eventlist:
+#         test.write(i.event_Print())
+        
+# # # # # #loop through list of sorted events
 listloop = 1
 i = 0
 manualReview = [] #items with same times and notes that need to be reviewed
@@ -79,7 +84,7 @@ while(listloop==1):
         break
     a = eventlist[i]
     b = eventlist[i+1]
-    if b.dtstart > a.dtstart: #if times are different
+    if (a==null or b==null) or (b.dtstart > a.dtstart): #if times are different
         i+=1
         continue
     else: #if same time
@@ -107,7 +112,7 @@ while(listloop==1):
                     manualReview.append(a);
                     manualReview.append(b);
                     i+=1
-            
+              
 # for i in excludelist:
 #     print i
 #           
@@ -115,22 +120,18 @@ while(listloop==1):
 #   
 # for i in manualReview:
 #     i.event_Print()
-
-# for i in cal.walk("VEVENT"):
-#     if any(event["UID"].encode("utf-8") in s for s in excludelist):
-#         if "SUMMARY" in i:
-#             print i["SUMMARY"]
-#     
+count=0
 with open('outputics.ics', 'wb') as outfile:  
-    count=0 
     for row in preamble:
         outfile.write(row)
     for event in cal.walk("VEVENT"):
-        if ([event["UID"].encode("utf-8"), event["DTSTAMP"].dt] in excludelist):
+        if "DTSTAMP" not in event:
+            outfile.write(event.to_ical())
+        elif ([event["UID"].encode("utf-8"), event["DTSTAMP"].dt] in excludelist):
                 continue
         else:
             outfile.write(event.to_ical())
     outfile.write(ending)
-      
+          
 outfile.close()
 
