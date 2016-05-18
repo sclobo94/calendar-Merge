@@ -20,7 +20,7 @@ EST = timezone('US/Eastern')
 
 
 #Sort events and store in list
-f = open("Goldbart Paul M Smaller.ics", 'rb')
+f = open("testcalendar.ics", 'rb')
 fread=f.readlines()
 preamble=[]
 for i in fread:
