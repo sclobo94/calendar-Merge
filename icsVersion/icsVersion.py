@@ -1,68 +1,84 @@
 #!usr/bin/python
-import csv
-import time
+from icalendar import Calendar
 from Event import Event
+import datetime 
+from datetime import date
+from datetime import datetime as dt
+import pytz
+from pytz import timezone
 from pyasn1.compat.octets import null
+from icalendar.parser import tzid_from_dt
+import re
+
+
+def summary_Parse(summary):
+        p = re.compile('/\(([^)]+)\)/')
+        x=p.search(summary)
+        return x
+    
+EST = timezone('US/Eastern')
 
 
 #Sort events and store in list
-with open('testcalendar1.CSV') as csvfile:
-    reader = csv.DictReader(csvfile);
-    eventlist=[];
-    rownum=0
+f = open("Goldbart Paul M Smaller.ics", 'rb')
+cal = Calendar.from_ical(f.read())
+eventlist=[]
+
+for event in cal.walk('VEVENT'):
+    s = Event()
+    if "SUMMARY" in event:
+        s.summary = event["SUMMARY"]
+    if "DESCRIPTION" in event:
+        s.description = str(event["DESCRIPTION"])
+    if "DTSTART" in event:
+        x = event["DTSTART"].dt
+        if isinstance(x, datetime.datetime):
+            s.dtstart = event["DTSTART"].dt
+        else:
+            x = dt.combine(event["DTSTART"].dt, dt.min.time())
+            s.dtstart=x.replace(tzinfo=EST)
+#         
+    if "DTEND" in event:
+            s.dtend = event["DTEND"].dt
  
-    for row in reader:
-            x=Event(row['Subject'], row['Start Date'], row['Start Time'],
-                     row['End Date'], row['End Time'], row['All day event'], 
-                     row['Reminder on/off'], row['Reminder Date'], 
-                     row['Reminder Time'], row['Meeting Organizer'], 
-                     row['Required Attendees'], row['Optional Attendees'], 
-                     row['Meeting Resources'], row['Billing Information'], 
-                     row['Categories'], row['Description'],
-                     row['Location'], row['Mileage'],
-                     row['Priority'], row['Private'],
-                     row['Sensitivity'], row['Show time as'])
-            eventlist.append(x);
-     
- 
-csvfile.close()
- 
-#sort list of events
-eventlist.sort(key=lambda y: y.stimeanddate);
-# for i in eventlist:
-#     i.eventprint() 
-#   
-# #loop through list of sorted events
+    eventlist.append(s)
+    
+    
+f.close()
+
+# #sort list of events
+eventlist.sort(key=lambda y: y.dtstart);
+for i in eventlist:
+    i.event_Print()
+      
+# # #loop through list of sorted events
 listloop = 1
 i = 0
 manualReview = [] #items with same times and notes that need to be reviewed
 while(listloop==1):
     if i == len(eventlist)-1:
         listloop=0 
-        continue
-      
+        break
     a = eventlist[i]
     b = eventlist[i+1]
-    if b.stimeanddate > a.stimeanddate: #if times are different
+    if b.dtstart > a.dtstart: #if times are different
         i+=1
         continue
     else: #if same time
-        if b.subject != a.subject: #if subject doesn't match
+        if ((a.summary!=None and b.summary!=None) and b.isSameAs(a)==False): #if subject doesn't match
             i+=1
             continue
         else: #if subject does match
-            a.description = a.description.strip()
-            b.description = b.description.strip()
             if b.description == a.description : #if notes match
                 eventlist[i] = null
                 i+=1
                 continue
             else:
-                if b.description=="": #if one of the events has empty notes delete
+                if b.description==None: #if one of the events has empty notes delete
                     eventlist[i+1] = null
                     i+=1
                     continue
-                elif a.description=="":
+                elif a.description==None:
                     eventlist[i] = null
                     i+=1
                     continue
@@ -70,28 +86,28 @@ while(listloop==1):
                     manualReview.append(a);
                     manualReview.append(b);
                     i+=1
+         
+for i in manualReview:
+    i.event_Print
       
-# for i in eventlist:
-#     if(i!=null):
-#         i.eventprint()    
-#        
-#write updated version to csv
-writeto = open("output.csv", "w")
-header = "Subject,Start Date,Start Time,End Date,End Time,All day event,Reminder on/off,Reminder Date,Reminder Time,Meeting Organizer,Required Attendees,Optional Attendees,Meeting Resources,Billing Information,Categories,Description,Location,Mileage,Priority,Private,Sensitivity,Show time as"
-header += "\n"
-writeto.write(header)
-for i in eventlist:
-    if(i!=null):
-        writeto.write(i.toString() + "\r")
-print "\n--------Manual Review--------" 
-for i in manualReview:  
-    print(i.toString())
-writeto.close()       
-          
-       
-      
-      
-      
-     
-     
-        
+# #                
+# # with open("output1.csv", "w") as writeto:
+# #     writer = csv.writer(writeto, quotechar='"', quoting=csv.QUOTE_ALL)
+# #     writer.writerow(["Subject","Start Date","Start Time","End Date","End Time","All day event","Reminder on/off","Reminder Date","Reminder Time","Meeting Organizer","Required Attendees","Optional Attendees","Meeting Resources","Billing Information","Categories","Description","Location","Mileage","Priority","Private","Sensitivity","Show time as"])
+# #     for i in eventlist:
+# #         if(i!=null):
+# #             writer.writerow(i.toString())
+# #     
+# #     writeto.close()
+# #     
+# # print "\n--------Manual Review--------" 
+# # for i in manualReview:  
+# #     print(i.toString())      
+# #            
+# #         
+# #        
+# #        
+# #        
+# #       
+# #       
+# #          

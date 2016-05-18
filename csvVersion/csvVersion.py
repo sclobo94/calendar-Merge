@@ -39,8 +39,7 @@ manualReview = [] #items with same times and notes that need to be reviewed
 while(listloop==1):
     if i == len(eventlist)-1:
         listloop=0 
-        continue
-       
+        continue 
     a = eventlist[i]
     b = eventlist[i+1]
     if b.stimeanddate > a.stimeanddate: #if times are different
