@@ -27,7 +27,7 @@ eventlist=[]
 for event in cal.walk('VEVENT'):
     s = Event()
     if "SUMMARY" in event:
-        s.summary = event["SUMMARY"]
+        s.summary = event["SUMMARY"].encode('utf-8')
     if "DESCRIPTION" in event:
         s.description = str(event["DESCRIPTION"])
     if "DTSTART" in event:
@@ -40,7 +40,8 @@ for event in cal.walk('VEVENT'):
 #         
     if "DTEND" in event:
             s.dtend = event["DTEND"].dt
- 
+    if s.summary==None and s.description==None:
+        continue
     eventlist.append(s)
     
     
@@ -48,10 +49,10 @@ f.close()
 
 # #sort list of events
 eventlist.sort(key=lambda y: y.dtstart);
-for i in eventlist:
-    i.event_Print()
+# for i in eventlist:
+#     i.event_Print()
       
-# # #loop through list of sorted events
+# # # #loop through list of sorted events
 listloop = 1
 i = 0
 manualReview = [] #items with same times and notes that need to be reviewed
@@ -86,9 +87,15 @@ while(listloop==1):
                     manualReview.append(a);
                     manualReview.append(b);
                     i+=1
-         
+          
+for i in eventlist:
+    if i is not null:
+        i.event_Print()
+        
+print "\n\n\n"
+
 for i in manualReview:
-    i.event_Print
+    i.event_Print()
       
 # #                
 # # with open("output1.csv", "w") as writeto:
