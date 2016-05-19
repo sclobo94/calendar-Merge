@@ -20,7 +20,7 @@ EST = timezone('US/Eastern')
 
 
 #Sort events and store in list
-f = open("testyear2016.ics", 'rb')
+f = open("testcalendar.ics", 'rb')
 fread=f.readlines()
 preamble=[]
 for i in fread:
@@ -32,10 +32,11 @@ for i in fread:
 ending="END:VCALENDAR\r\n"
 f.close()
 
-f = open("testyear2016.ics", 'rb')
+f = open("testcalendar.ics", 'rb')
 
 cal = Calendar.from_ical(f.read())
 eventlist=[]
+serieslist=[]
  
 for event in cal.walk('VEVENT'):
     s = Event()
@@ -59,16 +60,19 @@ for event in cal.walk('VEVENT'):
         s.dtstamp=event["DTSTAMP"].dt
     if s.summary==None and s.description==None:
         continue
+    elif "RRULE" in event:
+        serieslist.append(s)
     else:
         eventlist.append(s)
      
 f.close()
 
-for i in eventlist:
-    if isinstance(i.dtstart, str):
-        print i.summary
 # #sort list of events
+serieslist.sort(key=lambda z: z.summary)
 eventlist.sort(key=lambda y: y.dtstart);
+# for i in eventlist:
+#     i.event_Print()
+
 # with open("checkfile.txt", "wb") as test:
 #     for i in eventlist:
 #         test.write(i.event_Print())
@@ -112,26 +116,28 @@ while(listloop==1):
                     manualReview.append(a);
                     manualReview.append(b);
                     i+=1
-              
-# for i in excludelist:
-#     print i
-#           
-# print "\n\n\n"
-#   
-# for i in manualReview:
-#     i.event_Print()
-count=0
-with open('outputics.ics', 'wb') as outfile:  
-    for row in preamble:
-        outfile.write(row)
-    for event in cal.walk("VEVENT"):
-        if "DTSTAMP" not in event:
-            outfile.write(event.to_ical())
-        elif ([event["UID"].encode("utf-8"), event["DTSTAMP"].dt] in excludelist):
-                continue
-        else:
-            outfile.write(event.to_ical())
-    outfile.write(ending)
-          
-outfile.close()
+                
+# # for i in excludelist:
+# #     print i
+# #           
+# # print "\n\n\n"
+# #   
+for i in manualReview:
+    i.event_Print()
+
+print len(manualReview)    
+print len(excludelist)
+# with open('outputics.ics', 'wb') as outfile:  
+#     for row in preamble:
+#         outfile.write(row)
+#     for event in cal.walk("VEVENT"):
+#         if "DTSTAMP" not in event:
+#             outfile.write(event.to_ical())
+#         elif ([event["UID"].encode("utf-8"), event["DTSTAMP"].dt] in excludelist):
+#                 continue
+#         else:
+#             outfile.write(event.to_ical())
+#     outfile.write(ending)
+#            
+# outfile.close()
 

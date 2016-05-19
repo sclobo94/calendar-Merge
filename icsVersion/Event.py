@@ -16,7 +16,7 @@ class Event(object):
         
         
     def event_Print(self):
-        return "({0}, {1}, {2}, {3}, {4}) \r\n".format(self.summary, self.dtstart, self.dtend, self.description, self.uid)
+        print "({0}, {1}, {2}, {3}, {4}) \r\n".format(self.summary, self.dtstart, self.dtend, self.description, self.uid)
       
       
     def isSameAs(self, other):

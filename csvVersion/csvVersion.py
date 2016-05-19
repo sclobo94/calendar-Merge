@@ -6,7 +6,7 @@ from pyasn1.compat.octets import null
 
 
 #Sort events and store in list
-with open('testcalendar1.CSV') as csvfile:
+with open('csvfullcalendar.CSV') as csvfile:
     reader = csv.DictReader(csvfile);
     eventlist=[];
     rownum=0
@@ -42,7 +42,7 @@ while(listloop==1):
         continue 
     a = eventlist[i]
     b = eventlist[i+1]
-    if b.stimeanddate > a.stimeanddate: #if times are different
+    if (a==null or b==null) or (b.stimeanddate > a.stimeanddate): #if times are different
         i+=1
         continue
     else: #if same time
@@ -96,9 +96,7 @@ with open("output1.csv", "w") as writeto:
     
     writeto.close()
     
-print "\n--------Manual Review--------" 
-for i in manualReview:  
-    print(i.toString())
+
        
        
       
