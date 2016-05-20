@@ -15,23 +15,29 @@ def isSameAs(a, b):
             return False
         
 def parseDate(string):
-    p = r'\bDTSTART;\D*(\d+).(\w+)'
-    q = r'\bDTSTART:\D*(\d+).(\d+)'
-    s = r'\bDTSTART;\D*(\d+)(\d+)'
-    t=re.search(p, string)
-    u=re.search(q, string)
-    v=re.search(s, string)
-    if(t != None) and (len(t.group(1)+t.group(2))==14):
-        return dt.strptime(t.group(1)+t.group(2), "%Y%m%d%H%M%S")
-    elif (u != None) and (len(u.group(1)+u.group(2))==14):
-        temp = dt.strptime(u.group(1)+u.group(2), "%Y%m%d%H%M%S")
-        temp = temp.replace(hour=0, minute=0, second=0)
-        return temp
-    else:
-        temp = dt.strptime(v.group(1)+v.group(2), "%Y%m%d")
-        temp = temp.replace(hour=0, minute=0, second=0)
-        return temp
-    
+    try:
+        p = r'\bDTSTART;\D*(\d+).(\d+)'
+        q = r'\bDTSTART:\D*(\d+).(\d+)'
+        s = r'\bDTSTART;\D*(\d+)(\d+)'
+        r = r'\bDTSTART;\S*:(\d+).(\d+)'
+        t=re.search(p, string)
+        u=re.search(q, string)
+        v=re.search(s, string)
+        w=re.search(r, string)
+        if(t != None) and (len(t.group(1)+t.group(2))==14):
+            return dt.strptime(t.group(1)+t.group(2), "%Y%m%d%H%M%S")
+        elif (u != None) and (len(u.group(1)+u.group(2))==14):
+            temp = dt.strptime(u.group(1)+u.group(2), "%Y%m%d%H%M%S")
+            temp = temp.replace(hour=0, minute=0, second=0)
+            return temp
+        elif (w != None) and (len(w.group(1)+w.group(2))==14):
+            return dt.strptime(w.group(1)+w.group(2), "%Y%m%d%H%M%S")
+        else:
+            temp = dt.strptime(v.group(1)+v.group(2), "%Y%m%d")
+            temp = temp.replace(hour=0, minute=0, second=0)
+            return temp
+    except AttributeError:
+        print string
 def parseSummary(string):
     p = r'\bSUMMARY[^:]*:([^\n\r]*)'
     t = re.search(p, string)
@@ -48,44 +54,44 @@ def parseNotes(string):
     else:
         return t.group(2)
     
-f = open("Goldbart Paul M Smaller.ics", 'rb')
+f = open("testcalendar.ics", 'rb')
 fread=f.readlines()
 preamble=[]
 i=-1
 for line in fread:
     i+=1
-    if (line=="BEGIN:VEVENT\r\n"):
+    if (line=="BEGIN:VEVENT\n"):
         break
     else:
         preamble.append(line)
         
-ending="END:VCALENDAR\r\n"      
+ending="END:VCALENDAR\n"      
 eventstring=""
 events=[]
 eventBegin = False
 
 while(i<len(fread)):
-    if fread[i] == "BEGIN:VEVENT\r\n":
+    if (fread[i] == "BEGIN:VEVENT\n"):
         eventBegin=True
-    if fread[i] == "END:VEVENT\r\n":
+    if (fread[i] == "END:VEVENT\n"):
         eventstring+=fread[i]
         events.append(eventstring)
         eventstring=""
         eventBegin=False
     elif eventBegin==True:
         eventstring+=fread[i]
-    
     i+=1
  
+  
 for event in range(0, len(events)):
     strEvent=events[event]
     date_parsed=parseDate(events[event]) 
     summary_parsed=parseSummary(events[event])
     notes_parsed=parseNotes(events[event])
     events[event]=(date_parsed, summary_parsed, notes_parsed, strEvent)
-    
+     
 events.sort(key=lambda y: y[0])
-
+ 
 listloop = 1
 i = 0
 manualReview = [] #items with same times and notes that need to be reviewed
@@ -122,14 +128,14 @@ while(listloop==1):
                     manualReview.append(a);
                     manualReview.append(b);
                     i+=1    
-
-with open("sortedics.ics", "wb") as outfile:
+ 
+with open("sortedfull.ics", "wb") as outfile:
     for i in preamble:
         outfile.write(i)
     for i in events:
         if(i!=null):
             outfile.write(i[3])
     outfile.write(ending)
-  
+   
 outfile.close()
 
