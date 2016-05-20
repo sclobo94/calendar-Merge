@@ -41,11 +41,11 @@ serieslist=[]
 for event in cal.walk('VEVENT'):
     s = Event()
     if "SUMMARY" in event:
-        s.summary = event["SUMMARY"].encode('utf-8')
+        s.summary = event.decode("SUMMARY")
     if "DESCRIPTION" in event:
-        s.description = event["DESCRIPTION"].encode('utf-8')
+        s.description = event.decode("DESCRIPTION")
     if "DTSTART" in event:
-        x = event["DTSTART"].dt
+        x = event.decode("DTSTART").dt
         if isinstance(x, datetime.datetime):
             s.dtstart = event["DTSTART"].dt
         else:

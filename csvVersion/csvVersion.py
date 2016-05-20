@@ -86,7 +86,14 @@ while(listloop==1):
 # for i in manualReview:  
 #     print(i.toString())
 # writeto.close()       
-           
+with open("manualReview.csv", "w") as writeto:
+    writer = csv.writer(writeto, quotechar='"', quoting=csv.QUOTE_ALL)
+    writer.writerow(["Subject","Start Date","Start Time","End Date","End Time","All day event","Reminder on/off","Reminder Date","Reminder Time","Meeting Organizer","Required Attendees","Optional Attendees","Meeting Resources","Billing Information","Categories","Description","Location","Mileage","Priority","Private","Sensitivity","Show time as"])
+    for i in manualReview:
+        writer.writerow(i.toString())
+    
+    writeto.close()
+               
 with open("output1.csv", "w") as writeto:
     writer = csv.writer(writeto, quotechar='"', quoting=csv.QUOTE_ALL)
     writer.writerow(["Subject","Start Date","Start Time","End Date","End Time","All day event","Reminder on/off","Reminder Date","Reminder Time","Meeting Organizer","Required Attendees","Optional Attendees","Meeting Resources","Billing Information","Categories","Description","Location","Mileage","Priority","Private","Sensitivity","Show time as"])
