@@ -82,7 +82,8 @@ while(i<len(fread)):
         eventstring+=fread[i]
     i+=1
  
-  
+print len(events)
+
 for event in range(0, len(events)):
     strEvent=events[event]
     date_parsed=parseDate(events[event]) 
@@ -128,7 +129,8 @@ while(listloop==1):
                     manualReview.append(a);
                     manualReview.append(b);
                     i+=1    
- 
+
+                    
 with open("sortedfull.ics", "wb") as outfile:
     for i in preamble:
         outfile.write(i)
