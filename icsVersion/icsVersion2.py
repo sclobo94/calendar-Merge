@@ -135,6 +135,7 @@ for k in range(0, len(serieslist)):
     for j in eventlist:
         if (serieslist[k][3] == j[3]):
             occurences.append(j)
+            j=null
     if len(occurences) == 0 or len(occurences) == 1:
         continue
     elif len(occurences) > 1:
@@ -177,7 +178,10 @@ for i in serieslist:
     if i != null:
         cleanedEvents.append(i)
     
-
+for i in eventlist:
+    if i!= null:
+        cleanedEvents.append(i)
+        
 listloop = 1
 i = 0
 while(listloop==1):
