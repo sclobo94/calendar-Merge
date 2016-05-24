@@ -54,26 +54,44 @@ def parseNotes(string):
     else:
         return t.group(2)
     
-f = open("testcalendar.ics", 'rb')
+def parseUID(string):
+    p = r'\bUID:(\S*)'
+    q = r'\bUID:(\S*\s*\S*)'
+    t = re.search(p, string)
+    v = re.search(q, string)
+    if (t==None) or (len(t.group(1))>36):
+        return v.group(1)
+    else:
+        return t.group(1)
+    
+def checkSeries(string):
+    p = r'(RRULE:)'
+    t = re.search(p, string)
+    if (t!=None):
+        return True
+    else:
+        return False
+    
+f = open("Goldbart Paul M Smaller.ics", 'rb')
 fread=f.readlines()
 preamble=[]
 i=-1
 for line in fread:
     i+=1
-    if (line=="BEGIN:VEVENT\n"):
+    if (line=="BEGIN:VEVENT\r\n"):
         break
     else:
         preamble.append(line)
         
-ending="END:VCALENDAR\n"      
+ending="END:VCALENDAR\r\n"      
 eventstring=""
 events=[]
 eventBegin = False
 
 while(i<len(fread)):
-    if (fread[i] == "BEGIN:VEVENT\n"):
+    if (fread[i] == "BEGIN:VEVENT\r\n"):
         eventBegin=True
-    if (fread[i] == "END:VEVENT\n"):
+    if (fread[i] == "END:VEVENT\r\n"):
         eventstring+=fread[i]
         events.append(eventstring)
         eventstring=""
@@ -82,26 +100,92 @@ while(i<len(fread)):
         eventstring+=fread[i]
     i+=1
  
-print len(events)
+serieslist = []
+eventlist = []
 
+###### PARSE EVENTS AND ADD TO LISTS (SERIES/OCCURENCE)
 for event in range(0, len(events)):
+    series=False
     strEvent=events[event]
     date_parsed=parseDate(events[event]) 
     summary_parsed=parseSummary(events[event])
     notes_parsed=parseNotes(events[event])
-    events[event]=(date_parsed, summary_parsed, notes_parsed, strEvent)
-     
-events.sort(key=lambda y: y[0])
- 
+    uid_parsed=parseUID(events[event])
+    if (checkSeries(events[event]) == True):
+        series=True
+        serieslist.append((date_parsed, summary_parsed, notes_parsed, uid_parsed, strEvent))
+    if series==False:
+        eventlist.append((date_parsed, summary_parsed, notes_parsed, uid_parsed, strEvent))
+
+eventlist.sort(key=lambda y: y[3])
+serieslist.sort(key=lambda y: y[0])        
+print len(eventlist)     
+print len(serieslist)
+
+manualReview = [] #items with same times and notes that need to be reviewed
+occurences=[]
+cleanedEvents=[]
+
+for k in range(0, len(serieslist)):
+    if (k > 0) and (serieslist[k] != null) and (serieslist[k-1] != null):
+        if (serieslist[k][3] == serieslist[k-1][3]):
+            serieslist[k] = null
+    if serieslist[k] == null:
+        continue
+    for j in eventlist:
+        if (serieslist[k][3] == j[3]):
+            occurences.append(j)
+    if len(occurences) == 0 or len(occurences) == 1:
+        continue
+    elif len(occurences) > 1:
+        listloop = 1
+        i = 0
+        while(listloop==1):
+            if i == len(occurences)-1:
+                listloop=0 
+                continue 
+            a = occurences[i]
+            b = occurences[i+1]
+            if (a==null or b==null) or (b[0] > a[0]): #if times are different
+                i+=1
+                continue
+            else: #if same time
+                if (isSameAs(b, a)==False): #if subject doesn't match
+                    i+=1
+                    continue
+                else: #if subject does match
+                    x = a[2].strip()
+                    y = b[2].strip()
+                    if x == y : #if notes match
+                        occurences[i] = null
+                        i+=1
+                        continue
+                    else:
+                        if x =="": #if one of the events has empty notes delete
+                            occurences[i] = null
+                            i+=1
+                            continue
+                        elif y =="":
+                            occurences[i+1] = null
+                            i+=1
+                            continue   
+    for i in occurences:
+        if (i!=null):
+            cleanedEvents.append(i)
+
+for i in serieslist:
+    if i != null:
+        cleanedEvents.append(i)
+    
+
 listloop = 1
 i = 0
-manualReview = [] #items with same times and notes that need to be reviewed
 while(listloop==1):
-    if i == len(events)-1:
+    if i == len(cleanedEvents)-1:
         listloop=0 
         continue 
-    a = events[i]
-    b = events[i+1]
+    a = cleanedEvents[i]
+    b = cleanedEvents[i+1]
     if (a==null or b==null) or (b[0] > a[0]): #if times are different
         i+=1
         continue
@@ -113,31 +197,43 @@ while(listloop==1):
             x = a[2].strip()
             y = b[2].strip()
             if x == y : #if notes match
-                events[i] = null
+                cleanedEvents[i] = null
                 i+=1
                 continue
             else:
                 if x =="": #if one of the events has empty notes delete
-                    events[i] = null
+                    cleanedEvents[i] = null
                     i+=1
                     continue
                 elif y =="":
-                    events[i+1] = null
+                    cleanedEvents[i+1] = null
                     i+=1
                     continue
                 else:
                     manualReview.append(a);
                     manualReview.append(b);
                     i+=1    
-
-                    
+    
+for i in cleanedEvents:
+    if i != null:
+        print i    
+ 
+                     
 with open("sortedfull.ics", "wb") as outfile:
     for i in preamble:
         outfile.write(i)
-    for i in events:
+    for i in cleanedEvents:
         if(i!=null):
-            outfile.write(i[3])
+            outfile.write(i[4])
     outfile.write(ending)
-   
+    
 outfile.close()
 
+with open("manualReview.ics", "wb") as manfile:
+    for i in preamble:
+        manfile.write(i)
+    for i in manualReview:
+        manfile.write(i[4])
+    manfile.write(ending)
+    
+manfile.close()
