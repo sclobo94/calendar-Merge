@@ -72,7 +72,7 @@ def checkSeries(string):
     else:
         return False
     
-f = open("Goldbart Paul M Smaller.ics", 'rb')
+f = open("testyear2016.ics", 'rb')
 fread=f.readlines()
 preamble=[]
 i=-1
@@ -181,7 +181,8 @@ for i in serieslist:
 for i in eventlist:
     if i!= null:
         cleanedEvents.append(i)
-        
+
+cleanedEvents.sort(key=lambda y: y[0])    
 listloop = 1
 i = 0
 while(listloop==1):
@@ -223,7 +224,7 @@ for i in cleanedEvents:
         print i    
  
                      
-with open("sortedfull.ics", "wb") as outfile:
+with open("sortedfull2016.ics", "wb") as outfile:
     for i in preamble:
         outfile.write(i)
     for i in cleanedEvents:
@@ -233,7 +234,7 @@ with open("sortedfull.ics", "wb") as outfile:
     
 outfile.close()
 
-with open("manualReview.ics", "wb") as manfile:
+with open("manualReview2016.ics", "wb") as manfile:
     for i in preamble:
         manfile.write(i)
     for i in manualReview:
