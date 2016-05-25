@@ -23,4 +23,360 @@ TZOFFSETFROM:-0500
 TZOFFSETTO:-0400
 END:DAYLIGHT
 END:VTIMEZONE
+BEGIN:VEVENT
+ATTENDEE;CN="Chung Hinkson, Dian A";RSVP=TRUE:mailto:dian.chung@cos.gatech.
+	edu
+ATTENDEE;CN="David M Collard";RSVP=TRUE:mailto:david.collard@chemistry.gate
+	ch.edu
+ATTENDEE;CN="David J Terraso";RSVP=TRUE:mailto:david.terraso@cos.gatech.edu
+ATTENDEE;CN="Moore, David L";RSVP=TRUE:mailto:david.moore@cos.gatech.edu
+ATTENDEE;CN="Kubanek, Julia M";RSVP=TRUE:mailto:julia.kubanek@biology.gatec
+	h.edu
+ATTENDEE;CN="O'Brien, Gerald E";RSVP=TRUE:mailto:jerry.obrien@cos.gatech.ed
+	u
+ATTENDEE;CN=juan.archila@facilities.gatech.edu;RSVP=TRUE:mailto:juan.archil
+	a@facilities.gatech.edu
+ATTENDEE;CN="Wasserman, Arthur G";RSVP=TRUE:mailto:arthur.wasserman@cos.gat
+	ech.edu
+ATTENDEE;CN=cam.tyson@chemistry.gatech.edu;RSVP=TRUE:mailto:cam.tyson@chemi
+	stry.gatech.edu
+ATTENDEE;CN="Oden, Keith L";RSVP=TRUE:mailto:keith.oden@chemistry.gatech.ed
+	u
+ATTENDEE;CN="Leavey, Jennifer K";RSVP=TRUE:mailto:jennifer.leavey@cos.gatec
+	h.edu
+ATTENDEE;CN="Lew E Lefton";RSVP=TRUE:mailto:lew.lefton@math.gatech.edu
+ATTENDEE;CN="Paul M. Goldbart";RSVP=TRUE:mailto:paul.goldbart@cos.gatech.ed
+	u
+CLASS:PUBLIC
+CREATED:20160516T150035Z
+DESCRIPTION:\nThe following meeting has been modified:\n\n\n\nSubject:	CoS 
+	Chairs' Meeting 	\nOrganizer:	"Crowther\, Joylene P" <joylene.crowther@cos
+	.gatech.edu> 	\n\n\nLocation:	Student Success Center - President Suite C [
+	MODIFIED]	\nTime:	11:00:00 AM - 1:00:00 PM GMT -05:00 US/Canada Eastern [M
+	ODIFIED] 	\nRecurrence	: The second Tuesday of every 1 month(s) No end dat
+	e Effective Jan 13\, 2015	\n\n\nInvitees:	dian.chung@cos.gatech.edu\; davi
+	d.collard@chemistry.gatech.edu\; david.terraso@cos.gatech.edu\; david.moor
+	e@cos.gatech.edu\; julia.kubanek@biology.gatech.edu\; jerry.obrien@cos.gat
+	ech.edu\; juan.archila@facilities.gatech.edu\; arthur.wasserman@cos.gatech
+	.edu\; cam.tyson@chemistry.gatech.edu\; keith.oden@chemistry.gatech.edu\; 
+	Jennifer.Leavey@cos.gatech.edu ... 	\n*~*~*~*~*~*~*~*~*~*\n\n
+DTEND;TZID="Eastern Standard Time":20160112T130000
+DTSTAMP:20150320T140919Z
+DTSTART;TZID="Eastern Standard Time":20160112T110000
+LAST-MODIFIED:20160516T150035Z
+LOCATION:Student Success Center - President Suite C
+ORGANIZER;CN="Crowther, Joylene P":mailto:joylene.crowther@cos.gatech.edu
+PRIORITY:5
+RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=TU;BYSETPOS=2
+SEQUENCE:1
+SUMMARY;LANGUAGE=en-us:CoS Chairs' Meeting
+TRANSP:OPAQUE
+UID:5ed8c294-a3bd-47e4-804a-12d33b8bed55
+X-ALT-DESC;FMTTYPE=text/html:<html><body><h3>The following meeting has been
+	 modified:</h3>\n\n<p>\n<table border='0'>\n<tr><th align=left>Subject:</t
+	h><td>CoS Chairs' Meeting </td></tr>\n<tr><th align=left>Organizer:</th><t
+	d>"Crowther\, Joylene P" &lt\;joylene.crowther@cos.gatech.edu&gt\; </td></
+	tr>\n</table>\n<p>\n<table border='0'>\n<tr><th align=left>Location:</th><
+	td>Student Success Center - President Suite C [MODIFIED]</td></tr>\n<tr><t
+	h align=left>Time:</th><td>11:00:00 AM - 1:00:00 PM GMT -05:00 US/Canada E
+	astern [MODIFIED]\n </td></tr><tr><th align=left>Recurrence</th><td>: The 
+	second Tuesday of every 1 month(s) No end date Effective Jan 13\, 2015</td
+	></tr>\n</table>\n<p>\n<table border='0'>\n<tr><th align=left>Invitees:</t
+	h><td>dian.chung@cos.gatech.edu\; david.collard@chemistry.gatech.edu\; dav
+	id.terraso@cos.gatech.edu\; david.moore@cos.gatech.edu\; julia.kubanek@bio
+	logy.gatech.edu\; jerry.obrien@cos.gatech.edu\; juan.archila@facilities.ga
+	tech.edu\; arthur.wasserman@cos.gatech.edu\; cam.tyson@chemistry.gatech.ed
+	u\; keith.oden@chemistry.gatech.edu\; Jennifer.Leavey@cos.gatech.edu ... <
+	/td></tr>\n</table>\n<div>*~*~*~*~*~*~*~*~*~*</div><br></body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150145Z
+DESCRIPTION:\nThe following meeting has been modified:\n\n\n\nSubject:	CoS 
+	Chairs' Meeting 	\nOrganizer:	"Crowther\, Joylene P" 	\n\n\nLocation:	Stud
+	ent Success Center - President Suite C [MODIFIED]	\nTime:	11:00:00 AM - 1:
+	00:00 PM GMT -05:00 US/Canada Eastern [MODIFIED] 	\nRecurrence	: The secon
+	d Tuesday of every 1 month(s) No end date Effective Jan 13\, 2015	\n\n\nIn
+	vitees:	dian.chung@cos.gatech.edu\; david.collard@chemistry.gatech.edu\; d
+	avid.terraso@cos.gatech.edu\; david.moore@cos.gatech.edu\; julia.kubanek@b
+	iology.gatech.edu\; jerry.obrien@cos.gatech.edu\; juan.archila@facilities.
+	gatech.edu\; arthur.wasserman@cos.gatech.edu\; cam.tyson@chemistry.gatech.
+	edu\; keith.oden@chemistry.gatech.edu\; Jennifer.Leavey@cos.gatech.edu ...
+	 	\n\n*~*~*~*~*~*~*~*~*~*\n\n
+DTEND;TZID="Eastern Standard Time":20160112T130000
+DTSTAMP:20160107T144046Z
+DTSTART;TZID="Eastern Standard Time":20160112T110000
+LAST-MODIFIED:20160516T150145Z
+LOCATION:EBB - Conference room 4029
+PRIORITY:5
+RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=TU;BYSETPOS=2
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:CoS Chairs' Meeting
+TRANSP:OPAQUE
+UID:5ed8c294-a3bd-47e4-804a-12d33b8bed55
+X-ALT-DESC;FMTTYPE=text/html:<html><head></Head><body><h3>The following mee
+	ting has been modified:</H3><p><table border="0"><tr><th align="left">Subj
+	ect:</TH><td>CoS Chairs' Meeting </TD></TR><tr><th align="left">Organizer:
+	</TH><td>"Crowther\, Joylene P" <joylene.crowther@cos.gatech.edu> </TD></T
+	R></Tbody></Table></P><p><table border="0"><tr><th align="left">Location:<
+	/TH><td>Student Success Center - President Suite C [MODIFIED]</TD></TR><tr
+	><th align="left">Time:</TH><td>11:00:00 AM - 1:00:00 PM GMT -05:00 US/Can
+	ada Eastern [MODIFIED] </TD></TR><tr><th align="left">Recurrence</TH><td>:
+	 The second Tuesday of every 1 month(s) No end date Effective Jan 13\, 201
+	5</TD></TR></Tbody></Table></P><p><table border="0"><tr><th align="left">I
+	nvitees:</TH><td>dian.chung@cos.gatech.edu\; david.collard@chemistry.gatec
+	h.edu\; david.terraso@cos.gatech.edu\; david.moore@cos.gatech.edu\; julia.
+	kubanek@biology.gatech.edu\; jerry.obrien@cos.gatech.edu\; juan.archila@fa
+	cilities.gatech.edu\; arthur.wasserman@cos.gatech.edu\; cam.tyson@chemistr
+	y.gatech.edu\; keith.oden@chemistry.gatech.edu\; Jennifer.Leavey@cos.gatec
+	h.edu ... </TD></TR></Tbody></Table></P><div>*~*~*~*~*~*~*~*~*~*</Div><br>
+	\n</Body></Html>
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150029Z
+DESCRIPTION:*       New semester: \n\no       Last one was a pretty good on
+	e\, thanks in large measure to your efforts. \n\no       To mention just a
+	 few good things… \n\n*       We discovered flowing water on mars\n\n*  
+	     The first Engineered Biosystems Building opened\n\n*       The Center
+	 for Chemical Evolution program was renewed by NSF \n\n*       The Einstei
+	n Statue arrived \n\n*       and Lizanne DeStefano took the helm at CEISMC
+	 and is connecting us outstandingly to leaders at the city\, State and nat
+	ional levels\, as well as key philanthropists!\n\no       Since then: \n\n
+	*       Kathryn Bond and Chinneta Willis have come on board in the college
+	 as Faculty Support Coordinators and are already having a terrific impact 
+	(e.g.\, CoS HPC Day) – welcome to you both!\n\n*       Four new faculty 
+	members in Mathematics (including three women) have been named National Sc
+	ience Foundation Career Award recipients – a terrific distinction that w
+	ill help propel their careers.\n\n*       EAS graduate student Lujendra Oj
+	ha – a member of the water on Mars team – was this morning named one o
+	f Forbes Magazine’s Thirty Under Thirty in Science.\n\n*       My wife J
+	enny and I are celebrating the employment of our elder child Oliver – ri
+	ght here in the Biltmore Building (so Lizanne can keep an eye on him) – 
+	he’s the first member of our family to really leave school!\n\n*       W
+	e welcome Dr. Maureen Rouhi\, a tremendously accomplished science communic
+	ator\, as our new Director of Communications. I know I speak for the whole
+	 college when I say how pleased we are\, Maureen\, to have you as a member
+	 of the team. \n\n*       And Art has some news about Campaign Georgia Tec
+	h: Art?\n\n	\n\no       So I wish everyone a terrific semester. We have vi
+	tal work to do\, and some of it quite challenging. But if there are two th
+	ings I’m certain of\, they are that: (i) the work done by this team will
+	 be done extremely well\, and (ii) that we’ll have fun doing it.\n\n	\n\
+	n	\n\n*       Ellington / ME space request / JO-JA\n\n*       Timetabling 
+	of budget decisions\, including the 1% and 3% subtractions.\n\n*       Ric
+	hard Catrambone\n\n*       Push on neighborhoods and EBB backfill – does
+	 the campus appreciate the plans we have?\n\n*       Thoughts on hiring st
+	rategy for Dean’s meeting\n\n*       Shall we invite Tris Uschrig to the
+	 chairs meeting for CIOS guidance\n\n*       Alerting chairs and faculty t
+	o the Learning Environment program\, second round\n\n*       Topics for fo
+	rthcoming chairs meeting?\n\n
+DTEND:20160105T153000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160105T140000Z
+LAST-MODIFIED:20160516T150029Z
+PRIORITY:5
+RECURRENCE-ID:20160105T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+UID:b28d66de-0e7b-4fc8-a6f3-295263a393c3
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
+	from text/rtf format -->\n\n<P DIR=LTR><FONT FACE="Symbol">&#183\;<FONT FA
+	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
+	SPAN LANG="en-us"> <FONT FACE="Calibri">New semester: </FONT></SPAN></P>\n
+	\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Courier New">o&nbsp\;&nbsp\;&n
+	bsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us"></SPAN><SPAN LA
+	NG="en-us"> <FONT FACE="Calibri">Last one was</FONT></SPAN><SPAN LANG="en-
+	us"> <FONT FACE="Calibri">a</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="C
+	alibri">pretty goo</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">d 
+	one</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">\, thanks in larg
+	e measure to your efforts</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Cali
+	bri">. </FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Cou
+	rier New">o&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN L
+	ANG="en-us"> <FONT FACE="Calibri">To mention just a few good things</FONT>
+	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">… </FONT></SPAN></P>\n\n<
+	P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Cou
+	rier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><
+	SPAN LANG="en-us"> <FONT FACE="Calibri">W</FONT></SPAN><SPAN LANG="en-us">
+	<FONT FACE="Calibri">e discovered f</FONT></SPAN><SPAN LANG="en-us"><FONT 
+	FACE="Calibri">lowing water on mars</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN 
+	LANG="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\
+	;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us
+	"> <FONT FACE="Calibri">T</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Cali
+	bri">he first Engineered Biosystems Building</FONT></SPAN><SPAN LANG="en-u
+	s"><FONT FACE="Calibri"> opened</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG
+	="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\;&nb
+	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <
+	FONT FACE="Calibri">T</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"
+	>he Center for Chemical Evolution program</FONT></SPAN><SPAN LANG="en-us">
+	<FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri
+	">was renewed by NSF</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">
+	 </FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings
+	">&#167\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp
+	\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">T</FONT></
+	SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">he Einstein Statue arrived</F
+	ONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> </FONT></SPAN></P>\n\n
+	<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Co
+	urier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT 
+	FACE="Calibri">and</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">L
+	izanne DeStefano</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> too
+	k</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">the helm at</FONT>
+	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> CEISM</FONT></SPAN><SPAN L
+	ANG="en-us"><FONT FACE="Calibri">C</FONT></SPAN><SPAN LANG="en-us"><FONT F
+	ACE="Calibri"> and is connecting us outstandingly to leaders at the city\,
+	 State and national levels\, as well as key philanthropists</FONT></SPAN><
+	SPAN LANG="en-us"><FONT FACE="Calibri">!</FONT></SPAN></P>\n\n<P DIR=LTR><
+	SPAN LANG="en-us"><FONT FACE="Courier New">o&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
+	bsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Since t
+	hen:</FONT></SPAN><SPAN LANG="en-us"> </SPAN></P>\n\n<P DIR=LTR><SPAN LANG
+	="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\;&nb
+	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <
+	FONT FACE="Calibri">Kathryn Bond and Chinneta Willis have come on board</F
+	ONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">in the college as Facu
+	lty Support Coordinators and are already having a terrific impact</FONT></
+	SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">(e.g.\,</FONT></SPAN><SPAN L
+	ANG="en-us"> <FONT FACE="Calibri">CoS</FONT></SPAN><SPAN LANG="en-us"> <FO
+	NT FACE="Calibri">HPC Day)</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Ca
+	libri">–</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> welcome</
+	FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">to you both!</FONT></
+	SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings">&#167\;<
+	FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT><
+	/FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Four new faculty mem
+	bers in Mathematics (including three women) have been named National Scien
+	ce Foundation Career Award recipients – a terrific distinction that will
+	 help propel their careers.</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
+	-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\;&nbsp\;
+	&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT
+	 FACE="Calibri">EAS graduate student Lujendra Ojha – a member of the wat
+	er on Mars team</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">–<
+	/FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> was this morning nam
+	ed one of Forbes Magazine’s Thirty Under Thirty</FONT></SPAN><SPAN LANG=
+	"en-us"><FONT FACE="Calibri"> in Science.</FONT></SPAN><SPAN LANG="en-us">
+	</SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings">&#167\
+	;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT
+	></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">My wife</FONT></SP
+	AN><SPAN LANG="en-us"> <FONT FACE="Calibri">Jenny and I are celebrating th
+	e employment of our elder child Oliver – right here in the Biltmore Buil
+	ding (so Lizanne can keep an eye on him)</FONT></SPAN><SPAN LANG="en-us"><
+	FONT FACE="Calibri"> –</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Cali
+	bri">he’s</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">the firs
+	t member of our family to</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Cal
+	ibri">really</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">leave s
+	chool!</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LAN
+	G="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\;&n
+	bsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> 
+	<FONT FACE="Calibri">We welcome Dr. Maureen Rouhi\,</FONT></SPAN><SPAN LAN
+	G="en-us"> <FONT FACE="Calibri">a tremendously accomplished</FONT></SPAN><
+	SPAN LANG="en-us"> <FONT FACE="Calibri">science communicator\, as our new 
+	Director of Communications. I know I speak for the whole college when I sa
+	y how pleased we are\, Maureen\, to have you</FONT></SPAN><SPAN LANG="en-u
+	s"> <FONT FACE="Calibri">as a member of the team.</FONT></SPAN><SPAN LANG=
+	"en-us"> </SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingding
+	s">&#167\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbs
+	p\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">And Art h
+	as some news about Campaign Georgia Tech: Art?</FONT></SPAN><SPAN LANG="en
+	-us"></SPAN></P>\n<UL DIR=LTR><UL DIR=LTR><UL DIR=LTR><UL DIR=LTR><UL DIR=
+	LTR><UL DIR=LTR>\n<P DIR=LTR><SPAN LANG="en-us"></SPAN></P>\n</UL></UL></U
+	L></UL></UL></UL>\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Courier New">
+	o&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us
+	"> <FONT FACE="Calibri">So I wish</FONT></SPAN><SPAN LANG="en-us"> <FONT F
+	ACE="Calibri">everyone</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri
+	"> a terrific semester. We have vital work to do\,</FONT></SPAN><SPAN LANG
+	="en-us"> <FONT FACE="Calibri">and</FONT></SPAN><SPAN LANG="en-us"> <FONT 
+	FACE="Calibri">some of it quite challenging. But if there are two things I
+	</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">’m certain of</FON
+	T></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">\,</FONT></SPAN><SPAN LAN
+	G="en-us"><FONT FACE="Calibri"> they are that</FONT></SPAN><SPAN LANG="en-
+	us"><FONT FACE="Calibri">:</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Cal
+	ibri"></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">(i)</FONT></S
+	PAN><SPAN LANG="en-us"> <FONT FACE="Calibri">the work done by this team wi
+	ll be done extremely well\,</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="C
+	alibri">and</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">(ii)</FO
+	NT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">that we’ll have fun d
+	oing it.</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n<UL DIR=LTR><UL DIR=
+	LTR>\n<P DIR=LTR><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="
+	en-us"></SPAN></P>\n</UL></UL>\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="
+	Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\
+	;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Elli
+	ngton / ME space request / JO-JA</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LAN
+	G="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp
+	\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT FACE="Calibri">Timetabl
+	ing of budget decisions\, including the 1% and 3% subtractions.</FONT></SP
+	AN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT 
+	FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT
+	> <FONT FACE="Calibri">Richard Catrambone</FONT></SPAN></P>\n\n<P DIR=LTR>
+	<SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nb
+	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT FACE="Calibri"
+	>Push on neighborhoods and EBB backfill – does the campus appreciate the
+	 plans we have?</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT F
+	ACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&
+	nbsp\;&nbsp\;</FONT></FONT> <FONT FACE="Calibri">Thoughts on hiring strate
+	gy for Dean’s meeting</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"
+	><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;
+	&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT FACE="Calibri">Shall we invite T
+	ris Uschrig to the chairs meeting for CIOS guidance</FONT></SPAN></P>\n\n<
+	P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courie
+	r New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT FACE
+	="Calibri">Alerting chairs and faculty to the Learning Environment program
+	\, second round</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT F
+	ACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&
+	nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri"
+	>Topics for forthcoming chairs meeting?</FONT></SPAN></P>\n\n</BODY>\n</HT
+	ML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:TRUE
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150029Z
+DESCRIPTION:*       SACSCOC: Accreditation reaffirmed by monitoring report 
+	will be required regarding the assessment of our academic programs / DC to
+	 mention at chairs meeting\n\n*       CoS visit from State of GA reps? Is 
+	this something we should do\, with GT blessing\, of course.\n\n*       Nom
+	inate participants for the Governor's Teaching Fellows program – was bro
+	adcast to schools – anything else to do? / DC\n\n
+DTEND:20160112T153000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160112T140000Z
+LAST-MODIFIED:20160516T150029Z
+PRIORITY:5
+RECURRENCE-ID:20160112T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+UID:b28d66de-0e7b-4fc8-a6f3-295263a393c3
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
+	from text/rtf format -->\n\n<P DIR=LTR><FONT FACE="Symbol">&#183\;<FONT FA
+	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
+	SPAN LANG="en-us"> <FONT FACE="Calibri">SACSCOC: Accreditation reaffirmed 
+	by m</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">onitoring report
+	 will be required regarding the assessment of our academic programs</FONT>
+	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> / DC to mention at chairs 
+	meeting</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Sym
+	bol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
+	bsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">CoS vis
+	it from State of GA reps? Is this something we should do\, with GT blessin
+	g\, of course.</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FA
+	CE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
+	bsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-
+	us"> <FONT FACE="Calibri">Nominate participants for the Govern</FONT></SPA
+	N><SPAN LANG="en-us"><FONT FACE="Calibri">o</FONT></SPAN><SPAN LANG="en-us
+	"><FONT FACE="Calibri">r's Teaching Fellows program</FONT></SPAN><SPAN LAN
+	G="en-us"><FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="en-us"> <FONT FAC
+	E="Calibri">–</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> was<
+	/FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">broadcast to schools
+	 – anything else to do? / DC</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>
+	\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:TRUE
+END:VEVENT
 END:VCALENDAR

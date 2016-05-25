@@ -1,28 +1,3 @@
-BEGIN:VCALENDAR
-PRODID:-//Microsoft Corporation//Outlook 16.0 MIMEDIR//EN
-VERSION:2.0
-METHOD:PUBLISH
-X-CALSTART:20150902T170000Z
-X-CALEND:20170102T000000
-X-CLIPSTART:20160101T050000Z
-X-CLIPEND:20170102T050000Z
-X-WR-RELCALID:{0000002E-E917-E5CB-18EA-19C95A0730F5}
-X-WR-CALNAME:Goldbart\, Paul M (This computer only)
-BEGIN:VTIMEZONE
-TZID:Eastern Standard Time
-BEGIN:STANDARD
-DTSTART:16011104T020000
-RRULE:FREQ=YEARLY;BYDAY=1SU;BYMONTH=11
-TZOFFSETFROM:-0400
-TZOFFSETTO:-0500
-END:STANDARD
-BEGIN:DAYLIGHT
-DTSTART:16010311T020000
-RRULE:FREQ=YEARLY;BYDAY=2SU;BYMONTH=3
-TZOFFSETFROM:-0500
-TZOFFSETTO:-0400
-END:DAYLIGHT
-END:VTIMEZONE
 BEGIN:VEVENT
 CLASS:PUBLIC
 CREATED:20160516T150137Z
@@ -967,6 +942,24 @@ X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150042Z
+DESCRIPTION:b. 1949\, Llandudno\, Wales
+DTEND;VALUE=DATE:20161106
+DTSTAMP:20140911T224036Z
+DTSTART;VALUE=DATE:20161105
+LAST-MODIFIED:20160516T150042Z
+PRIORITY:5
+RRULE:FREQ=YEARLY;COUNT=1;BYMONTHDAY=5;BYMONTH=11
+SEQUENCE:1
+SUMMARY;LANGUAGE=en-us:Michael Stone birthday
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000F078C19638D4CB01000000000000000
+	0100000002329CD0DD45B474DB40390B917C98ACC
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150150Z
 DESCRIPTION:b. 1949\, Llandudno\, Wales
 DTEND;TZID="Eastern Standard Time":20161106T000000
@@ -982,6 +975,25 @@ UID:040000008200E00074C5B7101A82E00800000000F078C19638D4CB01000000000000000
 	0100000002329CD0DD45B474DB40390B917C98ACC
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:2
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150042Z
+DESCRIPTION:b. 1995 \n
+DTEND;VALUE=DATE:20160315
+DTSTAMP:20150406T010641Z
+DTSTART;VALUE=DATE:20160314
+LAST-MODIFIED:20160516T150042Z
+PRIORITY:5
+RRULE:FREQ=YEARLY;COUNT=1;BYMONTHDAY=14;BYMONTH=3
+SEQUENCE:2
+SUMMARY;LANGUAGE=en-us:Nicola Georgina Bernardelle birthday
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000F099009638D4CB01000000000000000
+	010000000D4B084C64597EE49BD02C25E3BD6E456
+X-ALT-DESC;FMTTYPE=text/html:<html><body>b. 1995 </body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -1044,6 +1056,24 @@ X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150041Z
+DTEND;TZID="Eastern Standard Time":20160120T150000
+DTSTAMP:20130426T195905Z
+DTSTART;TZID="Eastern Standard Time":20160120T130000
+LAST-MODIFIED:20160516T150041Z
+LOCATION:PCR
+PRIORITY:5
+RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=WE;BYSETPOS=3
+SEQUENCE:3
+SUMMARY;LANGUAGE=en-us:Provost meeting: Deans and Vice Provosts
+TRANSP:OPAQUE
+UID:0788ccf9-7b37-493d-ab1a-8fa6c9c9904d
+X-ALT-DESC;FMTTYPE=text/html:<html><body></body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150150Z
 DTEND;TZID="Eastern Standard Time":20160217T150000
 DTSTAMP:20160107T144046Z
@@ -1057,6 +1087,23 @@ SUMMARY;LANGUAGE=en-us:Provost meeting: Deans and Vice Provosts
 TRANSP:TRANSPARENT
 UID:0788ccf9-7b37-493d-ab1a-8fa6c9c9904d
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
+X-MICROSOFT-CDO-IMPORTANCE:1
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150040Z
+DTEND;VALUE=DATE:20161206
+DTSTAMP:20140901T181521Z
+DTSTART;VALUE=DATE:20161205
+LAST-MODIFIED:20160516T150040Z
+PRIORITY:5
+RRULE:FREQ=YEARLY;COUNT=1;BYDAY=MO;BYMONTH=12;BYSETPOS=1
+SEQUENCE:1
+SUMMARY;LANGUAGE=en-us:GT reminder: complete CETL TA/course evaluations
+TRANSP:OPAQUE
+UID:0b4c3710-4f82-45b8-bff3-0561b72c5d8e
+X-ALT-DESC;FMTTYPE=text/html:<html><body></body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
@@ -1078,6 +1125,22 @@ X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150040Z
+DTEND;VALUE=DATE:20161219
+DTSTAMP:20141210T223947Z
+DTSTART;VALUE=DATE:20161218
+LAST-MODIFIED:20160516T150040Z
+PRIORITY:5
+RRULE:FREQ=YEARLY;COUNT=1;BYMONTHDAY=18;BYMONTH=12
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Someone other than Dian Chung's birthday
+TRANSP:OPAQUE
+UID:1a152e7d-23ef-4600-bb29-c6c5ad8f377d
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150148Z
 DTEND;VALUE=DATE:20161219
 DTSTAMP:20160107T144046Z
@@ -1091,6 +1154,22 @@ TRANSP:TRANSPARENT
 UID:1a152e7d-23ef-4600-bb29-c6c5ad8f377d
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 X-MICROSOFT-CDO-IMPORTANCE:2
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150039Z
+DTEND;VALUE=DATE:20161215
+DTSTAMP:20141210T223947Z
+DTSTART;VALUE=DATE:20161214
+LAST-MODIFIED:20160516T150039Z
+PRIORITY:5
+RRULE:FREQ=YEARLY;COUNT=1;BYMONTHDAY=14;BYMONTH=12
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Mary Wasserman's birthday
+TRANSP:OPAQUE
+UID:2b121b7c-6f3b-4319-b29e-8cb9ca27c43c
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -1326,6 +1405,28 @@ X-MS-OLK-AUTOFILLLOCATION:FALSE
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150035Z
+DESCRIPTION:City of Atlanta City taxes due by October 15\, 2014\nFulton Cou
+	nty taxes due by October 31\, 2014\nCheck when due at: https://www.fultonc
+	ountytaxes.org/ \n
+DTEND;VALUE=DATE:20160922
+DTSTAMP:20140902T002149Z
+DTSTART;VALUE=DATE:20160921
+LAST-MODIFIED:20160516T150035Z
+PRIORITY:5
+RRULE:FREQ=YEARLY;COUNT=1;BYDAY=WE;BYMONTH=9;BYSETPOS=3
+SEQUENCE:2
+SUMMARY;LANGUAGE=en-us:Atlanta/Fulton taxes due
+TRANSP:OPAQUE
+UID:5eed4d80-f45b-4f7f-a85f-5c2455519e55
+X-ALT-DESC;FMTTYPE=text/html:<html><body>City of Atlanta City taxes due by 
+	October 15\, 2014<br>Fulton County taxes due by October 31\, 2014<br>Check
+	 when due at: https://www.fultoncountytaxes.org/ </body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150150Z
 DESCRIPTION:City of Atlanta City taxes due by October 15\, 2014\nFulton Cou
 	nty taxes due by October 31\, 2014\nCheck when due at: https://www.fultonc
@@ -1520,6 +1621,28 @@ X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150029Z
+DTEND;TZID="Eastern Standard Time":20160105T103000
+DTSTAMP:20150503T152218Z
+DTSTART;TZID="Eastern Standard Time":20160105T090000
+LAST-MODIFIED:20160518T144712Z
+PRIORITY:5
+RRULE:FREQ=WEEKLY;COUNT=52;BYDAY=TU
+SEQUENCE:5
+SUMMARY;LANGUAGE=en-us:CoS Group meeting: Dian\, David M\, David C\, Julia\
+	, Jerry\, Lew\, Art\, David T\, Juan
+TRANSP:OPAQUE
+UID:b28d66de-0e7b-4fc8-a6f3-295263a393c3
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150144Z
 DTEND;TZID="Eastern Standard Time":20160105T103000
 DTSTAMP:20160107T144046Z
@@ -1581,6 +1704,27 @@ END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150029Z
+DTEND;TZID="Eastern Standard Time":20160104T103000
+DTSTAMP:20141224T023934Z
+DTSTART;TZID="Eastern Standard Time":20160104T100000
+LAST-MODIFIED:20160516T150029Z
+PRIORITY:5
+RRULE:FREQ=WEEKLY;COUNT=52;BYDAY=MO
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Weekly meeting David Moore
+TRANSP:OPAQUE
+UID:bd735dd3-f73f-4a1e-a00c-882f5a50c7ff
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150148Z
 DTEND;TZID="Eastern Standard Time":20160104T103000
 DTSTAMP:20160107T144046Z
@@ -1599,6 +1743,28 @@ X-MS-OLK-APPTLASTSEQUENCE:2
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150028Z
+DTEND;TZID="Eastern Standard Time":20160217T154500
+DTSTAMP:20150408T134949Z
+DTSTART;TZID="Eastern Standard Time":20160217T150000
+LAST-MODIFIED:20160516T150028Z
+LOCATION:carnegie
+PRIORITY:5
+RRULE:FREQ=MONTHLY;COUNT=11;BYDAY=WE;BYSETPOS=3
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Monthly Meeting with Provost Bras
+TRANSP:OPAQUE
+UID:c07162c7-1e6f-4582-8452-c1e9df296435
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150145Z
 DTEND;TZID="Eastern Standard Time":20160217T154500
 DTSTAMP:20160107T144046Z
@@ -1614,6 +1780,24 @@ UID:c07162c7-1e6f-4582-8452-c1e9df296435
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:2
 X-MS-OLK-APPTLASTSEQUENCE:1
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150028Z
+DESCRIPTION:* ASF (3/21-28): encourage participation\, back off teaching\, 
+	engage your students
+DTEND;VALUE=DATE:20160113
+DTSTAMP:20150107T175715Z
+DTSTART;VALUE=DATE:20160112
+LAST-MODIFIED:20160516T150028Z
+PRIORITY:5
+RRULE:FREQ=YEARLY;COUNT=1;BYMONTHDAY=12;BYMONTH=1
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:ASF reminder to chairs\, deans etc.
+TRANSP:OPAQUE
+UID:c2278ca7-cc89-45d2-897c-62738c7e20c7
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -1656,6 +1840,22 @@ X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150027Z
+DTEND;VALUE=DATE:20161211
+DTSTAMP:20141210T223946Z
+DTSTART;VALUE=DATE:20161210
+LAST-MODIFIED:20160516T150027Z
+PRIORITY:5
+RRULE:FREQ=YEARLY;COUNT=1;BYMONTHDAY=10;BYMONTH=12
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Birthdays: David Collard\, Kathy Friedman
+TRANSP:OPAQUE
+UID:cd44e013-d9e7-480a-b8c8-b05d170a7215
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150148Z
 DTEND;VALUE=DATE:20161211
 DTSTAMP:20160107T144046Z
@@ -1669,6 +1869,28 @@ TRANSP:TRANSPARENT
 UID:cd44e013-d9e7-480a-b8c8-b05d170a7215
 X-MICROSOFT-CDO-BUSYSTATUS:FREE
 X-MICROSOFT-CDO-IMPORTANCE:2
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150027Z
+DESCRIPTION:City of Atlanta City taxes due by October 15\, 2014\nFulton Cou
+	nty taxes due by October 31\, 2014\nCheck when due at: https://www.fultonc
+	ountytaxes.org/ \n
+DTEND;VALUE=DATE:20161002
+DTSTAMP:20140902T002126Z
+DTSTART;VALUE=DATE:20161001
+LAST-MODIFIED:20160516T150027Z
+PRIORITY:5
+RRULE:FREQ=YEARLY;COUNT=1;BYMONTHDAY=1;BYMONTH=10
+SEQUENCE:2
+SUMMARY;LANGUAGE=en-us:Atlanta/Fulton County taxes due
+TRANSP:OPAQUE
+UID:d0241627-ec3c-4721-9353-08fccc972742
+X-ALT-DESC;FMTTYPE=text/html:<html><body>City of Atlanta City taxes due by 
+	October 15\, 2014<br>Fulton County taxes due by October 31\, 2014<br>Check
+	 when due at: https://www.fultoncountytaxes.org/ </body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -1797,6 +2019,33 @@ X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150025Z
+DESCRIPTION:Regular monthly with School Chair - the third Thursday of every
+	 month.\n
+DTEND;TZID="Eastern Standard Time":20160121T161500
+DTSTAMP:20150127T204048Z
+DTSTART;TZID="Eastern Standard Time":20160121T153000
+LAST-MODIFIED:20160516T150025Z
+LOCATION:TT
+PRIORITY:5
+RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=TH;BYSETPOS=3
+SEQUENCE:1
+SUMMARY;LANGUAGE=en-us:Monthly meeting with Howard Weiss
+TRANSP:OPAQUE
+UID:f51a3985-9593-49d2-9194-1d395bff8b9c
+X-ALT-DESC;FMTTYPE=text/html:<html><body id='htmlmode'><html><body>Regular 
+	monthly with School Chair - the third Thursday of every month.</body></htm
+	l></body></html>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150147Z
 DESCRIPTION:Regular monthly with School Chair - the third Thursday of every
 	 month.\n
@@ -1860,43 +2109,55 @@ X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
-DTEND:20160106T170000Z
-DTSTART:20160106T160000Z
-RECURRENCE-ID:20151223T160000Z
+CLASS:PUBLIC
+CREATED:20160516T150138Z
+DTEND;TZID="Eastern Standard Time":20160101T130000
+DTSTAMP:20160107T144041Z
+DTSTART;TZID="Eastern Standard Time":20160101T103000
+LAST-MODIFIED:20160516T150138Z
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Leave for LHR
 TRANSP:OPAQUE
-UID:040000008200E00074C5B7101A82E008000000002436C1410E88D001000000000000000
-	010000000CDBDFDFB25693A429D2A9F5589B4DF35
+UID:0627918d-71aa-4fd8-96cb-409fae39ae9c
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Reminder
-END:VALARM
+X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
-CREATED:20160516T150144Z
-DTEND:20160210T203000Z
-DTSTAMP:20160107T141604Z
-DTSTART:20160210T193000Z
-LAST-MODIFIED:20160516T150144Z
-LOCATION:CE 201A
+CREATED:20160516T150138Z
+DTEND;TZID="Eastern Standard Time":20160101T150000
+DTSTAMP:20160107T144041Z
+DTSTART;TZID="Eastern Standard Time":20160101T130000
+LAST-MODIFIED:20160516T150138Z
 PRIORITY:5
-RECURRENCE-ID:20160210T160000Z
-SEQUENCE:1
-SUMMARY:Art Wasserman weekly meeting *Meeting Time Change*
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Check in at LHR
 TRANSP:OPAQUE
-UID:040000008200E00074C5B7101A82E008000000002436C1410E88D001000000000000000
-	010000000CDBDFDFB25693A429D2A9F5589B4DF35
+UID:520fb824-d03d-425e-8bd3-230f2ba348b6
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:1
-X-MS-OLK-APPTSEQTIME:20160107T141604Z
-X-MS-OLK-AUTOFILLLOCATION:FALSE
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Reminder
-END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150140Z
+DESCRIPTION:Thu\, 24DEC DEPART ARRIVE \n\nDELTA 28 \n\nMAIN CABIN (V) \n\nA
+	TLANTA \n\n7:15pm \n\nLONDON-HEATHROW \n\n8:30am \n**Fri 25DEC \n\nFri\, 0
+	1JAN DEPART ARRIVE \n\nDELTA 31 \n\nMAIN CABIN (T) \n\nLONDON-HEATHROW \n\
+	n3:00pm \n\nATLANTA \n\n8:00pm \n\n**Arrival date is different than depart
+	ure date.
+DTEND;TZID="Eastern Standard Time":20160101T200000
+DTSTAMP:20160107T144041Z
+DTSTART;TZID="Eastern Standard Time":20160101T150000
+LAST-MODIFIED:20160516T150140Z
+LOCATION:3p/8p
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:LHR/ATL:Delta#31
+TRANSP:OPAQUE
+UID:b258fc0e-8241-4bdb-b004-c6c765110376
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 DTEND:20160104T150000Z
@@ -1913,137 +2174,148 @@ DESCRIPTION:Reminder
 END:VALARM
 END:VEVENT
 BEGIN:VEVENT
-DTEND:20160129T164500Z
-DTSTART:20160129T160000Z
-LOCATION:CE 201A
-RECURRENCE-ID:20160118T180000Z
-TRANSP:OPAQUE
-UID:040000008200E00074C5B7101A82E00800000000B08493355700D101000000000000000
-	01000000034F1B2D5CC6D7E42A38B3DB982012602
-X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Reminder
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
 CLASS:PUBLIC
 CREATED:20160516T150138Z
-DTEND:20160111T164500Z
-DTSTAMP:20160105T131546Z
-DTSTART:20160111T160000Z
+DESCRIPTION:*       Meeting the chairs (including Lizanne DeStefano) and ot
+	hers \n\n*       Celebrating the Dean’s chair\; commemorating Besty Suth
+	erland: a beautiful website (cf Stephen Wolfram)\n\n*       Strategic plan
+	ning\n\n*       Celebrating research successes: Must be a priority (drough
+	ts and floods)\n\n*       Atlanta Science Festival\n\n*       Weekly meeti
+	ng for us\; more? Open-door policy\n\n*       Let us know your needs!\n\n*
+	       Teaching communications\n\n*       Monthly CoS meetings\n\n*       
+	Occasional chairs meetings (breakfasts)\n\n*       Twice weekly (Tu Th) me
+	etings: all there\, not sure totally efficient but keeps all informed\n\n*
+	       Deirdre and Laura – and gravitational radiation\n\n*       Michae
+	l Warden\n\n*       Marc Merlin and the Atlanta Science Tavern\n\n*       
+	Public lectures: We have some momentum\; we need to maintain it\; it has h
+	ad an impact (ANAK gifts!)\n\n*       Big ideas: a kind of Aspen Institute
+	 in Midtown\n\n*       Big ideas: a kind of retirement community coupled t
+	o GT\n\n*       Big ideas: a hands-on Exploratorium for people of all ages
+	\n\n*       For me: stepping into Facebook and Twitter! What’s next? \n\
+	n*       Lots of video \n\n*       Career cameos of successful alumni\n\n*
+	       Undergraduate admissions: Recruiting into mathematics and the scien
+	ces\; balance with engineering and computing\n\n*       Welcoming first-ge
+	neration students: Languages for learning about admissions\n\n*       Dive
+	rsity – in all its aspects – is very important\n\n
+DTEND;TZID="Eastern Standard Time":20160104T090000
+DTSTAMP:20160107T144041Z
+DTSTART;TZID="Eastern Standard Time":20160104T083000
 LAST-MODIFIED:20160516T150138Z
 PRIORITY:5
-RECURRENCE-ID:20160111T210000Z
-SEQUENCE:2
-TRANSP:OPAQUE
-UID:040000008200E00074C5B7101A82E00800000000B0AE76759047D101000000000000000
-	0100000007236C7AEFA3A5D4D81CA4F36A0EAB1DE
-X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-X-MICROSOFT-CDO-IMPORTANCE:1
-X-MS-OLK-APPTSEQTIME:20160105T131546Z
-BEGIN:VALARM
-TRIGGER:-PT15M
-ACTION:DISPLAY
-DESCRIPTION:Reminder
-END:VALARM
-END:VEVENT
-BEGIN:VEVENT
-CLASS:PUBLIC
-CREATED:20160516T150144Z
-DTEND:20160106T200000Z
-DTSTAMP:20150422T132253Z
-DTSTART:20160106T180000Z
-LAST-MODIFIED:20160516T150144Z
-LOCATION:PCR (bring hiring info)
-PRIORITY:5
-RECURRENCE-ID:20150805T170000Z
-SEQUENCE:6
-SUMMARY:Provost meeting: Dean *Agenda below*
-TRANSP:OPAQUE
-UID:040000008200E00074C5B7101A82E00800000000F0B076090288D001000000000000000
-	01000000089C49D89EA2EB2479A035FD4C9A6B6B7
-X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-X-MICROSOFT-CDO-IMPORTANCE:1
-X-MICROSOFT-DISALLOW-COUNTER:FALSE
-END:VEVENT
-BEGIN:VEVENT
-CLASS:PUBLIC
-CREATED:20160516T150041Z
-DTEND:20160120T200000Z
-DTSTAMP:20160107T144031Z
-DTSTART:20160120T180000Z
-LAST-MODIFIED:20160516T150041Z
-PRIORITY:5
-RECURRENCE-ID:20160120T180000Z
 SEQUENCE:0
-SUMMARY:*CANCELLED* Provost meeting: Deans and Vice Provosts
+SUMMARY;LANGUAGE=en-us:Maureen Rouhi
 TRANSP:OPAQUE
-UID:0788ccf9-7b37-493d-ab1a-8fa6c9c9904d
-X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-X-MICROSOFT-CDO-IMPORTANCE:1
-END:VEVENT
-BEGIN:VEVENT
-CLASS:PUBLIC
-CREATED:20160516T150144Z
-DESCRIPTION:*       NCHCR: A great success! Thank you Dian for conceiving a
-	nd organizing\; thank you David for paying!\n\n*       Am I clear with lap
-	top backups?\n\n*       Hiring plans: Notes for Provost’s meeting / JK\n
-	\n*       Critical: ASF funding decision\n\n*       Issues for the Provost
-	 – Thursday\n\n*       C&F Building leadership ideas? / JK\n\n*       Ma
-	th Fathi dinner—expenses\n\n*       What’s in GT TRACS – including B
-	ottomley\, leaves\, hires\,…\n\n*       Hiring strategy for Deans meetin
-	g\n\n\n\n
-DTEND:20160107T160000Z
-DTSTAMP:20160107T144046Z
-DTSTART:20160107T140000Z
-LAST-MODIFIED:20160516T150144Z
-PRIORITY:5
-RECURRENCE-ID:20151217T140000Z
-SEQUENCE:0
-TRANSP:OPAQUE
-UID:5733d3c4-2952-4aaf-803c-2149da2036d3
+UID:040000008200E00074C5B7101A82E00800000000B096BD8F8739D101000000000000000
+	010000000F206C4C7264AC24EAAC2DAC2FB7EE2C8
 X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
 	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
 	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
 	from text/rtf format -->\n\n<P DIR=LTR><FONT FACE="Symbol">&#183\;<FONT FA
 	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
-	SPAN LANG="en-us"> <FONT FACE="Calibri">NCHCR: A great success! Thank you 
-	Dian for conceiving and organizing\; thank you David for paying!</FONT></S
-	PAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT
-	 FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FON
-	T></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Am I clear with laptop b
-	ackups?</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Sym
-	bol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
-	bsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Hiring 
-	plans: Notes for Provost’s meeting / JK</FONT></SPAN></P>\n\n<P DIR=LTR>
-	<SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nb
-	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en
-	-us"> <FONT FACE="Calibri">Critical: ASF funding decision</FONT></SPAN><SP
-	AN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="S
-	ymbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;
-	&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><
-	/SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Issues for the Provost – 
-	Thursday</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN L
-	ANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nb
-	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <
-	FONT FACE="Calibri">C&amp\;F Building leadership ideas? / JK</FONT></SPAN>
+	SPAN LANG="en-us"> <FONT FACE="Calibri">Meeting the chairs</FONT></SPAN><S
+	PAN LANG="en-us"><FONT FACE="Calibri"> (including Lizanne DeStefano)</FONT
+	></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">and others </FONT></SPAN>
 	</P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FAC
 	E="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></
-	SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Math Fathi dinner—expenses
-	</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#
+	SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Celebrating the Dean’s cha
+	ir</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">\; c</FONT></SPAN>
+	<SPAN LANG="en-us"><FONT FACE="Calibri">ommemorating Besty Sutherland: a b
+	eautiful website</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> (cf
+	 Stephen Wolfram)</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LT
+	R><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&
+	nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="
+	en-us"> <FONT FACE="Calibri">Strategic planning</FONT></SPAN><SPAN LANG="e
+	n-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#1
+	83\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</F
+	ONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Celebrating res
+	earch successes: Must be a priority (droughts and floods)</FONT></SPAN><SP
+	AN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="S
+	ymbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;
+	&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Atlan
+	ta Science Festival</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=
+	LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New"
+	>&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG
+	="en-us"> <FONT FACE="Calibri">Weekly meeting for us\; more?</FONT></SPAN>
+	<SPAN LANG="en-us"><FONT FACE="Calibri"> O</FONT></SPAN><SPAN LANG="en-us"
+	><FONT FACE="Calibri">pen</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Cali
+	bri">-</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">door policy</F
+	ONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183
+	\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FON
+	T></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Let us know your 
+	needs!</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symb
+	ol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nb
+	sp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Teaching
+	 commu</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">n</FONT></SPAN
+	><SPAN LANG="en-us"><FONT FACE="Calibri">ications</FONT></SPAN></P>\n\n<P 
+	DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier 
+	New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN 
+	LANG="en-us"> <FONT FACE="Calibri">Monthly CoS meetings</FONT></SPAN></P>\
+	n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Co
+	urier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN>
+	<SPAN LANG="en-us"> <FONT FACE="Calibri">Occasional chairs meetings</FONT>
+	</SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">(breakfasts)</FONT></SPAN>
+	<SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE
+	="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbs
+	p\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Tw
+	ice weekly (Tu Th) meetings: all there\, not sure totally efficient but ke
+	eps all informed</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT 
+	FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;
+	&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri
+	">Deirdre and Laura</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">
+	– and gravitational radiation</FONT></SPAN><SPAN LANG="en-us"></SPAN></P
+	>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="
+	Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPA
+	N><SPAN LANG="en-us"> <FONT FACE="Calibri">Michael Warden</FONT></SPAN><SP
+	AN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="S
+	ymbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;
+	&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Marc 
+	Merlin and the Atlanta Science Tavern</FONT></SPAN><SPAN LANG="en-us"></SP
+	AN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT 
+	FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT
+	></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Public lectures: We have 
+	some momentum\; we need to maintain it\; it has had an impact (ANAK gifts!
+	)</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
+	-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nb
+	sp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FA
+	CE="Calibri">Big ideas: a kind of Aspen Institute in Midtown</FONT></SPAN>
+	</P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FAC
+	E="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></
+	SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Big ideas: a kind of retirem
+	ent community coupled to GT</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
+	-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nb
+	sp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FA
+	CE="Calibri">Big ideas: a hands-on Exploratorium for people of all ages</F
+	ONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"
+	><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;
+	&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="
+	Calibri">For me: stepping into Facebook and Twitter! What’s next? </FONT
+	></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<
+	FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT><
+	/FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Lots of video</FONT>
+	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="e
+	n-us"> </SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#
 	183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</
-	FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">What’s in GT
-	 TRACS – including Bottomley\, leaves\, hires\,…</FONT></SPAN></P>\n\n
-	<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Couri
-	er New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SP
-	AN LANG="en-us"> <FONT FACE="Calibri">Hiring strategy for Deans meeting</F
-	ONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"
-	></SPAN></P>\n<BR>\n<BR>\n\n</BODY>\n</HTML>
+	FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Career cameos 
+	of successful alumni</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR
+	=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New
+	">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LAN
+	G="en-us"> <FONT FACE="Calibri">Undergraduate admissions: Recruiting into 
+	mathematics and the sciences\; balance with engineering and computing</FON
+	T></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><
+	FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&n
+	bsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Ca
+	libri">Welcoming first-generation students: Languages for learning about a
+	dmissions</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN 
+	LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&n
+	bsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> 
+	<FONT FACE="Calibri">Diversity – in all its aspects – is very importan
+	t</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
+	-us"></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n</BODY>\n</HTML>
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
 X-MS-OLK-AUTOFILLLOCATION:TRUE
+X-MS-OLK-CONFTYPE:0
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -2240,247 +2512,6 @@ X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:1
 X-MS-OLK-AUTOFILLLOCATION:TRUE
-END:VEVENT
-BEGIN:VEVENT
-CLASS:PUBLIC
-CREATED:20160516T150029Z
-DESCRIPTION:*       SACSCOC: Accreditation reaffirmed by monitoring report 
-	will be required regarding the assessment of our academic programs / DC to
-	 mention at chairs meeting\n\n*       CoS visit from State of GA reps? Is 
-	this something we should do\, with GT blessing\, of course.\n\n*       Nom
-	inate participants for the Governor's Teaching Fellows program – was bro
-	adcast to schools – anything else to do? / DC\n\n
-DTEND:20160112T153000Z
-DTSTAMP:20160107T144046Z
-DTSTART:20160112T140000Z
-LAST-MODIFIED:20160516T150029Z
-PRIORITY:5
-RECURRENCE-ID:20160112T140000Z
-SEQUENCE:0
-TRANSP:OPAQUE
-UID:b28d66de-0e7b-4fc8-a6f3-295263a393c3
-X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
-	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
-	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
-	from text/rtf format -->\n\n<P DIR=LTR><FONT FACE="Symbol">&#183\;<FONT FA
-	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
-	SPAN LANG="en-us"> <FONT FACE="Calibri">SACSCOC: Accreditation reaffirmed 
-	by m</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">onitoring report
-	 will be required regarding the assessment of our academic programs</FONT>
-	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> / DC to mention at chairs 
-	meeting</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Sym
-	bol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
-	bsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">CoS vis
-	it from State of GA reps? Is this something we should do\, with GT blessin
-	g\, of course.</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FA
-	CE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
-	bsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-
-	us"> <FONT FACE="Calibri">Nominate participants for the Govern</FONT></SPA
-	N><SPAN LANG="en-us"><FONT FACE="Calibri">o</FONT></SPAN><SPAN LANG="en-us
-	"><FONT FACE="Calibri">r's Teaching Fellows program</FONT></SPAN><SPAN LAN
-	G="en-us"><FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="en-us"> <FONT FAC
-	E="Calibri">–</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> was<
-	/FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">broadcast to schools
-	 – anything else to do? / DC</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>
-	\n\n</BODY>\n</HTML>
-X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-X-MICROSOFT-CDO-IMPORTANCE:1
-X-MS-OLK-AUTOFILLLOCATION:TRUE
-END:VEVENT
-BEGIN:VEVENT
-CLASS:PUBLIC
-CREATED:20160516T150138Z
-DTEND;TZID="Eastern Standard Time":20160101T130000
-DTSTAMP:20160107T144041Z
-DTSTART;TZID="Eastern Standard Time":20160101T103000
-LAST-MODIFIED:20160516T150138Z
-PRIORITY:5
-SEQUENCE:0
-SUMMARY;LANGUAGE=en-us:Leave for LHR
-TRANSP:OPAQUE
-UID:0627918d-71aa-4fd8-96cb-409fae39ae9c
-X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-X-MICROSOFT-CDO-IMPORTANCE:1
-END:VEVENT
-BEGIN:VEVENT
-CLASS:PUBLIC
-CREATED:20160516T150138Z
-DTEND;TZID="Eastern Standard Time":20160101T150000
-DTSTAMP:20160107T144041Z
-DTSTART;TZID="Eastern Standard Time":20160101T130000
-LAST-MODIFIED:20160516T150138Z
-PRIORITY:5
-SEQUENCE:0
-SUMMARY;LANGUAGE=en-us:Check in at LHR
-TRANSP:OPAQUE
-UID:520fb824-d03d-425e-8bd3-230f2ba348b6
-X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-X-MICROSOFT-CDO-IMPORTANCE:1
-END:VEVENT
-BEGIN:VEVENT
-CLASS:PUBLIC
-CREATED:20160516T150140Z
-DESCRIPTION:Thu\, 24DEC DEPART ARRIVE \n\nDELTA 28 \n\nMAIN CABIN (V) \n\nA
-	TLANTA \n\n7:15pm \n\nLONDON-HEATHROW \n\n8:30am \n**Fri 25DEC \n\nFri\, 0
-	1JAN DEPART ARRIVE \n\nDELTA 31 \n\nMAIN CABIN (T) \n\nLONDON-HEATHROW \n\
-	n3:00pm \n\nATLANTA \n\n8:00pm \n\n**Arrival date is different than depart
-	ure date.
-DTEND;TZID="Eastern Standard Time":20160101T200000
-DTSTAMP:20160107T144041Z
-DTSTART;TZID="Eastern Standard Time":20160101T150000
-LAST-MODIFIED:20160516T150140Z
-LOCATION:3p/8p
-PRIORITY:5
-SEQUENCE:0
-SUMMARY;LANGUAGE=en-us:LHR/ATL:Delta#31
-TRANSP:OPAQUE
-UID:b258fc0e-8241-4bdb-b004-c6c765110376
-X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-X-MICROSOFT-CDO-IMPORTANCE:1
-END:VEVENT
-BEGIN:VEVENT
-CLASS:PUBLIC
-CREATED:20160516T150138Z
-DESCRIPTION:*       Meeting the chairs (including Lizanne DeStefano) and ot
-	hers \n\n*       Celebrating the Dean’s chair\; commemorating Besty Suth
-	erland: a beautiful website (cf Stephen Wolfram)\n\n*       Strategic plan
-	ning\n\n*       Celebrating research successes: Must be a priority (drough
-	ts and floods)\n\n*       Atlanta Science Festival\n\n*       Weekly meeti
-	ng for us\; more? Open-door policy\n\n*       Let us know your needs!\n\n*
-	       Teaching communications\n\n*       Monthly CoS meetings\n\n*       
-	Occasional chairs meetings (breakfasts)\n\n*       Twice weekly (Tu Th) me
-	etings: all there\, not sure totally efficient but keeps all informed\n\n*
-	       Deirdre and Laura – and gravitational radiation\n\n*       Michae
-	l Warden\n\n*       Marc Merlin and the Atlanta Science Tavern\n\n*       
-	Public lectures: We have some momentum\; we need to maintain it\; it has h
-	ad an impact (ANAK gifts!)\n\n*       Big ideas: a kind of Aspen Institute
-	 in Midtown\n\n*       Big ideas: a kind of retirement community coupled t
-	o GT\n\n*       Big ideas: a hands-on Exploratorium for people of all ages
-	\n\n*       For me: stepping into Facebook and Twitter! What’s next? \n\
-	n*       Lots of video \n\n*       Career cameos of successful alumni\n\n*
-	       Undergraduate admissions: Recruiting into mathematics and the scien
-	ces\; balance with engineering and computing\n\n*       Welcoming first-ge
-	neration students: Languages for learning about admissions\n\n*       Dive
-	rsity – in all its aspects – is very important\n\n
-DTEND;TZID="Eastern Standard Time":20160104T090000
-DTSTAMP:20160107T144041Z
-DTSTART;TZID="Eastern Standard Time":20160104T083000
-LAST-MODIFIED:20160516T150138Z
-PRIORITY:5
-SEQUENCE:0
-SUMMARY;LANGUAGE=en-us:Maureen Rouhi
-TRANSP:OPAQUE
-UID:040000008200E00074C5B7101A82E00800000000B096BD8F8739D101000000000000000
-	010000000F206C4C7264AC24EAAC2DAC2FB7EE2C8
-X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
-	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
-	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
-	from text/rtf format -->\n\n<P DIR=LTR><FONT FACE="Symbol">&#183\;<FONT FA
-	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
-	SPAN LANG="en-us"> <FONT FACE="Calibri">Meeting the chairs</FONT></SPAN><S
-	PAN LANG="en-us"><FONT FACE="Calibri"> (including Lizanne DeStefano)</FONT
-	></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">and others </FONT></SPAN>
-	</P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FAC
-	E="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></
-	SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Celebrating the Dean’s cha
-	ir</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">\; c</FONT></SPAN>
-	<SPAN LANG="en-us"><FONT FACE="Calibri">ommemorating Besty Sutherland: a b
-	eautiful website</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> (cf
-	 Stephen Wolfram)</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LT
-	R><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&
-	nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="
-	en-us"> <FONT FACE="Calibri">Strategic planning</FONT></SPAN><SPAN LANG="e
-	n-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#1
-	83\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</F
-	ONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Celebrating res
-	earch successes: Must be a priority (droughts and floods)</FONT></SPAN><SP
-	AN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="S
-	ymbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;
-	&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Atlan
-	ta Science Festival</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=
-	LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New"
-	>&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG
-	="en-us"> <FONT FACE="Calibri">Weekly meeting for us\; more?</FONT></SPAN>
-	<SPAN LANG="en-us"><FONT FACE="Calibri"> O</FONT></SPAN><SPAN LANG="en-us"
-	><FONT FACE="Calibri">pen</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Cali
-	bri">-</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">door policy</F
-	ONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183
-	\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FON
-	T></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Let us know your 
-	needs!</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symb
-	ol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nb
-	sp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Teaching
-	 commu</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">n</FONT></SPAN
-	><SPAN LANG="en-us"><FONT FACE="Calibri">ications</FONT></SPAN></P>\n\n<P 
-	DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier 
-	New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN 
-	LANG="en-us"> <FONT FACE="Calibri">Monthly CoS meetings</FONT></SPAN></P>\
-	n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Co
-	urier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN>
-	<SPAN LANG="en-us"> <FONT FACE="Calibri">Occasional chairs meetings</FONT>
-	</SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">(breakfasts)</FONT></SPAN>
-	<SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE
-	="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbs
-	p\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Tw
-	ice weekly (Tu Th) meetings: all there\, not sure totally efficient but ke
-	eps all informed</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT 
-	FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;
-	&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri
-	">Deirdre and Laura</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">
-	– and gravitational radiation</FONT></SPAN><SPAN LANG="en-us"></SPAN></P
-	>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="
-	Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPA
-	N><SPAN LANG="en-us"> <FONT FACE="Calibri">Michael Warden</FONT></SPAN><SP
-	AN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="S
-	ymbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;
-	&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Marc 
-	Merlin and the Atlanta Science Tavern</FONT></SPAN><SPAN LANG="en-us"></SP
-	AN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT 
-	FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT
-	></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Public lectures: We have 
-	some momentum\; we need to maintain it\; it has had an impact (ANAK gifts!
-	)</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
-	-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nb
-	sp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FA
-	CE="Calibri">Big ideas: a kind of Aspen Institute in Midtown</FONT></SPAN>
-	</P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FAC
-	E="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></
-	SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Big ideas: a kind of retirem
-	ent community coupled to GT</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
-	-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nb
-	sp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FA
-	CE="Calibri">Big ideas: a hands-on Exploratorium for people of all ages</F
-	ONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"
-	><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;
-	&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="
-	Calibri">For me: stepping into Facebook and Twitter! What’s next? </FONT
-	></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<
-	FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT><
-	/FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Lots of video</FONT>
-	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="e
-	n-us"> </SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#
-	183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</
-	FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Career cameos 
-	of successful alumni</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR
-	=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New
-	">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LAN
-	G="en-us"> <FONT FACE="Calibri">Undergraduate admissions: Recruiting into 
-	mathematics and the sciences\; balance with engineering and computing</FON
-	T></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><
-	FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&n
-	bsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Ca
-	libri">Welcoming first-generation students: Languages for learning about a
-	dmissions</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN 
-	LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&n
-	bsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> 
-	<FONT FACE="Calibri">Diversity – in all its aspects – is very importan
-	t</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
-	-us"></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n</BODY>\n</HTML>
-X-MICROSOFT-CDO-BUSYSTATUS:BUSY
-X-MICROSOFT-CDO-IMPORTANCE:1
-X-MICROSOFT-DISALLOW-COUNTER:FALSE
-X-MS-OLK-AUTOFILLLOCATION:TRUE
-X-MS-OLK-CONFTYPE:0
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -2710,6 +2741,100 @@ X-MS-OLK-CONFTYPE:0
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150144Z
+DTEND:20160106T200000Z
+DTSTAMP:20150422T132253Z
+DTSTART:20160106T180000Z
+LAST-MODIFIED:20160516T150144Z
+LOCATION:PCR (bring hiring info)
+PRIORITY:5
+RECURRENCE-ID:20150805T170000Z
+SEQUENCE:6
+SUMMARY:Provost meeting: Dean *Agenda below*
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000F0B076090288D001000000000000000
+	01000000089C49D89EA2EB2479A035FD4C9A6B6B7
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20160106T170000Z
+DTSTART:20160106T160000Z
+RECURRENCE-ID:20151223T160000Z
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E008000000002436C1410E88D001000000000000000
+	010000000CDBDFDFB25693A429D2A9F5589B4DF35
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150144Z
+DESCRIPTION:*       NCHCR: A great success! Thank you Dian for conceiving a
+	nd organizing\; thank you David for paying!\n\n*       Am I clear with lap
+	top backups?\n\n*       Hiring plans: Notes for Provost’s meeting / JK\n
+	\n*       Critical: ASF funding decision\n\n*       Issues for the Provost
+	 – Thursday\n\n*       C&F Building leadership ideas? / JK\n\n*       Ma
+	th Fathi dinner—expenses\n\n*       What’s in GT TRACS – including B
+	ottomley\, leaves\, hires\,…\n\n*       Hiring strategy for Deans meetin
+	g\n\n\n\n
+DTEND:20160107T160000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160107T140000Z
+LAST-MODIFIED:20160516T150144Z
+PRIORITY:5
+RECURRENCE-ID:20151217T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+UID:5733d3c4-2952-4aaf-803c-2149da2036d3
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
+	from text/rtf format -->\n\n<P DIR=LTR><FONT FACE="Symbol">&#183\;<FONT FA
+	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
+	SPAN LANG="en-us"> <FONT FACE="Calibri">NCHCR: A great success! Thank you 
+	Dian for conceiving and organizing\; thank you David for paying!</FONT></S
+	PAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT
+	 FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FON
+	T></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Am I clear with laptop b
+	ackups?</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Sym
+	bol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
+	bsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Hiring 
+	plans: Notes for Provost’s meeting / JK</FONT></SPAN></P>\n\n<P DIR=LTR>
+	<SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nb
+	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en
+	-us"> <FONT FACE="Calibri">Critical: ASF funding decision</FONT></SPAN><SP
+	AN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="S
+	ymbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;
+	&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><
+	/SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Issues for the Provost – 
+	Thursday</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN L
+	ANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nb
+	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <
+	FONT FACE="Calibri">C&amp\;F Building leadership ideas? / JK</FONT></SPAN>
+	</P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FAC
+	E="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></
+	SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Math Fathi dinner—expenses
+	</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#
+	183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</
+	FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">What’s in GT
+	 TRACS – including Bottomley\, leaves\, hires\,…</FONT></SPAN></P>\n\n
+	<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Couri
+	er New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SP
+	AN LANG="en-us"> <FONT FACE="Calibri">Hiring strategy for Deans meeting</F
+	ONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"
+	></SPAN></P>\n<BR>\n<BR>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:TRUE
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150024Z
 DTEND;TZID="Eastern Standard Time":20160107T153000
 DTSTAMP:20160107T144027Z
@@ -2822,6 +2947,28 @@ X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
+CREATED:20160516T150138Z
+DTEND:20160111T164500Z
+DTSTAMP:20160105T131546Z
+DTSTART:20160111T160000Z
+LAST-MODIFIED:20160516T150138Z
+PRIORITY:5
+RECURRENCE-ID:20160111T210000Z
+SEQUENCE:2
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000B0AE76759047D101000000000000000
+	0100000007236C7AEFA3A5D4D81CA4F36A0EAB1DE
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-APPTSEQTIME:20160105T131546Z
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
 CREATED:20160516T150141Z
 DTEND;VALUE=DATE:20160112
 DTSTAMP:20160107T144045Z
@@ -2858,6 +3005,52 @@ X-MICROSOFT-CDO-IMPORTANCE:1
 X-MICROSOFT-DISALLOW-COUNTER:FALSE
 X-MS-OLK-AUTOFILLLOCATION:TRUE
 X-MS-OLK-CONFTYPE:0
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150029Z
+DESCRIPTION:*       SACSCOC: Accreditation reaffirmed by monitoring report 
+	will be required regarding the assessment of our academic programs / DC to
+	 mention at chairs meeting\n\n*       CoS visit from State of GA reps? Is 
+	this something we should do\, with GT blessing\, of course.\n\n*       Nom
+	inate participants for the Governor's Teaching Fellows program – was bro
+	adcast to schools – anything else to do? / DC\n\n
+DTEND:20160112T153000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160112T140000Z
+LAST-MODIFIED:20160516T150029Z
+PRIORITY:5
+RECURRENCE-ID:20160112T140000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+UID:b28d66de-0e7b-4fc8-a6f3-295263a393c3
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
+	from text/rtf format -->\n\n<P DIR=LTR><FONT FACE="Symbol">&#183\;<FONT FA
+	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
+	SPAN LANG="en-us"> <FONT FACE="Calibri">SACSCOC: Accreditation reaffirmed 
+	by m</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">onitoring report
+	 will be required regarding the assessment of our academic programs</FONT>
+	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> / DC to mention at chairs 
+	meeting</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Sym
+	bol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
+	bsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">CoS vis
+	it from State of GA reps? Is this something we should do\, with GT blessin
+	g\, of course.</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FA
+	CE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
+	bsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-
+	us"> <FONT FACE="Calibri">Nominate participants for the Govern</FONT></SPA
+	N><SPAN LANG="en-us"><FONT FACE="Calibri">o</FONT></SPAN><SPAN LANG="en-us
+	"><FONT FACE="Calibri">r's Teaching Fellows program</FONT></SPAN><SPAN LAN
+	G="en-us"><FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="en-us"> <FONT FAC
+	E="Calibri">–</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> was<
+	/FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">broadcast to schools
+	 – anything else to do? / DC</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>
+	\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:TRUE
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -3242,6 +3435,14 @@ X-MICROSOFT-CDO-IMPORTANCE:1
 X-MICROSOFT-DISALLOW-COUNTER:FALSE
 X-MS-OLK-AUTOFILLLOCATION:FALSE
 X-MS-OLK-CONFTYPE:0
+END:VEVENT
+BEGIN:VEVENT
+DTEND:20160114T160000Z
+DTSTART:20160114T143000Z
+RECURRENCE-ID:20151224T140000Z
+TRANSP:OPAQUE
+UID:5733d3c4-2952-4aaf-803c-2149da2036d3
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -3898,6 +4099,22 @@ X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:1
 X-MICROSOFT-DISALLOW-COUNTER:FALSE
 X-MS-OLK-CONFTYPE:0
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150041Z
+DTEND:20160120T200000Z
+DTSTAMP:20160107T144031Z
+DTSTART:20160120T180000Z
+LAST-MODIFIED:20160516T150041Z
+PRIORITY:5
+RECURRENCE-ID:20160120T180000Z
+SEQUENCE:0
+SUMMARY:*CANCELLED* Provost meeting: Deans and Vice Provosts
+TRANSP:OPAQUE
+UID:0788ccf9-7b37-493d-ab1a-8fa6c9c9904d
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -4770,6 +4987,21 @@ X-MS-OLK-AUTOFILLLOCATION:TRUE
 X-MS-OLK-CONFTYPE:0
 END:VEVENT
 BEGIN:VEVENT
+DTEND:20160129T164500Z
+DTSTART:20160129T160000Z
+LOCATION:CE 201A
+RECURRENCE-ID:20160118T180000Z
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E00800000000B08493355700D101000000000000000
+	01000000034F1B2D5CC6D7E42A38B3DB982012602
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 CLASS:PUBLIC
 CREATED:20160516T150143Z
 DTEND;TZID="Eastern Standard Time":20160129T150000
@@ -5387,6 +5619,31 @@ UID:5ed8c294-a3bd-47e4-804a-12d33b8bed55
 X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
 X-MICROSOFT-CDO-IMPORTANCE:1
 X-MS-OLK-AUTOFILLLOCATION:FALSE
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150144Z
+DTEND:20160210T203000Z
+DTSTAMP:20160107T141604Z
+DTSTART:20160210T193000Z
+LAST-MODIFIED:20160516T150144Z
+LOCATION:CE 201A
+PRIORITY:5
+RECURRENCE-ID:20160210T160000Z
+SEQUENCE:1
+SUMMARY:Art Wasserman weekly meeting *Meeting Time Change*
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E008000000002436C1410E88D001000000000000000
+	010000000CDBDFDFB25693A429D2A9F5589B4DF35
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-APPTSEQTIME:20160107T141604Z
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
@@ -8474,4 +8731,3 @@ ACTION:DISPLAY
 DESCRIPTION:Reminder
 END:VALARM
 END:VEVENT
-END:VCALENDAR
