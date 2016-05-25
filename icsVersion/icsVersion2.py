@@ -242,8 +242,51 @@ for i in eventlist:
 
 
 cleanedEvents = cleanedSeries+cleanedRecurr
+cleanedEvents.sort(key=lambda y: y[1])
 
-
+listloop = 1
+i = 0
+while(listloop==1):
+    if i == len(cleanedEvents)-1:
+        listloop=0 
+        continue 
+    a = cleanedEvents[i]
+    b = cleanedEvents[i+1]
+    if (a==null or b==null) or (a[0] > b[0]): #if times are different
+        i+=1
+        continue
+    else: #if same time
+        if (isSameAs(b, a)==False): #if subject doesn't match
+            i+=1
+            continue
+        else: #if subject does match
+            x = a[2].strip()
+            y = b[2].strip()
+            if (a[3] != b[3]): #if location is different, add to manual review
+                if a not in manualReview:
+                    manualReview.append(a)
+                if b not in manualReview:
+                    manualReview.append(b)
+                i+=1
+            elif x == y : #if notes match
+                cleanedEvents[i] = null
+                i+=1
+                continue
+            else:
+                if x =="": #if one of the events has empty notes delete
+                    cleanedEvents[i] = null
+                    i+=1
+                    continue
+                elif y =="":
+                    cleanedEvents[i+1] = null
+                    i+=1
+                    continue
+                else:
+                    if a not in manualReview:
+                        manualReview.append(a)
+                    if b not in manualReview:
+                        manualReview.append(b)
+                    i+=1
 
 with open("sortedfull2016.ics", "wb") as outfile:
     for i in preamble:
