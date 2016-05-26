@@ -6,6 +6,7 @@ from pyasn1.compat.octets import null
 ############# METHODS USED TO PARSE PARAMETERS IN ICS FILE #############  
   
 def parseDate(string):
+    p = r'\bDTSTART;\D*(\d+).(\d+)'
     q = r'\bDTSTART:\D*(\d+).(\d+)'
     s = r'\bDTSTART;\D*(\d+)(\d+)'
     r = r'\bDTSTART;\S*:(\d+).(\d+)'
@@ -216,7 +217,7 @@ while(listloop==1):
                         manualReview.append(b)
                     p+=1
 
-
+###CLEAN DUPLICATES IN SERIES LIST
 listloop=1
 i=0
 while(listloop):
@@ -244,7 +245,7 @@ while(listloop):
                 i+=1
                 continue
             else:
-                if a[2] == "" or (isSameAs(a[2], b[2])):
+                if a[2] == "" or (isSameAs(a[2], b[2])): #if either is blank, copy uid from curr parent to all children and delete duplicate
                     for j in range(0, len(eventlist)):
                         c = eventlist[j]
                         if c==null or a[4] != c[4]:
@@ -273,13 +274,15 @@ while(listloop):
                       
 cleanedEvents=[]
 
+###concatenate series and events into one cleaned list
 for i in serieslist:
     if i is not null:
         cleanedEvents.append(i)
 for i in eventlist:
     if i is not null:
         cleanedEvents.append(i)
-        
+
+###add events with same uid as ones in manual review to manual review (these are modified series)    
 curr = len(manualReview)
 for i in cleanedEvents:
     a=i[4]
@@ -287,7 +290,8 @@ for i in cleanedEvents:
         if manualReview[j][4] == a:
             if i not in manualReview:
                 manualReview.append(i)
-    
+
+###write to a sorted ics file and a manual review ics file  
 with open("sortedfull.ics", "wb") as outfile:
     for i in preamble:
         outfile.write(i)
