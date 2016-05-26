@@ -24,6 +24,28 @@ TZOFFSETTO:-0400
 END:DAYLIGHT
 END:VTIMEZONE
 BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150029Z
+DTEND;TZID="Eastern Standard Time":20160112T130000
+DTSTAMP:20150411T192659Z
+DTSTART;TZID="Eastern Standard Time":20160112T110000
+LAST-MODIFIED:20160516T150029Z
+LOCATION:Success Center - President's Suite C
+PRIORITY:5
+RRULE:FREQ=MONTHLY;COUNT=12;BYDAY=TU;BYSETPOS=2
+SEQUENCE:2
+SUMMARY;LANGUAGE=en-us:CoS Chairs' Monthly Meeting
+TRANSP:OPAQUE
+UID:bcaa231a-a2d0-4230-93da-fdb3601c08f0
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+BEGIN:VALARM
+TRIGGER:-PT10M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
 ATTENDEE;CN="Chung Hinkson, Dian A";RSVP=TRUE:mailto:dian.chung@cos.gatech.
 	edu
 ATTENDEE;CN="David M Collard";RSVP=TRUE:mailto:david.collard@chemistry.gate
@@ -139,244 +161,52 @@ X-MS-OLK-AUTOFILLLOCATION:FALSE
 END:VEVENT
 BEGIN:VEVENT
 CLASS:PUBLIC
-CREATED:20160516T150029Z
-DESCRIPTION:*       New semester: \n\no       Last one was a pretty good on
-	e\, thanks in large measure to your efforts. \n\no       To mention just a
-	 few good things… \n\n*       We discovered flowing water on mars\n\n*  
-	     The first Engineered Biosystems Building opened\n\n*       The Center
-	 for Chemical Evolution program was renewed by NSF \n\n*       The Einstei
-	n Statue arrived \n\n*       and Lizanne DeStefano took the helm at CEISMC
-	 and is connecting us outstandingly to leaders at the city\, State and nat
-	ional levels\, as well as key philanthropists!\n\no       Since then: \n\n
-	*       Kathryn Bond and Chinneta Willis have come on board in the college
-	 as Faculty Support Coordinators and are already having a terrific impact 
-	(e.g.\, CoS HPC Day) – welcome to you both!\n\n*       Four new faculty 
-	members in Mathematics (including three women) have been named National Sc
-	ience Foundation Career Award recipients – a terrific distinction that w
-	ill help propel their careers.\n\n*       EAS graduate student Lujendra Oj
-	ha – a member of the water on Mars team – was this morning named one o
-	f Forbes Magazine’s Thirty Under Thirty in Science.\n\n*       My wife J
-	enny and I are celebrating the employment of our elder child Oliver – ri
-	ght here in the Biltmore Building (so Lizanne can keep an eye on him) – 
-	he’s the first member of our family to really leave school!\n\n*       W
-	e welcome Dr. Maureen Rouhi\, a tremendously accomplished science communic
-	ator\, as our new Director of Communications. I know I speak for the whole
-	 college when I say how pleased we are\, Maureen\, to have you as a member
-	 of the team. \n\n*       And Art has some news about Campaign Georgia Tec
-	h: Art?\n\n	\n\no       So I wish everyone a terrific semester. We have vi
-	tal work to do\, and some of it quite challenging. But if there are two th
-	ings I’m certain of\, they are that: (i) the work done by this team will
-	 be done extremely well\, and (ii) that we’ll have fun doing it.\n\n	\n\
-	n	\n\n*       Ellington / ME space request / JO-JA\n\n*       Timetabling 
-	of budget decisions\, including the 1% and 3% subtractions.\n\n*       Ric
-	hard Catrambone\n\n*       Push on neighborhoods and EBB backfill – does
-	 the campus appreciate the plans we have?\n\n*       Thoughts on hiring st
-	rategy for Dean’s meeting\n\n*       Shall we invite Tris Uschrig to the
-	 chairs meeting for CIOS guidance\n\n*       Alerting chairs and faculty t
-	o the Learning Environment program\, second round\n\n*       Topics for fo
-	rthcoming chairs meeting?\n\n
-DTEND:20160105T153000Z
-DTSTAMP:20160107T144046Z
-DTSTART:20160105T140000Z
-LAST-MODIFIED:20160516T150029Z
+CREATED:20160516T150025Z
+DTEND;TZID="Eastern Standard Time":20160106T114500
+DTSTAMP:20150114T153728Z
+DTSTART;TZID="Eastern Standard Time":20160106T110000
+LAST-MODIFIED:20160516T150025Z
+LOCATION:TT
 PRIORITY:5
-RECURRENCE-ID:20160105T140000Z
-SEQUENCE:0
+RRULE:FREQ=WEEKLY;COUNT=52;BYDAY=WE
+SEQUENCE:1
+SUMMARY;LANGUAGE=en-us:Weekly Meeting: Art Wasserman
 TRANSP:OPAQUE
-UID:b28d66de-0e7b-4fc8-a6f3-295263a393c3
-X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
-	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
-	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
-	from text/rtf format -->\n\n<P DIR=LTR><FONT FACE="Symbol">&#183\;<FONT FA
-	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
-	SPAN LANG="en-us"> <FONT FACE="Calibri">New semester: </FONT></SPAN></P>\n
-	\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Courier New">o&nbsp\;&nbsp\;&n
-	bsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us"></SPAN><SPAN LA
-	NG="en-us"> <FONT FACE="Calibri">Last one was</FONT></SPAN><SPAN LANG="en-
-	us"> <FONT FACE="Calibri">a</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="C
-	alibri">pretty goo</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">d 
-	one</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">\, thanks in larg
-	e measure to your efforts</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Cali
-	bri">. </FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Cou
-	rier New">o&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN L
-	ANG="en-us"> <FONT FACE="Calibri">To mention just a few good things</FONT>
-	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">… </FONT></SPAN></P>\n\n<
-	P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Cou
-	rier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><
-	SPAN LANG="en-us"> <FONT FACE="Calibri">W</FONT></SPAN><SPAN LANG="en-us">
-	<FONT FACE="Calibri">e discovered f</FONT></SPAN><SPAN LANG="en-us"><FONT 
-	FACE="Calibri">lowing water on mars</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN 
-	LANG="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\
-	;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us
-	"> <FONT FACE="Calibri">T</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Cali
-	bri">he first Engineered Biosystems Building</FONT></SPAN><SPAN LANG="en-u
-	s"><FONT FACE="Calibri"> opened</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG
-	="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\;&nb
-	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <
-	FONT FACE="Calibri">T</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"
-	>he Center for Chemical Evolution program</FONT></SPAN><SPAN LANG="en-us">
-	<FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri
-	">was renewed by NSF</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">
-	 </FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings
-	">&#167\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp
-	\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">T</FONT></
-	SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">he Einstein Statue arrived</F
-	ONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> </FONT></SPAN></P>\n\n
-	<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Co
-	urier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT 
-	FACE="Calibri">and</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">L
-	izanne DeStefano</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> too
-	k</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">the helm at</FONT>
-	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> CEISM</FONT></SPAN><SPAN L
-	ANG="en-us"><FONT FACE="Calibri">C</FONT></SPAN><SPAN LANG="en-us"><FONT F
-	ACE="Calibri"> and is connecting us outstandingly to leaders at the city\,
-	 State and national levels\, as well as key philanthropists</FONT></SPAN><
-	SPAN LANG="en-us"><FONT FACE="Calibri">!</FONT></SPAN></P>\n\n<P DIR=LTR><
-	SPAN LANG="en-us"><FONT FACE="Courier New">o&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
-	bsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Since t
-	hen:</FONT></SPAN><SPAN LANG="en-us"> </SPAN></P>\n\n<P DIR=LTR><SPAN LANG
-	="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\;&nb
-	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <
-	FONT FACE="Calibri">Kathryn Bond and Chinneta Willis have come on board</F
-	ONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">in the college as Facu
-	lty Support Coordinators and are already having a terrific impact</FONT></
-	SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">(e.g.\,</FONT></SPAN><SPAN L
-	ANG="en-us"> <FONT FACE="Calibri">CoS</FONT></SPAN><SPAN LANG="en-us"> <FO
-	NT FACE="Calibri">HPC Day)</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Ca
-	libri">–</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> welcome</
-	FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">to you both!</FONT></
-	SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings">&#167\;<
-	FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT><
-	/FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Four new faculty mem
-	bers in Mathematics (including three women) have been named National Scien
-	ce Foundation Career Award recipients – a terrific distinction that will
-	 help propel their careers.</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en
-	-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\;&nbsp\;
-	&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT
-	 FACE="Calibri">EAS graduate student Lujendra Ojha – a member of the wat
-	er on Mars team</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">–<
-	/FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> was this morning nam
-	ed one of Forbes Magazine’s Thirty Under Thirty</FONT></SPAN><SPAN LANG=
-	"en-us"><FONT FACE="Calibri"> in Science.</FONT></SPAN><SPAN LANG="en-us">
-	</SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingdings">&#167\
-	;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT
-	></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">My wife</FONT></SP
-	AN><SPAN LANG="en-us"> <FONT FACE="Calibri">Jenny and I are celebrating th
-	e employment of our elder child Oliver – right here in the Biltmore Buil
-	ding (so Lizanne can keep an eye on him)</FONT></SPAN><SPAN LANG="en-us"><
-	FONT FACE="Calibri"> –</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Cali
-	bri">he’s</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">the firs
-	t member of our family to</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Cal
-	ibri">really</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">leave s
-	chool!</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LAN
-	G="en-us"><FONT FACE="Wingdings">&#167\;<FONT FACE="Courier New">&nbsp\;&n
-	bsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> 
-	<FONT FACE="Calibri">We welcome Dr. Maureen Rouhi\,</FONT></SPAN><SPAN LAN
-	G="en-us"> <FONT FACE="Calibri">a tremendously accomplished</FONT></SPAN><
-	SPAN LANG="en-us"> <FONT FACE="Calibri">science communicator\, as our new 
-	Director of Communications. I know I speak for the whole college when I sa
-	y how pleased we are\, Maureen\, to have you</FONT></SPAN><SPAN LANG="en-u
-	s"> <FONT FACE="Calibri">as a member of the team.</FONT></SPAN><SPAN LANG=
-	"en-us"> </SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Wingding
-	s">&#167\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbs
-	p\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">And Art h
-	as some news about Campaign Georgia Tech: Art?</FONT></SPAN><SPAN LANG="en
-	-us"></SPAN></P>\n<UL DIR=LTR><UL DIR=LTR><UL DIR=LTR><UL DIR=LTR><UL DIR=
-	LTR><UL DIR=LTR>\n<P DIR=LTR><SPAN LANG="en-us"></SPAN></P>\n</UL></UL></U
-	L></UL></UL></UL>\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Courier New">
-	o&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us
-	"> <FONT FACE="Calibri">So I wish</FONT></SPAN><SPAN LANG="en-us"> <FONT F
-	ACE="Calibri">everyone</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri
-	"> a terrific semester. We have vital work to do\,</FONT></SPAN><SPAN LANG
-	="en-us"> <FONT FACE="Calibri">and</FONT></SPAN><SPAN LANG="en-us"> <FONT 
-	FACE="Calibri">some of it quite challenging. But if there are two things I
-	</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">’m certain of</FON
-	T></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">\,</FONT></SPAN><SPAN LAN
-	G="en-us"><FONT FACE="Calibri"> they are that</FONT></SPAN><SPAN LANG="en-
-	us"><FONT FACE="Calibri">:</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Cal
-	ibri"></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">(i)</FONT></S
-	PAN><SPAN LANG="en-us"> <FONT FACE="Calibri">the work done by this team wi
-	ll be done extremely well\,</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="C
-	alibri">and</FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">(ii)</FO
-	NT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">that we’ll have fun d
-	oing it.</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>\n<UL DIR=LTR><UL DIR=
-	LTR>\n<P DIR=LTR><SPAN LANG="en-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="
-	en-us"></SPAN></P>\n</UL></UL>\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="
-	Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\
-	;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">Elli
-	ngton / ME space request / JO-JA</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LAN
-	G="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp
-	\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT FACE="Calibri">Timetabl
-	ing of budget decisions\, including the 1% and 3% subtractions.</FONT></SP
-	AN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT 
-	FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT
-	> <FONT FACE="Calibri">Richard Catrambone</FONT></SPAN></P>\n\n<P DIR=LTR>
-	<SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nb
-	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT FACE="Calibri"
-	>Push on neighborhoods and EBB backfill – does the campus appreciate the
-	 plans we have?</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT F
-	ACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&
-	nbsp\;&nbsp\;</FONT></FONT> <FONT FACE="Calibri">Thoughts on hiring strate
-	gy for Dean’s meeting</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"
-	><FONT FACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;
-	&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT FACE="Calibri">Shall we invite T
-	ris Uschrig to the chairs meeting for CIOS guidance</FONT></SPAN></P>\n\n<
-	P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Symbol">&#183\;<FONT FACE="Courie
-	r New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT> <FONT FACE
-	="Calibri">Alerting chairs and faculty to the Learning Environment program
-	\, second round</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT F
-	ACE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&
-	nbsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri"
-	>Topics for forthcoming chairs meeting?</FONT></SPAN></P>\n\n</BODY>\n</HT
-	ML>
+UID:f580c164-4012-4a22-9477-ac951ffe8664
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:1
-X-MS-OLK-AUTOFILLLOCATION:TRUE
+BEGIN:VALARM
+TRIGGER:-PT5M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
 END:VEVENT
 BEGIN:VEVENT
+ATTENDEE;CN="Wasserman, Arthur G";RSVP=TRUE;PARTSTAT=ACCEPTED:mailto:arthur
+	.wasserman@cos.gatech.edu
 CLASS:PUBLIC
-CREATED:20160516T150029Z
-DESCRIPTION:*       SACSCOC: Accreditation reaffirmed by monitoring report 
-	will be required regarding the assessment of our academic programs / DC to
-	 mention at chairs meeting\n\n*       CoS visit from State of GA reps? Is 
-	this something we should do\, with GT blessing\, of course.\n\n*       Nom
-	inate participants for the Governor's Teaching Fellows program – was bro
-	adcast to schools – anything else to do? / DC\n\n
-DTEND:20160112T153000Z
+CREATED:20160516T150144Z
+DESCRIPTION:\n
+DTEND;TZID="Eastern Standard Time":20151223T120000
 DTSTAMP:20160107T144046Z
-DTSTART:20160112T140000Z
-LAST-MODIFIED:20160516T150029Z
+DTSTART;TZID="Eastern Standard Time":20151223T110000
+EXDATE;TZID="Eastern Standard Time":20151230T110000,20160106T110000
+LAST-MODIFIED:20160518T144712Z
+ORGANIZER;CN="Goldbart, Paul M":mailto:pgoldbart6@mail.gatech.edu
 PRIORITY:5
-RECURRENCE-ID:20160112T140000Z
+RRULE:FREQ=WEEKLY;COUNT=54;BYDAY=WE
 SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Art Wasserman weekly meeting
 TRANSP:OPAQUE
-UID:b28d66de-0e7b-4fc8-a6f3-295263a393c3
-X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
-	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
-	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
-	from text/rtf format -->\n\n<P DIR=LTR><FONT FACE="Symbol">&#183\;<FONT FA
-	CE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></FONT><
-	SPAN LANG="en-us"> <FONT FACE="Calibri">SACSCOC: Accreditation reaffirmed 
-	by m</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri">onitoring report
-	 will be required regarding the assessment of our academic programs</FONT>
-	</SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> / DC to mention at chairs 
-	meeting</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FACE="Sym
-	bol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
-	bsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">CoS vis
-	it from State of GA reps? Is this something we should do\, with GT blessin
-	g\, of course.</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"><FONT FA
-	CE="Symbol">&#183\;<FONT FACE="Courier New">&nbsp\;&nbsp\;&nbsp\;&nbsp\;&n
-	bsp\;&nbsp\;</FONT></FONT></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-
-	us"> <FONT FACE="Calibri">Nominate participants for the Govern</FONT></SPA
-	N><SPAN LANG="en-us"><FONT FACE="Calibri">o</FONT></SPAN><SPAN LANG="en-us
-	"><FONT FACE="Calibri">r's Teaching Fellows program</FONT></SPAN><SPAN LAN
-	G="en-us"><FONT FACE="Calibri"></FONT></SPAN><SPAN LANG="en-us"> <FONT FAC
-	E="Calibri">–</FONT></SPAN><SPAN LANG="en-us"><FONT FACE="Calibri"> was<
-	/FONT></SPAN><SPAN LANG="en-us"> <FONT FACE="Calibri">broadcast to schools
-	 – anything else to do? / DC</FONT></SPAN><SPAN LANG="en-us"></SPAN></P>
-	\n\n</BODY>\n</HTML>
+UID:040000008200E00074C5B7101A82E008000000002436C1410E88D001000000000000000
+	010000000CDBDFDFB25693A429D2A9F5589B4DF35
 X-MICROSOFT-CDO-BUSYSTATUS:BUSY
 X-MICROSOFT-CDO-IMPORTANCE:1
-X-MS-OLK-AUTOFILLLOCATION:TRUE
+X-MS-OLK-APPTLASTSEQUENCE:1
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
 END:VEVENT
 END:VCALENDAR

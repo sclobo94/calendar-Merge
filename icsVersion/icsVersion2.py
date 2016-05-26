@@ -4,6 +4,7 @@ import difflib
 import re
 from pyasn1.compat.octets import null
 
+
 def isSameAs(a, b):
         seq=difflib.SequenceMatcher(None, a,b)
         d=seq.ratio()*100
@@ -77,7 +78,45 @@ def checkSeries(string):
         return True
     else:
         return False
-    
+
+def parseRRULE(string):
+    freq = r'\bFREQ=([^;|\s]*)'
+    byday = r'\bBYDAY=([^;|\s]*)'
+    bymonth = r'\bBYMONTH=([^;|\s]*)'
+    bymonthday=r'\bBYMONTHDAY=([^;|\s]*)'
+    bysetpos = r'\bBYSETPOS=([^;|\s]*)'
+    p = re.search(freq, string)
+    q = re.search(byday, string)
+    r = re.search(bymonth, string)
+    s = re.search(bymonthday, string)
+    t = re.search(bysetpos, string)
+    rrule = ""
+    if p != None:
+        rrule+=p.group(1)
+    if q != None:
+        rrule+=q.group(1)
+    if r != None:
+        rrule+=r.group(1)
+    if s != None:
+        rrule+=s.group(1)
+    if t != None:
+        rrule+=t.group(1)
+
+    return rrule
+
+def subUID(string, event):
+    uid = string
+    x = event[5]
+    text, numreplaced = re.subn(r'\bUID:(\S*\s*\S*)', "UID:"+uid, x)
+    if numreplaced:
+        return text
+    else:
+        text2, numreplaced1 = re.subn(r'\bUID:(\S*)', "UID:"+uid, x)
+        if numreplaced1:
+            return text2
+        else:
+            raise NameError("what daaa fucckk") 
+           
 f = open("testyear2016.ics", 'rb')
 fread=f.readlines()
 preamble=[]
@@ -89,7 +128,7 @@ for line in fread:
     else:
         preamble.append(line)
         
-ending="END:VCALENDAR\r\n"      
+ending="END:VCALENDAR\n"      
 eventstring=""
 events=[]
 eventBegin = False
@@ -119,166 +158,109 @@ for event in range(0, len(events)):
     location_parsed=parseLocation(events[event])
     uid_parsed=parseUID(events[event])
     if (checkSeries(events[event]) == True):
-        series=True
-        serieslist.append((date_parsed, summary_parsed, notes_parsed, location_parsed, uid_parsed, strEvent))
-    if series==False:
-        eventlist.append((date_parsed, summary_parsed, notes_parsed, location_parsed, uid_parsed, strEvent))
+        series = True
+        rrule_parsed=parseRRULE(events[event]) + date_parsed.strftime("%H%M%S")
+        serieslist.append([date_parsed, summary_parsed, notes_parsed, location_parsed, uid_parsed, strEvent, rrule_parsed])
+    if (series == False):
+        eventlist.append([date_parsed, summary_parsed, notes_parsed, location_parsed, uid_parsed, strEvent])
 
 eventlist.sort(key=lambda y: y[0])
-serieslist.sort(key=lambda y: y[4])
-# with open("compare1.txt", "wb") as write1:
-#     for i in serieslist:
-#         write1.write(i[5])
-#     for i in eventlist:
-#         write1.write(i[5])
-#         
-# write1.close()
-manualReview=[]
+serieslist.sort(key=lambda y: y[6])
+manualReview = []
 
-listloop = 1
-i = 0
+listloop = 1 ##CLEAN DUPLICATES IN EVENTLIST
+p = 0
 while(listloop==1):
-    if i == len(serieslist)-1:
+    if p == len(eventlist)-1:
         listloop=0 
         continue 
-    a = serieslist[i]
-    b = serieslist[i+1]
-    if (a==null or b==null) or (a[4] != b[4]): #if times are different
-        i+=1
+    a = eventlist[p]
+    b = eventlist[p+1]
+    if (a==null or b==null): 
+        p+=1
         continue
-    else: #if same UID
-        if (isSameAs(b, a)==False): #if subject doesn't match
-            i+=1
-            continue
-        else: #if subject does match
-            x = a[2].strip()
-            y = b[2].strip()
-            if x == y : #if notes match
-                serieslist[i] = null
-                i+=1
-                continue
-            else:
-                if x =="": #if one of the events has empty notes delete
-                    serieslist[i] = null
-                    i+=1
-                    continue
-                elif y =="":
-                    serieslist[i+1] = null
-                    i+=1
-                    continue
-                else:
-                    manualReview.append(a);
-                    manualReview.append(b);
-                    i+=1
-                    
-#ADD CLEANED SERIES TO CLEANED LIST
-cleanedSeries=[]
-cleanedRecurr=[]
-for i in serieslist:
-    if i is not null:
-        cleanedSeries.append(i)
-        
-        
-        
-for i in range(0, len(cleanedSeries)):
-    if cleanedSeries[i] in manualReview:
+    if (a[0] < b[0]):
+        p+=1
         continue
-    recurrence=[]
-    a = cleanedSeries[i]
-    for j in range(0, len(eventlist)):
-        b = eventlist[j]
-        if (a==null or b==null) or (a[4] != b[4]):
-            continue
-        else: #uid of series matches one in eventlist
-            recurrence.append(b)
-            eventlist[j] = null
-    if (len(recurrence) > 1):
-        listloop = 1
-        p = 0
-        while(listloop==1):
-            if p == len(recurrence)-1:
-                listloop=0 
-                continue 
-            a = recurrence[p]
-            b = recurrence[p+1]
-            if (a==null or b==null) or (a[0] > b[0]): #if times are different
-                p+=1
-                continue
-            else: #if same TIME
-                if (isSameAs(b[1], a[1])==False): #if subject doesn't match
-                    p+=1
-                    continue
-                else: #if subject does match
-                    x = a[2].strip()
-                    y = b[2].strip()
-                    if (a[3] != b[3]): #if location is different, add to manual review
-                        manualReview.append(a)
-                        manualReview.append(b)
-                        p+=1
-                    elif (isSameAs(b[2], a[2])==True): #if notes match
-                        recurrence[p] = null
-                        p+=1
-                        continue
-                    else:
-                        if x =="": #if one of the events has empty notes delete
-                            recurrence[p] = null
-                            p+=1
-                            continue
-                        elif y =="":
-                            recurrence[p+1] = null
-                            p+=1
-                            continue
-                        else:
-                            manualReview.append(a);
-                            manualReview.append(b);
-                            p+=1
-    for l in recurrence: ## ADD CLEANED RECURR TO CLEANED LIST
-        if l is not null:
-            cleanedRecurr.append(l)                      
-
-for i in eventlist:
-    if i is not null:
-        cleanedRecurr.append(i)      
-
-
-cleanedEvents = cleanedSeries+cleanedRecurr
-cleanedEvents.sort(key=lambda y: y[1])
-
-listloop = 1
-i = 0
-while(listloop==1):
-    if i == len(cleanedEvents)-1:
-        listloop=0 
-        continue 
-    a = cleanedEvents[i]
-    b = cleanedEvents[i+1]
-    if (a==null or b==null) or (a[0] > b[0]): #if times are different
-        i+=1
-        continue
-    else: #if same time
-        if (isSameAs(b, a)==False): #if subject doesn't match
-            i+=1
+    else: #if same TIME
+        if (isSameAs(b[1], a[1])==False): #if subject doesn't match
+            p+=1
             continue
         else: #if subject does match
             x = a[2].strip()
             y = b[2].strip()
             if (a[3] != b[3]): #if location is different, add to manual review
                 if a not in manualReview:
-                    manualReview.append(a)
+                        manualReview.append(a)
                 if b not in manualReview:
                     manualReview.append(b)
-                i+=1
-            elif x == y : #if notes match
-                cleanedEvents[i] = null
-                i+=1
+                p+=1
+            elif (isSameAs(b[2], a[2])==True): #if notes match
+                eventlist[p] = null
+                p+=1
                 continue
             else:
                 if x =="": #if one of the events has empty notes delete
-                    cleanedEvents[i] = null
-                    i+=1
+                    eventlist[p] = null
+                    p+=1
                     continue
                 elif y =="":
-                    cleanedEvents[i+1] = null
+                    eventlist[p+1] = null
+                    p+=1
+                    continue
+                else:
+                    if a not in manualReview:
+                        manualReview.append(a)
+                    if b not in manualReview:
+                        manualReview.append(b)
+                    p+=1
+
+
+listloop=1
+i=0
+while(listloop):
+    if i == len(serieslist)-1:
+        listloop=0 
+        continue 
+    a = serieslist[i]
+    b = serieslist[i+1]
+    if a==null or b==null:
+        i+=1
+        continue
+    if a[6] != b[6]:
+        i+=1
+        continue
+    else:
+        if isSameAs(a[1], b[1]) == False:
+            i+=1
+            continue
+        else:
+            if (a[3] != b[3]): #if locations are different
+                if a not in manualReview:
+                        manualReview.append(a)
+                if b not in manualReview:
+                    manualReview.append(b)
+                i+=1
+                continue
+            else:
+                if a[2] == "" or (isSameAs(a[2], b[2])):
+                    for j in range(0, len(eventlist)):
+                        c = eventlist[j]
+                        if c==null or a[4] != c[4]:
+                            continue
+                        else:
+                            eventlist[j][4]=subUID(b[4], c)
+                    serieslist[i] = null
+                    i+=1
+                    continue
+                elif b[2] == "":
+                    for j in range(0, len(eventlist)):
+                        c = eventlist[j]
+                        if c==null or b[4] != c[4]:
+                            continue
+                        else:
+                            eventlist[j][4]=subUID(a[4], c)
+                    serieslist[i+1] = null
                     i+=1
                     continue
                 else:
@@ -287,37 +269,239 @@ while(listloop==1):
                     if b not in manualReview:
                         manualReview.append(b)
                     i+=1
+                      
+cleanedEvents=[]
 
-with open("sortedfull2016.ics", "wb") as outfile:
+for i in serieslist:
+    if i is not null:
+        cleanedEvents.append(i)
+for i in eventlist:
+    if i is not null:
+        cleanedEvents.append(i)
+                 
+with open("sorted2016.ics", "wb") as outfile:
     for i in preamble:
         outfile.write(i)
     for i in cleanedEvents:
         if(i!=null):
             outfile.write(i[5])
     outfile.write(ending)
-     
+       
 outfile.close()
-
-for i in manualReview:
-    print i
-    
+  
 with open("manualReview2016.ics", "wb") as manfile:
     for i in preamble:
         manfile.write(i)
     for i in manualReview:
         manfile.write(i[5])
     manfile.write(ending)
+       
+manfile.close()          
+               
      
-manfile.close()
-
-
-
-
-
-
-
-
-
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+# listloop = 1
+# i = 0
+# while(listloop==1):
+#     if i == len(serieslist)-1:
+#         listloop=0 
+#         continue 
+#     a = serieslist[i]
+#     b = serieslist[i+1]
+#     if (a==null or b==null) or (a[4] != b[4]): #if uid are different
+#         i+=1
+#         continue
+#     else: #if same UID
+#         if (isSameAs(b, a)==False): #if subject doesn't match
+#             i+=1
+#             continue
+#         else: #if subject does match
+#             x = a[2].strip()
+#             y = b[2].strip()
+#             if x == y : #if notes match
+#                 serieslist[i] = null
+#                 i+=1
+#                 continue
+#             else:
+#                 if x =="": #if one of the events has empty notes delete
+#                     serieslist[i] = null
+#                     i+=1
+#                     continue
+#                 elif y =="":
+#                     serieslist[i+1] = null
+#                     i+=1
+#                     continue
+#                 else:
+#                     manualReview.append(a);
+#                     manualReview.append(b);
+#                     i+=1
+#                      
+# #ADD CLEANED SERIES TO CLEANED LIST
+# cleanedSeries=[]
+# cleanedRecurr=[]
+# for i in serieslist:
+#     if i is not null:
+#         cleanedSeries.append(i)
+#          
+#         
+#         
+# for i in range(0, len(cleanedSeries)):
+#     if cleanedSeries[i] in manualReview:
+#         continue
+#     recurrence=[]
+#     a = cleanedSeries[i]
+#     for j in range(0, len(eventlist)):
+#         b = eventlist[j]
+#         if (a==null or b==null) or (a[4] != b[4]):
+#             continue
+#         else: #uid of series matches one in eventlist
+#             recurrence.append(b)
+#             eventlist[j] = null
+#     if (len(recurrence) > 1):
+#         listloop = 1
+#         p = 0
+#         while(listloop==1):
+#             if p == len(recurrence)-1:
+#                 listloop=0 
+#                 continue 
+#             a = recurrence[p]
+#             b = recurrence[p+1]
+#             if (a==null or b==null) or (a[0] > b[0]): #if times are different
+#                 p+=1
+#                 continue
+#             else: #if same TIME
+#                 if (isSameAs(b[1], a[1])==False): #if subject doesn't match
+#                     p+=1
+#                     continue
+#                 else: #if subject does match
+#                     x = a[2].strip()
+#                     y = b[2].strip()
+#                     if (a[3] != b[3]): #if location is different, add to manual review
+#                         manualReview.append(a)
+#                         manualReview.append(b)
+#                         p+=1
+#                     elif (isSameAs(b[2], a[2])==True): #if notes match
+#                         recurrence[p] = null
+#                         p+=1
+#                         continue
+#                     else:
+#                         if x =="": #if one of the events has empty notes delete
+#                             recurrence[p] = null
+#                             p+=1
+#                             continue
+#                         elif y =="":
+#                             recurrence[p+1] = null
+#                             p+=1
+#                             continue
+#                         else:
+#                             manualReview.append(a);
+#                             manualReview.append(b);
+#                             p+=1
+#     for l in recurrence: ## ADD CLEANED RECURR TO CLEANED LIST
+#         if l is not null:
+#             cleanedRecurr.append(l)                      
+# 
+# for i in eventlist:
+#     if i is not null:
+#         cleanedRecurr.append(i)      
+# 
+# 
+# cleanedEvents = cleanedSeries+cleanedRecurr
+# cleanedEvents.sort(key=lambda y: y[0])
+# 
+# listloop = 1
+# i = 0
+# while(listloop==1):
+#     if i == len(cleanedEvents)-1:
+#         listloop=0 
+#         continue 
+#     a = cleanedEvents[i]
+#     b = cleanedEvents[i+1]
+#     if (a==null or b==null) or (a[0] > b[0]): #if times are different
+#         i+=1
+#         continue
+#     else: #if same time
+#         if (isSameAs(b, a)==False): #if subject doesn't match
+#             i+=1
+#             continue
+#         else: #if subject does match
+#             x = a[2].strip()
+#             y = b[2].strip()
+#             if (a[3] != b[3]): #if location is different, add to manual review
+#                 if a not in manualReview:
+#                     manualReview.append(a)
+#                 if b not in manualReview:
+#                     manualReview.append(b)
+#                 i+=1
+#             elif x == y : #if notes match
+#                 cleanedEvents[i] = null
+#                 i+=1
+#                 continue
+#             else:
+#                 if x =="": #if one of the events has empty notes delete
+#                     cleanedEvents[i] = null
+#                     i+=1
+#                     continue
+#                 elif y =="":
+#                     cleanedEvents[i+1] = null
+#                     i+=1
+#                     continue
+#                 else:
+#                     if a not in manualReview:
+#                         manualReview.append(a)
+#                     if b not in manualReview:
+#                         manualReview.append(b)
+#                     i+=1
+# 
+# with open("sortedfull.ics", "wb") as outfile:
+#     for i in preamble:
+#         outfile.write(i)
+#     for i in cleanedEvents:
+#         if(i!=null):
+#             outfile.write(i[5])
+#     outfile.write(ending)
+#      
+# outfile.close()
+# 
+# with open("manualReviewfull.ics", "wb") as manfile:
+#     for i in preamble:
+#         manfile.write(i)
+#     for i in manualReview:
+#         manfile.write(i[5])
+#     manfile.write(ending)
+#      
+# manfile.close()
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
+# 
 
 
 
