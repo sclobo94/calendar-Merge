@@ -4,55 +4,45 @@ import difflib
 import re
 from pyasn1.compat.octets import null
 
-
-def isSameAs(a, b):
-        seq=difflib.SequenceMatcher(None, a,b)
-        d=seq.ratio()*100
-        if (d > 40):
-            return True
-        else:
-            return False
-        
+############# METHODS USED TO PARSE PARAMETERS IN ICS FILE #############  
+  
 def parseDate(string):
-    try:
-        p = r'\bDTSTART;\D*(\d+).(\d+)'
-        q = r'\bDTSTART:\D*(\d+).(\d+)'
-        s = r'\bDTSTART;\D*(\d+)(\d+)'
-        r = r'\bDTSTART;\S*:(\d+).(\d+)'
-        t=re.search(p, string)
-        u=re.search(q, string)
-        v=re.search(s, string)
-        w=re.search(r, string)
-        if(t != None) and (len(t.group(1)+t.group(2))==14):
-            return dt.strptime(t.group(1)+t.group(2), "%Y%m%d%H%M%S")
-        elif (u != None) and (len(u.group(1)+u.group(2))==14):
-            temp = dt.strptime(u.group(1)+u.group(2), "%Y%m%d%H%M%S")
-            temp = temp.replace(hour=0, minute=0, second=0)
-            return temp
-        elif (w != None) and (len(w.group(1)+w.group(2))==14):
-            return dt.strptime(w.group(1)+w.group(2), "%Y%m%d%H%M%S")
-        else:
-            temp = dt.strptime(v.group(1)+v.group(2), "%Y%m%d")
-            temp = temp.replace(hour=0, minute=0, second=0)
-            return temp
-    except AttributeError:
-        print string
+    q = r'\bDTSTART:\D*(\d+).(\d+)'
+    s = r'\bDTSTART;\D*(\d+)(\d+)'
+    r = r'\bDTSTART;\S*:(\d+).(\d+)'
+    t=re.search(p, string)
+    u=re.search(q, string)
+    v=re.search(s, string)
+    w=re.search(r, string)
+    if(t != None) and (len(t.group(1)+t.group(2))==14):
+        return dt.strptime(t.group(1)+t.group(2), "%Y%m%d%H%M%S")
+    elif (u != None) and (len(u.group(1)+u.group(2))==14):
+        temp = dt.strptime(u.group(1)+u.group(2), "%Y%m%d%H%M%S")
+        temp = temp.replace(hour=0, minute=0, second=0)
+        return temp
+    elif (w != None) and (len(w.group(1)+w.group(2))==14):
+        return dt.strptime(w.group(1)+w.group(2), "%Y%m%d%H%M%S")
+    else:
+        temp = dt.strptime(v.group(1)+v.group(2), "%Y%m%d")
+        temp = temp.replace(hour=0, minute=0, second=0)
+        return temp
+    
 def parseSummary(string):
     p = r'\bSUMMARY[^:]*:([^\n\r]*)'
     t = re.search(p, string)
     if (t==None):
         return null   
     else:
-        return t.group(1)
-    
+        return t.group(1) 
+       
 def parseNotes(string):
     p = r'(DESCRIPTION:)([\S\s]*)(DTEND)'
     t = re.search(p, string)
     if (t==None):
         return null   
     else:
-        return t.group(2)
-    
+        return t.group(2) 
+      
 def parseUID(string):
     p = r'\bUID:(\S*)'
     q = r'\bUID:(\S*\s*\S*)'
@@ -103,7 +93,9 @@ def parseRRULE(string):
         rrule+=t.group(1)
 
     return rrule
+####################### END METHODS TO PARSE ICS #############################
 
+### Uses regex to substitute uid in event string
 def subUID(string, event):
     uid = string
     x = event[5]
@@ -116,7 +108,17 @@ def subUID(string, event):
             return text2
         else:
             raise NameError("Oops") 
-           
+
+### Uses difflib to check if strings are similar
+def isSameAs(a, b):
+        seq=difflib.SequenceMatcher(None, a,b)
+        d=seq.ratio()*100
+        if (d > 40):
+            return True
+        else:
+            return False
+        
+#################### BEGINNING OF PROGRAM #######################      
 f = open("testcalendarfull.ics", 'rb')
 fread=f.readlines()
 preamble=[]
@@ -305,28 +307,4 @@ with open("manualReviewfull.ics", "wb") as manfile:
     manfile.write(ending)
        
 manfile.close()          
-               
-     
-     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
- 
+#################### END OF PROGRAM #######################  
