@@ -1,143 +1,332 @@
-#!usr/bin/python
-from icalendar import Calendar
-from Event import Event
-import datetime 
-from datetime import date
+from collections import OrderedDict
 from datetime import datetime as dt
-import pytz
-from pytz import timezone
-from pyasn1.compat.octets import null
-from icalendar.parser import tzid_from_dt
+import difflib
 import re
+from pyasn1.compat.octets import null
 
 
-def summary_Parse(summary):
-        p = re.compile('/\(([^)]+)\)/')
-        x=p.search(summary)
-        return x
+def isSameAs(a, b):
+        seq=difflib.SequenceMatcher(None, a,b)
+        d=seq.ratio()*100
+        if (d > 40):
+            return True
+        else:
+            return False
+        
+def parseDate(string):
+    try:
+        p = r'\bDTSTART;\D*(\d+).(\d+)'
+        q = r'\bDTSTART:\D*(\d+).(\d+)'
+        s = r'\bDTSTART;\D*(\d+)(\d+)'
+        r = r'\bDTSTART;\S*:(\d+).(\d+)'
+        t=re.search(p, string)
+        u=re.search(q, string)
+        v=re.search(s, string)
+        w=re.search(r, string)
+        if(t != None) and (len(t.group(1)+t.group(2))==14):
+            return dt.strptime(t.group(1)+t.group(2), "%Y%m%d%H%M%S")
+        elif (u != None) and (len(u.group(1)+u.group(2))==14):
+            temp = dt.strptime(u.group(1)+u.group(2), "%Y%m%d%H%M%S")
+            temp = temp.replace(hour=0, minute=0, second=0)
+            return temp
+        elif (w != None) and (len(w.group(1)+w.group(2))==14):
+            return dt.strptime(w.group(1)+w.group(2), "%Y%m%d%H%M%S")
+        else:
+            temp = dt.strptime(v.group(1)+v.group(2), "%Y%m%d")
+            temp = temp.replace(hour=0, minute=0, second=0)
+            return temp
+    except AttributeError:
+        print string
+def parseSummary(string):
+    p = r'\bSUMMARY[^:]*:([^\n\r]*)'
+    t = re.search(p, string)
+    if (t==None):
+        return null   
+    else:
+        return t.group(1)
     
-EST = timezone('US/Eastern')
+def parseNotes(string):
+    p = r'(DESCRIPTION:)([\S\s]*)(DTEND)'
+    t = re.search(p, string)
+    if (t==None):
+        return null   
+    else:
+        return t.group(2)
+    
+def parseUID(string):
+    p = r'\bUID:(\S*)'
+    q = r'\bUID:(\S*\s*\S*)'
+    t = re.search(p, string)
+    v = re.search(q, string)
+    if (t==None) or (len(t.group(1))>36):
+        return v.group(1)
+    else:
+        return t.group(1)
+    
+def parseLocation(string):
+    p = r'\bLOCATION\b:(.*\s*)\bPRIORITY\b'
+    t = re.search(p, string)
+    if (t==None):
+        return null
+    else:
+        return t.group(1)  
+      
+def checkSeries(string):
+    p = r'(RRULE:)'
+    t = re.search(p, string)
+    if (t!=None):
+        return True
+    else:
+        return False
 
+def parseRRULE(string):
+    freq = r'\bFREQ=([^;|\s]*)'
+    byday = r'\bBYDAY=([^;|\s]*)'
+    bymonth = r'\bBYMONTH=([^;|\s]*)'
+    bymonthday=r'\bBYMONTHDAY=([^;|\s]*)'
+    bysetpos = r'\bBYSETPOS=([^;|\s]*)'
+    p = re.search(freq, string)
+    q = re.search(byday, string)
+    r = re.search(bymonth, string)
+    s = re.search(bymonthday, string)
+    t = re.search(bysetpos, string)
+    rrule = ""
+    if p != None:
+        rrule+=p.group(1)
+    if q != None:
+        rrule+=q.group(1)
+    if r != None:
+        rrule+=r.group(1)
+    if s != None:
+        rrule+=s.group(1)
+    if t != None:
+        rrule+=t.group(1)
 
-#Sort events and store in list
-f = open("testcalendar.ics", 'rb')
+    return rrule
+
+def subUID(string, event):
+    uid = string
+    x = event[5]
+    text, numreplaced = re.subn(r'\bUID:(\S*\s*\S*)', "UID:"+uid, x)
+    if numreplaced:
+        return text
+    else:
+        text2, numreplaced1 = re.subn(r'\bUID:(\S*)', "UID:"+uid, x)
+        if numreplaced1:
+            return text2
+        else:
+            raise NameError("Oops") 
+           
+f = open("testcalendarfull.ics", 'rb')
 fread=f.readlines()
 preamble=[]
-for i in fread:
-    if (i=="BEGIN:VEVENT\r\n"):
+i=-1
+for line in fread:
+    i+=1
+    if (line=="BEGIN:VEVENT\n"):
         break
     else:
-        preamble.append(i)
- 
-ending="END:VCALENDAR\r\n"
-f.close()
-
-f = open("testcalendar.ics", 'rb')
-
-cal = Calendar.from_ical(f.read())
-eventlist=[]
-serieslist=[]
- 
-for event in cal.walk('VEVENT'):
-    s = Event()
-    if "SUMMARY" in event:
-        s.summary = event.decode("SUMMARY")
-    if "DESCRIPTION" in event:
-        s.description = event.decode("DESCRIPTION")
-    if "DTSTART" in event:
-        x = event.decode("DTSTART").dt
-        if isinstance(x, datetime.datetime):
-            s.dtstart = event["DTSTART"].dt
-        else:
-            x = dt.combine(event["DTSTART"].dt, dt.min.time())
-            s.dtstart=x.replace(tzinfo=EST)   
-    if "DTEND" in event:
-        s.dtend = event["DTEND"].dt
-    if "UID" in event:
-        s.uid = event["UID"].encode('utf-8')
-    
-    if "DTSTAMP" in event:
-        s.dtstamp=event["DTSTAMP"].dt
-    if s.summary==None and s.description==None:
-        continue
-    elif "RRULE" in event:
-        serieslist.append(s)
-    else:
-        eventlist.append(s)
-     
-f.close()
-
-# #sort list of events
-serieslist.sort(key=lambda z: z.summary)
-eventlist.sort(key=lambda y: y.dtstart);
-# for i in eventlist:
-#     i.event_Print()
-
-# with open("checkfile.txt", "wb") as test:
-#     for i in eventlist:
-#         test.write(i.event_Print())
+        preamble.append(line)
         
-# # # # # #loop through list of sorted events
-listloop = 1
-i = 0
-manualReview = [] #items with same times and notes that need to be reviewed
-excludelist = [] #stores items uids that need to be skipped when writing
+ending="END:VCALENDAR\r\n"      
+eventstring=""
+events=[]
+eventBegin = False
+
+while(i<len(fread)):
+    if (fread[i] == "BEGIN:VEVENT\n"):
+        eventBegin=True
+    if (fread[i] == "END:VEVENT\n"):
+        eventstring+=fread[i]
+        events.append(eventstring)
+        eventstring=""
+        eventBegin=False
+    elif eventBegin==True:
+        eventstring+=fread[i]
+    i+=1
+ 
+serieslist = []
+eventlist = []
+
+###### PARSE EVENTS AND ADD TO LISTS (SERIES/OCCURENCE)
+for event in range(0, len(events)):
+    series=False
+    strEvent=events[event]
+    date_parsed=parseDate(events[event]) 
+    summary_parsed=parseSummary(events[event])
+    notes_parsed=parseNotes(events[event])
+    location_parsed=parseLocation(events[event])
+    uid_parsed=parseUID(events[event])
+    if (checkSeries(events[event]) == True):
+        series = True
+        rrule_parsed=parseRRULE(events[event]) + date_parsed.strftime("%H%M%S")
+        serieslist.append([date_parsed, summary_parsed, notes_parsed, location_parsed, uid_parsed, strEvent, rrule_parsed])
+    if (series == False):
+        eventlist.append([date_parsed, summary_parsed, notes_parsed, location_parsed, uid_parsed, strEvent])
+
+eventlist.sort(key=lambda y: y[0]) #sort eventlist by date
+serieslist.sort(key=lambda y: y[6]) #sort series list by rrule
+manualReview = []
+
+listloop = 1 ##CLEAN DUPLICATES IN EVENTLIST
+p = 0
 while(listloop==1):
-    if i == len(eventlist)-1:
+    if p == len(eventlist)-1:
         listloop=0 
-        break
-    a = eventlist[i]
-    b = eventlist[i+1]
-    if (a==null or b==null) or (b.dtstart > a.dtstart): #if times are different
-        i+=1
+        continue 
+    a = eventlist[p]
+    b = eventlist[p+1]
+    if (a==null or b==null): 
+        p+=1
         continue
-    else: #if same time
-        if ((a.summary!=None and b.summary!=None) and b.isSameAs(a)==False): #if subject doesn't match
-            i+=1
+    if (a[0] < b[0]):
+        p+=1
+        continue
+    else: #if same TIME
+        if (isSameAs(b[1], a[1])==False): #if subject doesn't match
+            p+=1
             continue
         else: #if subject does match
-            if b.description == a.description : #if notes match
-                excludelist.append([eventlist[i].uid, eventlist[i].dtstamp])
-                eventlist[i] = null
+            x = a[2].strip()
+            y = b[2].strip()
+            if (a[3] != b[3]): #if location is different, add to manual review
+                if a not in manualReview:
+                        manualReview.append(a)
+                if b not in manualReview:
+                    manualReview.append(b)
+                p+=1
+            elif (isSameAs(b[2], a[2])==True): #if notes match
+                eventlist[p] = null
+                p+=1
+                continue
+            else:
+                if x =="": #if one of the events has empty notes delete
+                    eventlist[p] = null
+                    p+=1
+                    continue
+                elif y =="":
+                    eventlist[p+1] = null
+                    p+=1
+                    continue
+                else:
+                    if a not in manualReview:
+                        manualReview.append(a)
+                    if b not in manualReview:
+                        manualReview.append(b)
+                    p+=1
+
+
+listloop=1
+i=0
+while(listloop):
+    if i == len(serieslist)-1:
+        listloop=0 
+        continue 
+    a = serieslist[i]
+    b = serieslist[i+1]
+    if a==null or b==null:
+        i+=1
+        continue
+    if a[6] != b[6]:
+        i+=1
+        continue
+    else:
+        if isSameAs(a[1], b[1]) == False:
+            i+=1
+            continue
+        else:
+            if (a[3] != b[3]): #if locations are different
+                if a not in manualReview:
+                        manualReview.append(a)
+                if b not in manualReview:
+                    manualReview.append(b)
                 i+=1
                 continue
             else:
-                if b.description==None: #if one of the events has empty notes delete
-                    excludelist.append([eventlist[i+1].uid, eventlist[i+1].dtstamp])
-                    eventlist[i+1] = null
+                if a[2] == "" or (isSameAs(a[2], b[2])):
+                    for j in range(0, len(eventlist)):
+                        c = eventlist[j]
+                        if c==null or a[4] != c[4]:
+                            continue
+                        else:
+                            eventlist[j][4]=subUID(b[4], c)
+                    serieslist[i] = null
                     i+=1
                     continue
-                elif a.description==None:
-                    excludelist.append([eventlist[i].uid, eventlist[i].dtstamp])
-                    eventlist[i] = null
+                elif b[2] == "":
+                    for j in range(0, len(eventlist)):
+                        c = eventlist[j]
+                        if c==null or b[4] != c[4]:
+                            continue
+                        else:
+                            eventlist[j][4]=subUID(a[4], c)
+                    serieslist[i+1] = null
                     i+=1
                     continue
                 else:
-                    manualReview.append(a);
-                    manualReview.append(b);
+                    if a not in manualReview:
+                        manualReview.append(a)
+                    if b not in manualReview:
+                        manualReview.append(b)
                     i+=1
-                
-# # for i in excludelist:
-# #     print i
-# #           
-# # print "\n\n\n"
-# #   
-for i in manualReview:
-    i.event_Print()
+                      
+cleanedEvents=[]
 
-print len(manualReview)    
-print len(excludelist)
-# with open('outputics.ics', 'wb') as outfile:  
-#     for row in preamble:
-#         outfile.write(row)
-#     for event in cal.walk("VEVENT"):
-#         if "DTSTAMP" not in event:
-#             outfile.write(event.to_ical())
-#         elif ([event["UID"].encode("utf-8"), event["DTSTAMP"].dt] in excludelist):
-#                 continue
-#         else:
-#             outfile.write(event.to_ical())
-#     outfile.write(ending)
-#            
-# outfile.close()
-
+for i in serieslist:
+    if i is not null:
+        cleanedEvents.append(i)
+for i in eventlist:
+    if i is not null:
+        cleanedEvents.append(i)
+        
+curr = len(manualReview)
+for i in cleanedEvents:
+    a=i[4]
+    for j in range(0, curr):
+        if manualReview[j][4] == a:
+            if i not in manualReview:
+                manualReview.append(i)
+    
+with open("sortedfull.ics", "wb") as outfile:
+    for i in preamble:
+        outfile.write(i)
+    for i in cleanedEvents:
+        if(i!=null):
+            outfile.write(i[5])
+    outfile.write(ending)
+       
+outfile.close()
+  
+with open("manualReviewfull.ics", "wb") as manfile:
+    for i in preamble:
+        manfile.write(i)
+    for i in manualReview:
+        manfile.write(i[5])
+    manfile.write(ending)
+       
+manfile.close()          
+               
+     
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+ 

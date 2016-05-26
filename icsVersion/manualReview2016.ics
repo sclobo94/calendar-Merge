@@ -209,4 +209,273 @@ ACTION:DISPLAY
 DESCRIPTION:Reminder
 END:VALARM
 END:VEVENT
+BEGIN:VEVENT
+DTEND:20160106T170000Z
+DTSTART:20160106T160000Z
+RECURRENCE-ID:20151223T160000Z
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E008000000002436C1410E88D001000000000000000
+	010000000CDBDFDFB25693A429D2A9F5589B4DF35
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150035Z
+DESCRIPTION:Andy Gerber GTRI is joining us – 20 mins + 10 for questions o
+	n GTRI and CoS opportunities\n\n\nThe following meeting has been modified:
+	\n\nSubject:        CoS Chairs' Meeting    \nOrganizer:      "Crowther\, J
+	oylene P" < <mailto:joylene.crowther@cos.gatech.edu> joylene.crowther@cos.
+	gatech.edu>        \nLocation:       Student Success Center - President Su
+	ite C [MODIFIED]  \nTime:   11:00:00 AM - 1:00:00 PM GMT -05:00 US/Canada 
+	Eastern [MODIFIED]       \nRecurrence      : The second Tuesday of every 1
+	 month(s) No end date Effective Jan 13\, 2015    \nInvitees:        <mailt
+	o:dian.chung@cos.gatech.edu> dian.chung@cos.gatech.edu\;  <mailto:david.co
+	llard@chemistry.gatech.edu> david.collard@chemistry.gatech.edu\;  <mailto:
+	david.terraso@cos.gatech.edu> david.terraso@cos.gatech.edu\;  <mailto:davi
+	d.moore@cos.gatech.edu> david.moore@cos.gatech.edu\;  <mailto:julia.kubane
+	k@biology.gatech.edu> julia.kubanek@biology.gatech.edu\;  <mailto:jerry.ob
+	rien@cos.gatech.edu> jerry.obrien@cos.gatech.edu\;  <mailto:juan.archila@f
+	acilities.gatech.edu> juan.archila@facilities.gatech.edu\;  <mailto:arthur
+	.wasserman@cos.gatech.edu> arthur.wasserman@cos.gatech.edu\;  <mailto:cam.
+	tyson@chemistry.gatech.edu> cam.tyson@chemistry.gatech.edu\;  <mailto:keit
+	h.oden@chemistry.gatech.edu> keith.oden@chemistry.gatech.edu\;  <mailto:Je
+	nnifer.Leavey@cos.gatech.edu> Jennifer.Leavey@cos.gatech.edu ...       \n*
+	~*~*~*~*~*~*~*~*~*\n\n\n\n\n
+DTEND:20160112T180000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160112T160000Z
+LAST-MODIFIED:20160516T150035Z
+LOCATION:EBB conf room 5029
+PRIORITY:5
+RECURRENCE-ID:20160112T160000Z
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:CoS Chairs' Meeting * Lora Weiss will be joining GTR
+	I director Andy Gerber at this meeting* He will arrive at 11:30am
+TRANSP:OPAQUE
+UID:5ed8c294-a3bd-47e4-804a-12d33b8bed55
+X-ALT-DESC;FMTTYPE=text/html:<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//E
+	N">\n<HTML>\n<HEAD>\n<META NAME="Generator" CONTENT="MS Exchange Server ve
+	rsion rmj.rmm.rup.rpr">\n<TITLE></TITLE>\n</HEAD>\n<BODY>\n<!-- Converted 
+	from text/rtf format -->\n\n<P DIR=LTR><SPAN LANG="en-us"><B></B></SPAN><S
+	PAN LANG="en-us"><B></B></SPAN><SPAN LANG="en-us"><B></B></SPAN><A NAME=""
+	><SPAN LANG="en-us"><B></B></SPAN></A><SPAN LANG="en-us"><B></B></SPAN><SP
+	AN LANG="en-us"><B><FONT SIZE=4 FACE="Times New Roman">Andy Gerber GTRI is
+	 joining us – 20 mins + 10 for questions on GTRI and CoS opportunities</
+	FONT></B></SPAN></P>\n<BR>\n\n<P DIR=LTR><SPAN LANG="en-us"><B><FONT SIZE=
+	4 FACE="Times New Roman">The following meeting has been modified:</FONT></
+	B></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="e
+	n-us"></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="en-us"></SPAN><SPAN LANG="en-u
+	s"></SPAN><SPAN LANG="en-us"><FONT FACE="Times New Roman">Subject:&nbsp\;&
+	nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us">
+	</SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"> <FONT FACE="Times New
+	 Roman">CoS Chairs' Meeting &nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN LANG=
+	"en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><BR>\n</SPAN><
+	SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><FON
+	T FACE="Times New Roman">Organizer:&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\; &qu
+	ot\;Crowther\, Joylene P&quot\; &lt\;</FONT></SPAN><SPAN LANG="en-us"></SP
+	AN><A HREF="mailto:joylene.crowther@cos.gatech.edu"><SPAN LANG="en-us"></S
+	PAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><U><FONT COLOR="#0563C1" 
+	FACE="Times New Roman">joylene.crowther@cos.gatech.edu</FONT></U></SPAN><S
+	PAN LANG="en-us"></SPAN></A><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><
+	/SPAN><SPAN LANG="en-us"><FONT FACE="Times New Roman">&gt\; &nbsp\;&nbsp\;
+	&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us"></SPAN
+	><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><BR>\n</SPAN><SPAN LANG="en-
+	us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><FONT FACE="Times 
+	New Roman">Location:&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\; Student Suc
+	cess Center - President Suite C [MODIFIED]&nbsp\;&nbsp\;</FONT></SPAN><SPA
+	N LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><BR>\n<
+	/SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-u
+	s"><FONT FACE="Times New Roman">Time:&nbsp\;&nbsp\; 11:00:00 AM - 1:00:00 
+	PM GMT -05:00 US/Canada Eastern [MODIFIED] &nbsp\;&nbsp\;&nbsp\;&nbsp\;&nb
+	sp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SP
+	AN><SPAN LANG="en-us"><BR>\n</SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="e
+	n-us"></SPAN><SPAN LANG="en-us"><FONT FACE="Times New Roman">Recurrence&nb
+	sp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\; : The second Tuesday of every 1 month(s) 
+	No end date Effective Jan 13\, 2015&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SP
+	AN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us">
+	<BR>\n</SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LAN
+	G="en-us"><FONT FACE="Times New Roman">Invitees:&nbsp\;&nbsp\;&nbsp\;&nbsp
+	\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us"> </SPAN><A HREF="mailto:d
+	ian.chung@cos.gatech.edu"><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></S
+	PAN><SPAN LANG="en-us"><U><FONT COLOR="#0563C1" FACE="Times New Roman">dia
+	n.chung@cos.gatech.edu</FONT></U></SPAN><SPAN LANG="en-us"></SPAN></A><SPA
+	N LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><FONT F
+	ACE="Times New Roman">\;</FONT></SPAN><SPAN LANG="en-us"> </SPAN><A HREF="
+	mailto:david.collard@chemistry.gatech.edu"><SPAN LANG="en-us"></SPAN><SPAN
+	 LANG="en-us"></SPAN><SPAN LANG="en-us"><U><FONT COLOR="#0563C1" FACE="Tim
+	es New Roman">david.collard@chemistry.gatech.edu</FONT></U></SPAN><SPAN LA
+	NG="en-us"></SPAN></A><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN>
+	<SPAN LANG="en-us"><FONT FACE="Times New Roman">\;</FONT></SPAN><SPAN LANG
+	="en-us"> </SPAN><A HREF="mailto:david.terraso@cos.gatech.edu"><SPAN LANG=
+	"en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><U><FONT COLOR
+	="#0563C1" FACE="Times New Roman">david.terraso@cos.gatech.edu</FONT></U><
+	/SPAN><SPAN LANG="en-us"></SPAN></A><SPAN LANG="en-us"></SPAN><SPAN LANG="
+	en-us"></SPAN><SPAN LANG="en-us"><FONT FACE="Times New Roman">\;</FONT></S
+	PAN><SPAN LANG="en-us"> </SPAN><A HREF="mailto:david.moore@cos.gatech.edu"
+	><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><U
+	><FONT COLOR="#0563C1" FACE="Times New Roman">david.moore@cos.gatech.edu</
+	FONT></U></SPAN><SPAN LANG="en-us"></SPAN></A><SPAN LANG="en-us"></SPAN><S
+	PAN LANG="en-us"></SPAN><SPAN LANG="en-us"><FONT FACE="Times New Roman">\;
+	</FONT></SPAN><SPAN LANG="en-us"> </SPAN><A HREF="mailto:julia.kubanek@bio
+	logy.gatech.edu"><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN
+	 LANG="en-us"><U><FONT COLOR="#0563C1" FACE="Times New Roman">julia.kubane
+	k@biology.gatech.edu</FONT></U></SPAN><SPAN LANG="en-us"></SPAN></A><SPAN 
+	LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><FONT FAC
+	E="Times New Roman">\;</FONT></SPAN><SPAN LANG="en-us"> </SPAN><A HREF="ma
+	ilto:jerry.obrien@cos.gatech.edu"><SPAN LANG="en-us"></SPAN><SPAN LANG="en
+	-us"></SPAN><SPAN LANG="en-us"><U><FONT COLOR="#0563C1" FACE="Times New Ro
+	man">jerry.obrien@cos.gatech.edu</FONT></U></SPAN><SPAN LANG="en-us"></SPA
+	N></A><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-u
+	s"><FONT FACE="Times New Roman">\;</FONT></SPAN><SPAN LANG="en-us"> </SPAN
+	><A HREF="mailto:juan.archila@facilities.gatech.edu"><SPAN LANG="en-us"></
+	SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><U><FONT COLOR="#0563C1"
+	 FACE="Times New Roman">juan.archila@facilities.gatech.edu</FONT></U></SPA
+	N><SPAN LANG="en-us"></SPAN></A><SPAN LANG="en-us"></SPAN><SPAN LANG="en-u
+	s"></SPAN><SPAN LANG="en-us"><FONT FACE="Times New Roman">\;</FONT></SPAN>
+	<SPAN LANG="en-us"> </SPAN><A HREF="mailto:arthur.wasserman@cos.gatech.edu
+	"><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><
+	U><FONT COLOR="#0563C1" FACE="Times New Roman">arthur.wasserman@cos.gatech
+	.edu</FONT></U></SPAN><SPAN LANG="en-us"></SPAN></A><SPAN LANG="en-us"></S
+	PAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><FONT FACE="Times New Rom
+	an">\;</FONT></SPAN><SPAN LANG="en-us"> </SPAN><A HREF="mailto:cam.tyson@c
+	hemistry.gatech.edu"><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><
+	SPAN LANG="en-us"><U><FONT COLOR="#0563C1" FACE="Times New Roman">cam.tyso
+	n@chemistry.gatech.edu</FONT></U></SPAN><SPAN LANG="en-us"></SPAN></A><SPA
+	N LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><FONT F
+	ACE="Times New Roman">\;</FONT></SPAN><SPAN LANG="en-us"> </SPAN><A HREF="
+	mailto:keith.oden@chemistry.gatech.edu"><SPAN LANG="en-us"></SPAN><SPAN LA
+	NG="en-us"></SPAN><SPAN LANG="en-us"><U><FONT COLOR="#0563C1" FACE="Times 
+	New Roman">keith.oden@chemistry.gatech.edu</FONT></U></SPAN><SPAN LANG="en
+	-us"></SPAN></A><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN 
+	LANG="en-us"><FONT FACE="Times New Roman">\;</FONT></SPAN><SPAN LANG="en-u
+	s"> </SPAN><A HREF="mailto:Jennifer.Leavey@cos.gatech.edu"><SPAN LANG="en-
+	us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><U><FONT COLOR="#0
+	563C1" FACE="Times New Roman">Jennifer.Leavey@cos.gatech.edu</FONT></U></S
+	PAN><SPAN LANG="en-us"></SPAN></A><SPAN LANG="en-us"></SPAN><SPAN LANG="en
+	-us"></SPAN><SPAN LANG="en-us"><FONT FACE="Times New Roman"> ... &nbsp\;&n
+	bsp\;&nbsp\;&nbsp\;&nbsp\;&nbsp\;</FONT></SPAN><SPAN LANG="en-us"></SPAN><
+	SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><BR>\n</SPAN><SPAN LANG="en-us
+	"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><FONT FACE="Times Ne
+	w Roman">*~*~*~*~*~*~*~*~*~*</FONT></SPAN></P>\n\n<P DIR=LTR><SPAN LANG="e
+	n-us"></SPAN><SPAN LANG="en-us"></SPAN><SPAN LANG="en-us"><BR>\n</SPAN><SP
+	AN LANG="en-us"></SPAN></P>\n\n</BODY>\n</HTML>
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150035Z
+DTEND:20160209T180000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160209T160000Z
+LAST-MODIFIED:20160516T150035Z
+LOCATION:EBB conf room 5029
+PRIORITY:5
+RECURRENCE-ID:20160209T160000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+UID:5ed8c294-a3bd-47e4-804a-12d33b8bed55
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150144Z
+DTEND:20160210T203000Z
+DTSTAMP:20160107T141604Z
+DTSTART:20160210T193000Z
+LAST-MODIFIED:20160516T150144Z
+LOCATION:CE 201A
+PRIORITY:5
+RECURRENCE-ID:20160210T160000Z
+SEQUENCE:1
+SUMMARY:Art Wasserman weekly meeting *Meeting Time Change*
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E008000000002436C1410E88D001000000000000000
+	010000000CDBDFDFB25693A429D2A9F5589B4DF35
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-APPTSEQTIME:20160107T141604Z
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+BEGIN:VALARM
+TRIGGER:-PT15M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150035Z
+DTEND:20160308T180000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160308T160000Z
+LAST-MODIFIED:20160516T150035Z
+LOCATION:EBB conf room 5029
+PRIORITY:5
+RECURRENCE-ID:20160308T160000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+UID:5ed8c294-a3bd-47e4-804a-12d33b8bed55
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150035Z
+DTEND:20160412T170000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160412T150000Z
+LAST-MODIFIED:20160516T150035Z
+LOCATION:EBB conf room 5029
+PRIORITY:5
+RECURRENCE-ID:20160412T150000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+UID:5ed8c294-a3bd-47e4-804a-12d33b8bed55
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150035Z
+DTEND:20160510T170000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160510T150000Z
+LAST-MODIFIED:20160516T150035Z
+LOCATION:EBB conf room 5029
+PRIORITY:5
+RECURRENCE-ID:20160510T150000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+UID:5ed8c294-a3bd-47e4-804a-12d33b8bed55
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+END:VEVENT
+BEGIN:VEVENT
+CLASS:PUBLIC
+CREATED:20160516T150035Z
+DTEND:20160913T170000Z
+DTSTAMP:20160107T144046Z
+DTSTART:20160913T150000Z
+LAST-MODIFIED:20160516T150035Z
+LOCATION:EBB conf room 5029
+PRIORITY:5
+RECURRENCE-ID:20160913T150000Z
+SEQUENCE:0
+TRANSP:OPAQUE
+UID:5ed8c294-a3bd-47e4-804a-12d33b8bed55
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+END:VEVENT
 END:VCALENDAR
