@@ -1,10 +1,13 @@
 from datetime import datetime as dt
 import difflib
 import re
+import sys
 from pyasn1.compat.octets import null
 
+
+
 ############# METHODS USED TO PARSE PARAMETERS IN ICS FILE #############  
-  
+ 
 def parseDate(string):
     p = r'\bDTSTART;\D*(\d+).(\d+)'
     q = r'\bDTSTART:\D*(\d+).(\d+)'
@@ -118,14 +121,17 @@ def isSameAs(a, b):
         else:
             return False
         
-#################### BEGINNING OF PROGRAM #######################      
-f = open("testcalendarfull.ics", 'rb')
+#################### BEGINNING OF PROGRAM ####################### 
+inputics = raw_input("\nPlease enter the file name to be cleaned (include .ics):  ")
+f = open(inputics, 'rb')
 fread=f.readlines()
 preamble=[]
 i=-1
 for line in fread:
     i+=1
     if (line=="BEGIN:VEVENT\n"):
+        break
+    elif(line=="BEGIN:VEVENT\r\n"):
         break
     else:
         preamble.append(line)
@@ -138,7 +144,14 @@ eventBegin = False
 while(i<len(fread)):
     if (fread[i] == "BEGIN:VEVENT\n"):
         eventBegin=True
+    elif(fread[i] == "BEGIN:VEVENT\r\n"):
+        eventBegin=True
     if (fread[i] == "END:VEVENT\n"):
+        eventstring+=fread[i]
+        events.append(eventstring)
+        eventstring=""
+        eventBegin=False
+    elif (fread[i] == "END:VEVENT\r\n"):
         eventstring+=fread[i]
         events.append(eventstring)
         eventstring=""
@@ -291,8 +304,9 @@ for i in cleanedEvents:
             if i not in manualReview:
                 manualReview.append(i)
 
+cleanedout = "cleaned-"+inputics
 ###write to a sorted ics file and a manual review ics file  
-with open("sortedfull.ics", "wb") as outfile:
+with open(cleanedout, "wb") as outfile:
     for i in preamble:
         outfile.write(i)
     for i in cleanedEvents:
@@ -301,13 +315,17 @@ with open("sortedfull.ics", "wb") as outfile:
     outfile.write(ending)
        
 outfile.close()
-  
-with open("manualReviewfull.ics", "wb") as manfile:
+
+manout = "manualRev-" + inputics
+with open(manout, "wb") as manfile:
     for i in preamble:
         manfile.write(i)
     for i in manualReview:
         manfile.write(i[5])
     manfile.write(ending)
        
-manfile.close()          
+manfile.close()      
+
+print "\nDuplicates have been removed, please check " + manout + " for events to look over"  
+print "\nSorted file saved in " + cleanedout 
 #################### END OF PROGRAM #######################  
