@@ -2,7 +2,7 @@ from datetime import datetime as dt
 import difflib
 import re
 import sys
-#from pyasn1.compat.octets import None
+from pyasn1.compat.octets import null
 
 
 
@@ -34,7 +34,7 @@ def parseSummary(string):
     p = r'\bSUMMARY[^:]*:([^\n\r]*)'
     t = re.search(p, string)
     if (t==None):
-        return None   
+        return null   
     else:
         return t.group(1) 
        
@@ -42,7 +42,7 @@ def parseNotes(string):
     p = r'(DESCRIPTION:)([\S\s]*)(DTEND)'
     t = re.search(p, string)
     if (t==None):
-        return None   
+        return null   
     else:
         return t.group(2) 
       
@@ -60,7 +60,7 @@ def parseLocation(string):
     p = r'\bLOCATION\b:(.*\s*)\bPRIORITY\b'
     t = re.search(p, string)
     if (t==None):
-        return None
+        return null
     else:
         return t.group(1)  
       
@@ -159,7 +159,7 @@ while(i<len(fread)):
     elif eventBegin==True:
         eventstring+=fread[i]
     i+=1
-
+ 
 serieslist = []
 eventlist = []
 
@@ -191,7 +191,7 @@ while(listloop==1):
         continue 
     a = eventlist[p]
     b = eventlist[p+1]
-    if (a[1]==None) or (b[1]==None) or (a[2]==None) or (b[2]==None): 
+    if (a==null or b==null): 
         p+=1
         continue
     if (a[0] < b[0]):
@@ -211,16 +211,16 @@ while(listloop==1):
                     manualReview.append(b)
                 p+=1
             elif (isSameAs(b[2], a[2])==True): #if notes match
-                eventlist[p] = None
+                eventlist[p] = null
                 p+=1
                 continue
             else:
                 if x =="": #if one of the events has empty notes delete
-                    eventlist[p] = None
+                    eventlist[p] = null
                     p+=1
                     continue
                 elif y =="":
-                    eventlist[p+1] = None
+                    eventlist[p+1] = null
                     p+=1
                     continue
                 else:
@@ -239,7 +239,7 @@ while(listloop):
         continue 
     a = serieslist[i]
     b = serieslist[i+1]
-    if (a[1]==None) or (b[1]==None) or (a[2]==None) or (b[2]==None): 
+    if a==null or b==null:
         i+=1
         continue
     if a[6] != b[6]:
@@ -261,21 +261,21 @@ while(listloop):
                 if a[2] == "" or (isSameAs(a[2], b[2])): #if either is blank, copy uid from curr parent to all children and delete duplicate
                     for j in range(0, len(eventlist)):
                         c = eventlist[j]
-                        if c==None or a[4] != c[4]:
+                        if c==null or a[4] != c[4]:
                             continue
                         else:
                             eventlist[j][4]=subUID(b[4], c)
-                    serieslist[i] = None
+                    serieslist[i] = null
                     i+=1
                     continue
                 elif b[2] == "":
                     for j in range(0, len(eventlist)):
                         c = eventlist[j]
-                        if c==None or b[4] != c[4]:
+                        if c==null or b[4] != c[4]:
                             continue
                         else:
                             eventlist[j][4]=subUID(a[4], c)
-                    serieslist[i+1] = None
+                    serieslist[i+1] = null
                     i+=1
                     continue
                 else:
@@ -289,10 +289,10 @@ cleanedEvents=[]
 
 ###concatenate series and events into one cleaned list
 for i in serieslist:
-    if i is not None:
+    if i is not null:
         cleanedEvents.append(i)
 for i in eventlist:
-    if i is not None:
+    if i is not null:
         cleanedEvents.append(i)
 
 ###add events with same uid as ones in manual review to manual review (these are modified series)    
@@ -310,7 +310,7 @@ with open(cleanedout, "wb") as outfile:
     for i in preamble:
         outfile.write(i)
     for i in cleanedEvents:
-        if(i!=None):
+        if(i!=null):
             outfile.write(i[5])
     outfile.write(ending)
        
@@ -326,6 +326,6 @@ with open(manout, "wb") as manfile:
        
 manfile.close()      
 
-print ("\nDuplicates have been removed, please check " + manout + " for events to look over")  
-print ("\nSorted file saved in " + cleanedout )
+print "\nDuplicates have been removed, please check " + manout + " for events to look over"  
+print "\nSorted file saved in " + cleanedout 
 #################### END OF PROGRAM #######################  
